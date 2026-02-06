@@ -81,7 +81,7 @@ export default function HomePage() {
           <div className="container-max mx-auto relative z-10">
             <div className="max-w-4xl">
               <span className="inline-block px-4 py-1.5 bg-gold-400/10 border border-gold-400/30 text-gold-400 rounded-full text-sm font-medium mb-8">
-                For RIA Advisors
+                For Advisors
               </span>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1]">
                 Technology-Driven Investment Solutions{" "}

@@ -1,10 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import episodes from "@/data/episodes.json";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { FaqSection } from "@/components/ui/FaqSection";
+import { podcastFaqs } from "@/data/faqs";
+import { podcastSeriesSchema, breadcrumbSchema, faqSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Behind the Ticker Podcast",
-  description: "ETF industry conversations with the people building the funds. Host Brad Roth talks strategy, structure, and the stories behind the ticker. 94+ episodes.",
+  title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
+  description: "Behind the Ticker is a podcast hosted by Brad Roth, Founder & CIO of THOR Financial Technologies. 94+ episodes featuring in-depth conversations with the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.",
+  alternates: { canonical: "https://thorft.com/podcast/" },
 };
 
 function fmtDate(iso: string) {
@@ -35,6 +40,9 @@ export default function PodcastPage() {
 
   return (
     <>
+      <JsonLd data={podcastSeriesSchema()} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Podcast", url: "/podcast/" }])} />
+      <JsonLd data={faqSchema(podcastFaqs)} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">
@@ -141,6 +149,9 @@ export default function PodcastPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FaqSection faqs={podcastFaqs} className="bg-white" />
 
       {/* CTA */}
       <section className="section-padding gradient-navy text-white">

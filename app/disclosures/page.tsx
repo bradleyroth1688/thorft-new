@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Disclosures",
-  description: "Important disclosures regarding THOR Financial Technologies' hypothetical performance data, privacy policy, and terms of use.",
+  title: "Disclosures — Hypothetical Performance, Privacy Policy & Terms of Use",
+  description: "Important disclosures regarding THOR Financial Technologies' hypothetical performance data, including back-testing limitations, fee assumptions, and risks. Also includes privacy policy and terms of use.",
+  alternates: { canonical: "https://thorft.com/disclosures/" },
 };
 
 export default function DisclosuresPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Disclosures", url: "/disclosures/" }])} />
+      <JsonLd data={webPageSchema({ name: "Disclosures", description: "Important disclosures regarding THOR Financial Technologies' hypothetical performance data.", url: "/disclosures/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-16 md:py-20">
         <div className="container-max mx-auto">

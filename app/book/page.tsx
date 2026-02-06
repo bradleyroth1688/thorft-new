@@ -1,9 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { FaqSection } from "@/components/ui/FaqSection";
+import { bookFaqs } from "@/data/faqs";
+import { bookSchema, breadcrumbSchema, faqSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Little Reasons, Big Consequences | The Book",
-  description: "Why your investment returns stink — and what to do about it. By Brad Roth, Founder & CIO of THOR Financial Technologies. 12 chapters on the behavioral mistakes that destroy wealth.",
+  title: "Little Reasons, Big Consequences — Why Your Investment Returns Stink | By Brad Roth",
+  description: "'Little Reasons, Big Consequences: Why Your Investment Returns Stink' is a 12-chapter book by Brad Roth, Founder & CIO of THOR Financial Technologies. It explores the behavioral mistakes that destroy investor wealth and makes the case for systematic, rules-based investing.",
+  alternates: { canonical: "https://thorft.com/book/" },
 };
 
 const chapters = [
@@ -24,6 +29,9 @@ const chapters = [
 export default function BookPage() {
   return (
     <>
+      <JsonLd data={bookSchema()} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Book", url: "/book/" }])} />
+      <JsonLd data={faqSchema(bookFaqs)} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">
@@ -135,6 +143,9 @@ export default function BookPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FaqSection faqs={bookFaqs} className="bg-white" />
 
       {/* About the Author */}
       <section className="section-padding gradient-navy text-white">

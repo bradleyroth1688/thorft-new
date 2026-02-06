@@ -5,6 +5,7 @@ export interface ModelData {
   description: string[];
   howItWorks: string[];
   keyFeatures: { title: string; description: string }[];
+  faqs: { question: string; answer: string }[];
   allocation: string;
   benchmark: string;
   minimum: string;
@@ -38,6 +39,12 @@ export const models: ModelData[] = [
       { title: "100% Cash Capability", description: "Can move entirely to short-duration treasuries when systemic risk is elevated" },
       { title: "Performance Overweighting", description: "Strongest sectors receive additional allocation as weaker sectors rotate out" },
     ],
+    faqs: [
+      { question: "What is the THOR Sector 100 model portfolio?", answer: "The Sector 100 model is THOR's flagship strategy that trades S&P 500 sector ETFs with equal weighting. THOR's proprietary signal processing evaluates each sector independently and systematically de-risks positions to short-duration treasuries when risk is elevated, with the ability to move to 100% cash." },
+      { question: "What is the minimum investment for Sector 100?", answer: "The minimum investment for the Sector 100 model portfolio is $25,000." },
+      { question: "Is there an ETF version of Sector 100?", answer: "Yes. The THLV (Thor Equal Weight Low Volatility ETF) follows the same systematic methodology as the Sector 100 model portfolio. It tracks the Thor Low Volatility Index." },
+      { question: "How does Sector 100 manage risk?", answer: "Sector 100 uses THOR's proprietary signal processing to evaluate each S&P 500 sector independently. When sectors turn risk-off, they rotate to short-duration treasuries while the best-performing sectors receive overweight allocation. When a majority of sectors signal risk-off, the portfolio can move to 100% cash." },
+    ],
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "S&P 500",
     minimum: "$25,000",
@@ -69,6 +76,12 @@ export const models: ModelData[] = [
       { title: "Low Minimum", description: "Accessible $5,000 minimum makes this strategy available to a wide range of accounts" },
       { title: "Dynamic Overweighting", description: "Best-performing index receives increased allocation as weaker indices rotate out" },
     ],
+    faqs: [
+      { question: "What is the THOR Low Volatility SDQ model?", answer: "The Low Volatility SDQ model trades three major U.S. equity indices — the S&P 500, Dow Jones Industrial Average, and Nasdaq 100 — with equal weighting and cascading risk management. As individual indices signal risk-off, positions cascade into short-duration treasuries." },
+      { question: "How does SDQ's cascading risk-off work?", answer: "When one index turns risk-off, the remaining two split 50/50. When two are risk-off, the portfolio goes 50% remaining index and 50% cash. When all three signal risk-off, the portfolio moves to 100% short-duration treasuries." },
+      { question: "What is the minimum for Low Volatility SDQ?", answer: "The minimum investment for the Low Volatility SDQ model is $5,000, making it one of THOR's most accessible strategies." },
+      { question: "Is there an ETF for SDQ?", answer: "Yes. The THIR (Thor SDQ Index Rotation ETF) follows the same strategy as the Low Volatility SDQ model, tracking the Thor SDQ Rotation Index." },
+    ],
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "S&P 500",
     minimum: "$5,000",
@@ -99,6 +112,11 @@ export const models: ModelData[] = [
       { title: "Equal Weight Approach", description: "No single country dominates the portfolio, reducing concentration risk" },
       { title: "Full Cash Capability", description: "Same ability to move to 100% short-duration treasuries during global risk events" },
     ],
+    faqs: [
+      { question: "What countries does the THOR International model invest in?", answer: "The International model trades country-specific equity ETFs representing the top 10 countries by market capitalization and economic output, including Japan, United Kingdom, Germany, France, South Korea, Italy, and others." },
+      { question: "How is risk managed in the International model?", answer: "Each country position is evaluated independently for risk-on/risk-off conditions using THOR's proprietary technology. Risk-off positions cascade into short-duration treasuries, and the portfolio can move to 100% cash during global systemic risk events." },
+      { question: "What is the International model's benchmark?", answer: "The International model benchmarks against a total world stock measure." },
+    ],
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "Total World Stock",
     minimum: "$5,000",
@@ -127,6 +145,11 @@ export const models: ModelData[] = [
       { title: "Enhanced Upside", description: "Up to ~140% S&P 500 exposure when both signals confirm risk-on conditions" },
       { title: "Buffer Protection", description: "Buffer ETF allocation provides downside cushioning with upside capture when risk is moderate" },
       { title: "Three-State Design", description: "Graduated positioning — aggressive, moderate, and defensive — instead of binary on/off" },
+    ],
+    faqs: [
+      { question: "How does the THOR Levered Index model work?", answer: "The Levered Index model uses a dual-signal framework combining THOR's standard signal with a faster-responding signal. When both are risk-on, the portfolio has up to ~140% S&P 500 exposure. When the fast signal turns off, it shifts to 60% index / 40% buffer ETF. When both are off, it moves to 100% buffer ETF for downside protection." },
+      { question: "What is the maximum exposure in Levered Index?", answer: "When both signals indicate risk-on, the portfolio allocates to both index and leveraged index ETFs, providing up to approximately 140% S&P 500 exposure." },
+      { question: "What are buffer ETFs?", answer: "Buffer ETFs provide downside protection while maintaining some upside capture potential. In the Levered Index model, buffer ETFs serve as the defensive position when risk signals are elevated." },
     ],
     allocation: "Up to 140% Equity Exposure",
     benchmark: "S&P 500",
@@ -157,6 +180,11 @@ export const models: ModelData[] = [
       { title: "Systematic Risk Guard", description: "Same proprietary de-risk cascade prevents the catastrophic losses typical of concentrated growth" },
       { title: "Satellite Strategy", description: "Designed to complement core holdings, not replace them — adds higher-octane exposure with discipline" },
     ],
+    faqs: [
+      { question: "What is the THOR NextGen Stock model?", answer: "NextGen Stock is a concentrated portfolio of 8–12 high-growth, disruptive stocks. Despite the concentrated nature, it uses the same proprietary cascading de-risk technology as all THOR models, laddering positions down to 100% short-duration treasuries when risk is elevated." },
+      { question: "Why is the minimum higher for NextGen Stock?", answer: "The $50,000 minimum reflects the concentrated nature of the portfolio (8–12 positions) and its role as a satellite strategy that requires adequate position sizing across a smaller number of holdings." },
+      { question: "Is NextGen Stock a core or satellite strategy?", answer: "NextGen Stock is designed as a satellite allocation — complementing core holdings with higher-conviction, higher-growth exposure. It adds higher-octane potential to a portfolio while maintaining THOR's systematic risk management guardrails." },
+    ],
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "Growth Innovation",
     minimum: "$50,000",
@@ -185,6 +213,11 @@ export const models: ModelData[] = [
       { title: "60/40 Gold/Silver", description: "Balanced precious metals allocation with gold as the anchor and silver for additional upside" },
       { title: "Independent Evaluation", description: "Each metal is evaluated separately — silver can be risk-off while gold remains risk-on, and vice versa" },
       { title: "Alternative Asset Class", description: "True alternative strategy that adds non-equity, non-fixed income diversification to portfolios" },
+    ],
+    faqs: [
+      { question: "What is the THOR Dollar ALT model?", answer: "Dollar ALT is a precious metals strategy that allocates 60% to gold and 40% to silver when risk-on. Each metal is evaluated independently by THOR's proprietary technology — if either signals risk-off, that position rotates to short-term treasuries. It provides dollar diversification and non-correlated alternative exposure." },
+      { question: "Why include precious metals in a portfolio?", answer: "Precious metals provide non-correlated exposure that can serve as a potential hedge against currency debasement and inflation. The Dollar ALT model adds a true alternative asset class that behaves differently from equities and fixed income." },
+      { question: "Can gold be risk-on while silver is risk-off?", answer: "Yes. THOR evaluates each metal independently. Gold can remain in the portfolio while silver moves to cash, and vice versa. This granular approach avoids the all-or-nothing problem of most precious metals strategies." },
     ],
     allocation: "60/40 Gold/Silver",
     benchmark: "Precious Metals Basket",

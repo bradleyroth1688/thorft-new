@@ -1,0 +1,51 @@
+# THOR Financial Technologies
+
+> THOR Financial Technologies is a registered investment adviser based in Greensburg, Pennsylvania. The firm provides technology-driven, systematic model portfolios and actively managed ETFs for registered investment advisors (RIAs). Founded by Brad Roth, THOR uses proprietary signal processing technology to manage risk across all of its investment strategies.
+
+## What THOR Does
+
+THOR builds systematic investment strategies that use proprietary signal processing — techniques adapted from telecommunications and defense — to detect market regime changes in real time. When conditions shift from risk-on to risk-off, THOR's models adapt automatically, cascading positions into short-duration treasuries. All strategies can move to 100% cash during periods of elevated systemic risk. The goal is to eliminate behavioral biases and replace emotional decision-making with disciplined, data-driven execution.
+
+## Key Offerings
+
+### Model Portfolios (6 strategies)
+- **Sector 100** — S&P 500 sector-based, equally weighted, with cascading de-risk. Minimum: $25,000. Benchmark: S&P 500.
+- **Low Volatility SDQ** — Trades S&P 500, Dow Jones, and Nasdaq 100 with cascading risk-off. Minimum: $5,000. Benchmark: S&P 500.
+- **International** — Top 10 countries by market cap, equally weighted with country-level risk management. Minimum: $5,000. Benchmark: Total World Stock.
+- **Levered Index** — Dual-signal framework for leveraged, standard, and buffered S&P 500 exposure. Minimum: $5,000. Benchmark: S&P 500.
+- **NextGen Stock** — Concentrated 8–12 high-growth stocks with systematic de-risk. Minimum: $50,000. Benchmark: Growth Innovation.
+- **Dollar ALT** — 60% gold / 40% silver with precious metals risk management. Minimum: $5,000. Benchmark: Precious Metals Basket.
+
+All model performance is hypothetical and net of a 0.20% management fee.
+
+### Active ETFs (2 funds, $1.1B+ combined AUM)
+- **THLV** — Thor Equal Weight Low Volatility ETF (same strategy as Sector 100)
+- **THIR** — Thor SDQ Index Rotation ETF (same strategy as Low Volatility SDQ)
+
+### Podcast
+- **Behind the Ticker** — 94+ episodes interviewing the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.
+
+### Book
+- **"Little Reasons, Big Consequences: Why Your Investment Returns Stink"** by Brad Roth — 12 chapters on the behavioral mistakes that destroy investor wealth.
+
+## Leadership
+- **Brad Roth** — Founder & Chief Investment Officer. Two decades of quantitative finance experience. Hosts Behind the Ticker podcast. Author.
+
+## Contact
+- Website: https://thorft.com
+- ETF site: https://thorfunds.com
+- Email: welcome@thoranalytics.com
+- Address: 327 W Pittsburgh St, Greensburg, PA 15601
+
+## Key Pages
+- Homepage: https://thorft.com/
+- About: https://thorft.com/about/
+- Team: https://thorft.com/team/
+- Model Portfolios: https://thorft.com/models/
+- THOR Funds (ETFs): https://thorft.com/funds/
+- Podcast: https://thorft.com/podcast/
+- Book: https://thorft.com/book/
+- Press & Media: https://thorft.com/press/
+- Resources: https://thorft.com/resources/
+- Contact: https://thorft.com/contact/
+- Disclosures: https://thorft.com/disclosures/

@@ -1,9 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Resources",
-  description: "Download THOR model factsheets, access the Signal Processing 101 whitepaper, and explore educational resources for advisors.",
+  title: "Advisor Resources — Factsheets, Whitepaper & Educational Content",
+  description: "Download THOR model portfolio factsheets for all six strategies, access the Signal Processing 101 whitepaper, and explore educational resources. All factsheets include full hypothetical performance disclosures.",
+  alternates: { canonical: "https://thorft.com/resources/" },
 };
 
 const factsheets = [
@@ -18,6 +21,8 @@ const factsheets = [
 export default function ResourcesPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Resources", url: "/resources/" }])} />
+      <JsonLd data={webPageSchema({ name: "Advisor Resources", description: "Download THOR model factsheets, access the Signal Processing 101 whitepaper, and explore educational resources.", url: "/resources/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">

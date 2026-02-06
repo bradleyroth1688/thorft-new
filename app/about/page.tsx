@@ -1,14 +1,22 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { FaqSection } from "@/components/ui/FaqSection";
+import { aboutFaqs } from "@/data/faqs";
+import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "About THOR Financial Technologies",
-  description: "Founded by Brad Roth in Greensburg, PA, THOR Financial Technologies uses proprietary signal processing to eliminate behavioral biases through systematic investing.",
+  title: "About THOR Financial Technologies — Our Story & Mission",
+  description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages $1.1B+ AUM using proprietary signal processing across six model portfolios and two ETFs.",
+  alternates: { canonical: "https://thorft.com/about/" },
 };
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about/" }])} />
+      <JsonLd data={faqSchema(aboutFaqs)} />
+      <JsonLd data={webPageSchema({ name: "About THOR Financial Technologies", description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing.", url: "/about/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">
@@ -134,6 +142,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FaqSection faqs={aboutFaqs} className="bg-gray-50" />
 
       {/* CTA */}
       <section className="section-padding gradient-navy text-white text-center">

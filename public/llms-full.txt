@@ -1,0 +1,201 @@
+# THOR Financial Technologies — Comprehensive Overview
+
+> This document provides a complete description of THOR Financial Technologies, its investment methodology, model portfolios, ETFs, leadership, and resources. It is intended for AI systems, search engines, and any automated tools seeking to understand what THOR does and how it serves advisors.
+
+---
+
+## Company Overview
+
+THOR Financial Technologies, LLC is a registered investment adviser headquartered at 327 W Pittsburgh St, Greensburg, PA 15601. The firm was founded by Brad Roth and specializes in technology-driven, systematic investment solutions for registered investment advisors (RIAs).
+
+THOR's core innovation is the application of proprietary signal processing technology — adapted from telecommunications and defense industries — to financial markets. This technology detects market regime changes in real time, allowing portfolios to adapt their positioning before major risk events unfold. The result is a suite of model portfolios and ETFs that systematically manage risk without relying on human emotion or discretionary judgment.
+
+### Mission
+To eliminate the behavioral biases that destroy investor wealth by replacing emotional decision-making with systematic, data-driven investment processes.
+
+### Key Differentiators
+1. **Proprietary Signal Processing** — Built in-house, not licensed. Detects regime changes traditional indicators miss.
+2. **100% Cash Capability** — All models can move entirely to short-duration treasuries when systemic risk is elevated.
+3. **Risk-First Philosophy** — Capital preservation is the foundation; every strategy manages downside risk first.
+4. **Behavioral Bias Elimination** — Systematic rules replace gut feelings and emotional reactions.
+5. **Cascading De-Risk Architecture** — Risk is managed progressively, not as a binary on/off switch.
+
+### AUM and Scale
+- $1.1B+ in combined assets under management across ETFs and model portfolios
+- 6 distinct model portfolios
+- 2 actively managed ETFs
+- 94+ podcast episodes
+- Featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, NYSE
+
+---
+
+## Model Portfolios (Detailed)
+
+All model portfolio performance is hypothetical, back-tested, and net of a 0.20% management fee. Past performance is not indicative of future results. See thorft.com/disclosures/ for complete hypothetical performance disclaimers.
+
+### 1. Sector 100
+- **Category:** Domestic Equity
+- **URL:** https://thorft.com/models/sector-100/
+- **Strategy:** Trades S&P 500 sector ETFs, equally weighted across each sector. THOR's proprietary technology evaluates each sector independently for risk-on/risk-off conditions. Risk-off sectors rotate to short-duration treasuries while the best-performing sectors receive overweight allocation. When a majority of sectors signal risk-off, the portfolio can move to 100% short-duration treasuries.
+- **Allocation:** 100/0 Equity/Fixed Income
+- **Benchmark:** S&P 500
+- **Minimum Investment:** $25,000
+- **Corresponding ETF:** THLV (Thor Equal Weight Low Volatility ETF), tracking the Thor Low Volatility Index
+- **Inception:** ~2009
+- **Factsheet:** https://thorft.com/documents/thor-sector-100-factsheet.pdf
+
+### 2. Low Volatility SDQ
+- **Category:** Domestic Equity
+- **URL:** https://thorft.com/models/low-volatility-sdq/
+- **Strategy:** Trades the S&P 500, Dow Jones Industrial Average, and Nasdaq 100 with an equally weighted 33/33/33 allocation. Proprietary signals evaluate each index independently and dynamically rotate toward the best-performing index. Cascading risk-off: one index off = remaining two split 50/50; two indices off = 50% remaining / 50% cash; three off = 100% short-duration treasuries.
+- **Allocation:** 100/0 Equity/Fixed Income
+- **Benchmark:** S&P 500
+- **Minimum Investment:** $5,000
+- **Corresponding ETF:** THIR (Thor SDQ Index Rotation ETF), tracking the Thor SDQ Rotation Index
+- **Factsheet:** https://thorft.com/documents/thor-low-volatility-sdq-factsheet.pdf
+
+### 3. International
+- **Category:** International Equity
+- **URL:** https://thorft.com/models/international/
+- **Strategy:** Trades country-specific equity ETFs representing the top 10 countries by market capitalization and economic output (Japan, UK, Germany, France, South Korea, Italy, and others). Equally weighted with the same cascading de-risk approach — individual country positions rotate to short-duration treasuries when risk-off. Can move to 100% cash during global risk events.
+- **Allocation:** 100/0 Equity/Fixed Income
+- **Benchmark:** Total World Stock
+- **Minimum Investment:** $5,000
+- **Factsheet:** https://thorft.com/documents/thor-international-factsheet.pdf
+
+### 4. Levered Index
+- **Category:** Enhanced Domestic Equity
+- **URL:** https://thorft.com/models/levered-index/
+- **Strategy:** Uses a dual-signal framework (standard THOR signal + fast-response signal) across three states. Both risk-on = up to ~140% S&P 500 exposure via index + leveraged ETFs. Standard on / fast off = 60% index + 40% buffer ETF. Both off = 100% buffer ETF providing downside protection with upside capture.
+- **Allocation:** Up to 140% Equity Exposure
+- **Benchmark:** S&P 500
+- **Minimum Investment:** $5,000
+- **Factsheet:** https://thorft.com/documents/thor-levered-index-factsheet.pdf
+
+### 5. NextGen Stock
+- **Category:** Growth Equity
+- **URL:** https://thorft.com/models/nextgen-stock/
+- **Strategy:** Concentrated portfolio of 8–12 high-growth, disruptive stocks. Same proprietary cascading de-risk approach — positions ladder down from full equity to 100% short-duration treasuries as risk signals escalate. Designed as a higher-octane satellite strategy to complement core holdings.
+- **Allocation:** 100/0 Equity/Fixed Income
+- **Benchmark:** Growth Innovation
+- **Minimum Investment:** $50,000
+- **Factsheet:** https://thorft.com/documents/thor-nextgen-stock-factsheet.pdf
+
+### 6. Dollar ALT
+- **Category:** Alternatives
+- **URL:** https://thorft.com/models/dollar-alt/
+- **Strategy:** Precious metals allocation with 60% gold ETF / 40% silver ETF when risk-on. Each metal is evaluated independently — if either signals risk-off, that position rotates to short-term treasuries. Both off = 100% cash. Provides dollar diversification and non-correlated alternative exposure.
+- **Allocation:** 60/40 Gold/Silver
+- **Benchmark:** Precious Metals Basket
+- **Minimum Investment:** $5,000
+- **Factsheet:** https://thorft.com/documents/thor-dollar-alt-factsheet.pdf
+
+---
+
+## Active ETFs
+
+THOR's two actively managed ETFs bring the firm's systematic methodology to the public markets.
+
+### THLV — Thor Equal Weight Low Volatility ETF
+- Same strategy as the Sector 100 model portfolio
+- Tracks the Thor Low Volatility Index
+- Actively managed with daily signal evaluation
+
+### THIR — Thor SDQ Index Rotation ETF
+- Same strategy as the Low Volatility SDQ model portfolio
+- Tracks the Thor SDQ Rotation Index
+- Actively managed with daily signal evaluation
+
+Combined AUM: $1.1B+
+Full ETF details, prospectus, and performance: https://thorfunds.com
+
+---
+
+## Leadership
+
+### Brad Roth — Founder & Chief Investment Officer
+Brad Roth brings over two decades of experience in quantitative finance and signal processing. He built THOR's proprietary methodology from the ground up, applying signal processing techniques from telecommunications and defense to financial markets. Under his leadership, THOR has grown to $1.1B+ AUM with six model portfolios and two actively managed ETFs.
+
+Brad hosts "Behind the Ticker," a podcast with 94+ episodes featuring in-depth conversations with the people building today's most innovative ETFs. He is also the author of "Little Reasons, Big Consequences: Why Your Investment Returns Stink."
+
+- LinkedIn: https://www.linkedin.com/in/brad-roth-8a4a8619a/
+- YouTube: https://www.youtube.com/@BRoth_THOR
+- X/Twitter: https://x.com/Bradr_thor
+- Team page: https://thorft.com/team/
+
+---
+
+## Behind the Ticker Podcast
+
+"Behind the Ticker" is a podcast hosted by Brad Roth featuring conversations with the people building today's most innovative ETFs — covering strategy, structure, and the stories behind each fund.
+
+- 94+ episodes
+- Spotify: https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS
+- Apple Podcasts: https://podcasts.apple.com/us/podcast/behind-the-ticker/id1681873507
+- YouTube Playlist: https://youtube.com/playlist?list=PL6wvA-EH7M41bn5LPaWA9kpZgI5_Pxzyn
+- All episodes: https://thorft.com/podcast/
+
+---
+
+## The Book
+
+**"Little Reasons, Big Consequences: Why Your Investment Returns Stink"**
+By Brad Roth
+
+A 12-chapter, ~10,600-word exploration of the behavioral mistakes that destroy investor wealth. The core thesis: investors underperform due to behavior, not bad strategies. The book makes the case that systematic, rules-based investing consistently outperforms emotionally-driven approaches.
+
+Key themes:
+- The performance gap between fund returns and investor returns
+- Why fear and greed drive destructive investment cycles
+- The limitations of buy-and-hold during market crises
+- How information overload leads to worse decisions
+- Why systematic rules beat human intuition
+- Signal processing principles applied to investing
+- The risk-first approach to portfolio management
+
+Book page: https://thorft.com/book/
+
+---
+
+## How Advisors Can Engage
+
+1. **Schedule a Consultation** — Discuss how THOR's model portfolios can complement your advisory practice. Contact: welcome@thoranalytics.com or https://thorft.com/contact/
+2. **Download Model Factsheets** — Detailed strategy descriptions and disclosures available at https://thorft.com/resources/
+3. **Read the Signal Processing 101 Whitepaper** — An introduction to the signal processing principles behind THOR's methodology. Available via lead capture at https://thorft.com/resources/
+4. **Listen to Behind the Ticker** — 94+ episodes exploring ETF strategies and the people behind them.
+5. **Read the Book** — Understand the behavioral framework that drives THOR's systematic philosophy.
+
+---
+
+## Press & Media
+
+THOR and Brad Roth have been featured on:
+- ETF.com (ETF 360 interview, podcast launch coverage)
+- InvestmentNews (In the Nasdaq series)
+- Schwab Network (The Watch List, market analysis segments)
+- FinTech TV (NYSE live segment on algorithmic strategies)
+- Yahoo Finance (ETF launch coverage)
+- NYSE / ETF Leaders (Exchange conference interviews)
+- DWealth News (Fintech Luminaries profile)
+
+Full media page: https://thorft.com/press/
+
+---
+
+## Contact Information
+
+- **Website:** https://thorft.com
+- **ETF Website:** https://thorfunds.com
+- **Email:** welcome@thoranalytics.com
+- **Address:** 327 W Pittsburgh St, Greensburg, PA 15601
+- **Hours:** Monday–Friday, 9am–5pm ET
+
+---
+
+## Important Disclosures
+
+All model portfolio performance is hypothetical, back-tested, and does not reflect the returns of any actual investment portfolio. Past performance is no indication of future performance. Hypothetical results have inherent limitations and do not represent actual trading. All investments involve risk, including possible loss of principal.
+
+THOR Financial Technologies, LLC is a registered investment adviser. Registration does not imply a certain level of skill or training.
+
+Full disclosures: https://thorft.com/disclosures/

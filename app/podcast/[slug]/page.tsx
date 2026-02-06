@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import episodes from "@/data/episodes.json";
 import { notFound } from "next/navigation";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { podcastEpisodeSchema, breadcrumbSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
   return episodes.map((ep) => ({ slug: ep.slug }));
@@ -23,8 +25,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const ep = episodes.find((e) => e.slug === params.slug);
   if (!ep) return {};
   return {
-    title: `${ep.guest} — Behind the Ticker`,
-    description: stripHtml(ep.description).substring(0, 160),
+    title: `${ep.guest} (${ep.company}) — Behind the Ticker Podcast`,
+    description: `Brad Roth interviews ${ep.guest} of ${ep.company} on the Behind the Ticker podcast. ${stripHtml(ep.description).substring(0, 120)}`,
+    alternates: { canonical: `https://thorft.com/podcast/${ep.slug}/` },
   };
 }
 
@@ -41,6 +44,13 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <JsonLd data={podcastEpisodeSchema(ep)} />
+      <JsonLd data={breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Podcast", url: "/podcast/" },
+        { name: ep.guest, url: `/podcast/${ep.slug}/` },
+      ])} />
+
       {/* Hero */}
       <section className="gradient-navy text-white py-16 md:py-20">
         <div className="container-max mx-auto">

@@ -1,9 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "THOR Funds | Active ETFs",
-  description: "THOR's two actively managed ETFs — THLV and THIR — bring systematic, adaptive investing to the public markets with over $1.1B in combined AUM.",
+  title: "THOR Funds — THLV & THIR Active ETFs | $1.1B+ AUM",
+  description: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF) and THIR (Thor SDQ Index Rotation ETF), with over $1.1 billion in combined assets under management. Both use THOR's proprietary signal processing for systematic risk management.",
+  alternates: { canonical: "https://thorft.com/funds/" },
 };
 
 const funds = [
@@ -30,6 +33,8 @@ const funds = [
 export default function FundsPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "THOR Funds", url: "/funds/" }])} />
+      <JsonLd data={webPageSchema({ name: "THOR Funds — Active ETFs", description: "Two actively managed ETFs bringing THOR's systematic methodology to the public markets.", url: "/funds/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">

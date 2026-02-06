@@ -1,13 +1,18 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Schedule a consultation with THOR Financial Technologies. Contact us about model portfolios, ETFs, and advisor partnerships.",
+  title: "Contact THOR Financial Technologies — Schedule a Consultation",
+  description: "Schedule a consultation with THOR Financial Technologies to discuss model portfolios, ETFs, and advisor partnerships. Email: welcome@thoranalytics.com. Office: 327 W Pittsburgh St, Greensburg, PA 15601.",
+  alternates: { canonical: "https://thorft.com/contact/" },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Contact", url: "/contact/" }])} />
+      <JsonLd data={webPageSchema({ name: "Contact THOR Financial Technologies", description: "Schedule a consultation or get in touch with THOR Financial Technologies.", url: "/contact/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">

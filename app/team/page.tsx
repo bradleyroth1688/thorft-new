@@ -1,14 +1,20 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { personSchema, breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Team",
-  description: "Meet Brad Roth, Founder & CIO of THOR Financial Technologies. Two decades of quantitative finance experience, host of Behind the Ticker podcast.",
+  title: "Brad Roth — Founder & CIO of THOR Financial Technologies",
+  description: "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies. With over two decades of quantitative finance experience, he built THOR's proprietary signal processing methodology. Host of Behind the Ticker podcast (94+ episodes) and author of 'Little Reasons, Big Consequences.'",
+  alternates: { canonical: "https://thorft.com/team/" },
 };
 
 export default function TeamPage() {
   return (
     <>
+      <JsonLd data={{ "@context": "https://schema.org", ...personSchema() }} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Team", url: "/team/" }])} />
+      <JsonLd data={webPageSchema({ name: "Brad Roth — Founder & CIO", description: "Meet Brad Roth, Founder and CIO of THOR Financial Technologies.", url: "/team/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">

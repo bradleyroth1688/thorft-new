@@ -1,10 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import mediaData from "@/data/media-appearances.json";
+import { JsonLd } from "@/components/ui/JsonLd";
+import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Press & Media",
-  description: "THOR Financial Technologies in the press. Video appearances, articles, and features from ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, and more.",
+  title: "Press & Media — THOR Financial Technologies in the News",
+  description: "THOR Financial Technologies and Brad Roth have been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles about THOR's systematic investment approach.",
+  alternates: { canonical: "https://thorft.com/press/" },
 };
 
 function fmtDate(dateStr: string) {
@@ -35,6 +38,8 @@ export default function PressPage() {
 
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Press & Media", url: "/press/" }])} />
+      <JsonLd data={webPageSchema({ name: "Press & Media", description: "THOR Financial Technologies in the press.", url: "/press/" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">

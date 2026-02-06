@@ -7,7 +7,7 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "About THOR Financial Technologies — Our Story & Mission",
-  description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages $1.1B+ AUM using proprietary signal processing across six model portfolios and two ETFs.",
+  description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages using proprietary signal processing across six model portfolios and two ETFs.",
   alternates: { canonical: "https://thorft.com/about/" },
 };
 
@@ -52,7 +52,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold text-navy-800 mb-6">By the Numbers</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">$1.1B+</div>
+                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">5+ Yrs</div>
                   <div className="text-gray-600">Assets under management across ETFs and model portfolios</div>
                 </div>
                 <div className="border-t border-gray-200" />

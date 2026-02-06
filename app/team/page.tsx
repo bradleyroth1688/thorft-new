@@ -84,7 +84,7 @@ export default function TeamPage() {
               <div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-4">THOR&apos;s Evolution</h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                  What started as a research project into market signal processing has grown into a comprehensive investment platform serving RIA advisors nationwide. Under Brad&apos;s leadership, THOR has launched six distinct model portfolios, two actively managed ETFs, and built over $1.1 billion in assets under management.
+                  What started as a research project into market signal processing has grown into a comprehensive investment platform serving RIA advisors nationwide. Under Brad&apos;s leadership, THOR has launched six distinct model portfolios, two actively managed ETFs.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Each strategy reflects Brad&apos;s core philosophy: manage risk first, then compound capital. The ability for THOR&apos;s models to move to 100% cash during periods of elevated systemic risk is a direct expression of this conviction — and a capability most competing approaches lack.

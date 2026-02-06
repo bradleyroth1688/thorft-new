@@ -47,7 +47,7 @@ export function Header() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center group">
               <Image
-                src="/images/thor-logo-white.png"
+                src="/images/logos/thor-ft-white.png"
                 alt="THOR Financial Technologies"
                 width={200}
                 height={48}

@@ -4,8 +4,8 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "THOR Funds — THLV & THIR Active ETFs | $1.1B+ AUM",
-  description: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF) and THIR (Thor SDQ Index Rotation ETF), with over $1.1 billion in combined assets under management. Both use THOR's proprietary signal processing for systematic risk management.",
+  title: "THOR Funds — THLV & THIR Active ETFs",
+  description: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF) and THIR (Thor SDQ Index Rotation ETF). Both use THOR's proprietary signal processing for systematic risk management.",
   alternates: { canonical: "https://thorft.com/funds/" },
 };
 
@@ -47,7 +47,7 @@ export default function FundsPage() {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
             Two actively managed ETFs bringing THOR&apos;s proprietary signal processing and systematic risk management to the public markets.
           </p>
-          <div className="text-3xl font-bold text-gold-400 mt-8">$1.1B+ Combined AUM</div>
+          
         </div>
       </section>
 

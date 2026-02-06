@@ -8,7 +8,7 @@ import { organizationSchema, breadcrumbSchema, faqSchema, webPageSchema } from "
 export const metadata: Metadata = {
   title: "THOR Financial Technologies | Systematic Model Portfolios & ETFs for RIA Advisors",
   description:
-    "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash. $1.1B+ AUM. Founded by Brad Roth in Greensburg, PA.",
+    "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash. Founded by Brad Roth in Greensburg, PA.",
   alternates: { canonical: "https://thorft.com/" },
 };
 
@@ -52,10 +52,10 @@ const models = [
 ];
 
 const stats = [
-  { value: "$1.1B+", label: "Assets Under Management" },
   { value: "6", label: "Model Portfolios" },
   { value: "2", label: "Active ETFs" },
-  { value: "94+", label: "Podcast Episodes" },
+  { value: "5+ Years", label: "Live Track Record" },
+  { value: "100%", label: "Cash Capability" },
 ];
 
 export default function HomePage() {
@@ -147,7 +147,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-navy-800 mb-3">Active ETFs</h3>
                 <p className="text-gray-600">
-                  Two actively managed ETFs bringing THOR&apos;s systematic methodology to the public markets, with over $1.1 billion in combined assets under management.
+                  Two actively managed ETFs bringing THOR&apos;s systematic methodology to the public markets, available to advisors and investors on all major platforms.
                 </p>
               </div>
               <div className="card text-center">
@@ -158,7 +158,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-navy-800 mb-3">Research &amp; Education</h3>
                 <p className="text-gray-600">
-                  94+ podcast episodes, a published book, and educational resources to help advisors understand systematic investing and signal processing approaches.
+                  A published book, podcast, and educational resources to help advisors understand systematic investing and signal processing approaches.
                 </p>
               </div>
             </div>
@@ -251,9 +251,7 @@ export default function HomePage() {
                   &ldquo;Every other industry has embraced technology to improve outcomes. Financial services hasn&apos;t. It&apos;s time that changed.&rdquo;
                 </blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-gold-400/20 rounded-full flex items-center justify-center">
-                    <span className="text-gold-400 font-bold">BR</span>
-                  </div>
+                  <img src="/images/brad-roth-headshot.jpg" alt="Brad Roth" className="w-12 h-12 rounded-full object-cover" />
                   <div>
                     <div className="font-semibold">Brad Roth</div>
                     <div className="text-sm text-gray-400">Founder &amp; CIO, THOR Financial Technologies</div>
@@ -304,7 +302,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-3">Behind the Ticker</h3>
                 <p className="text-gray-600 mb-4">
-                  94+ episodes featuring the people building today&apos;s most innovative ETFs. Strategy, structure, and the stories behind each fund.
+                  Conversations with the people building today&apos;s most innovative ETFs. Strategy, structure, and the stories behind each fund.
                 </p>
                 <Link href="/podcast" className="btn-secondary inline-flex">Listen Now →</Link>
               </div>

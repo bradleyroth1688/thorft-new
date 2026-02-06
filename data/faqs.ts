@@ -18,7 +18,7 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "What ETFs does THOR manage?",
-    answer: "THOR manages two actively managed ETFs with over $1.1 billion in combined assets under management: THLV (Thor Equal Weight Low Volatility ETF), which follows the Sector 100 strategy, and THIR (Thor SDQ Index Rotation ETF), which follows the Low Volatility SDQ strategy.",
+    answer: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF), which follows the Sector 100 strategy, and THIR (Thor SDQ Index Rotation ETF), which follows the Low Volatility SDQ strategy.",
   },
   {
     question: "What is the management fee for THOR's model portfolios?",

@@ -40,3 +40,49 @@
     background: linear-gradient(135deg, #0a1628 0%, #1a2744 60%, #2b200a 100%);
   }
 }
+
+/* Print styles for factsheet pages */
+@media print {
+  header, footer, nav {
+    break-inside: avoid;
+  }
+  .gradient-navy {
+    background: #0a1628 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  table {
+    break-inside: avoid;
+  }
+  tr {
+    break-inside: avoid;
+  }
+  section {
+    break-inside: avoid;
+  }
+  body {
+    font-size: 12px;
+  }
+  .bg-navy-800 {
+    background-color: #0a1628 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .bg-gray-50\/50, .bg-gray-50, .bg-gray-100 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .text-gold-400 {
+    color: #d4af37 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .text-emerald-600, .text-emerald-400 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .text-red-600 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

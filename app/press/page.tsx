@@ -6,7 +6,7 @@ import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "Press & Media — THOR Financial Technologies in the News",
-  description: "THOR Financial Technologies and Brad Roth have been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles about THOR's systematic investment approach.",
+  description: "THOR Financial Technologies has been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles about THOR's systematic investment approach.",
   alternates: { canonical: "https://thorft.com/press/" },
 };
 
@@ -50,7 +50,7 @@ export default function PressPage() {
             In the <span className="text-gold-400">News</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            THOR Financial Technologies and Brad Roth featured across the industry&apos;s leading financial media outlets.
+            THOR Financial Technologies featured across the industry&apos;s leading financial media outlets.
           </p>
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function PressPage() {
         <div className="container-max mx-auto">
           <h2 className="text-3xl font-bold mb-4">Media Inquiries</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            For press inquiries, interviews, or speaking engagements, contact us.
+            For all media inquiries, please contact us at welcome@thoranalytics.com
           </p>
           <Link href="/contact" className="btn-primary text-lg px-8 py-4">
             Contact Us

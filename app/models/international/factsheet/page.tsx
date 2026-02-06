@@ -5,8 +5,10 @@ import {
   calendarYears,
   growthOf10K,
   riskStats,
+  monthlyReturns,
 } from "@/data/international-performance";
 import { PrintButton } from "./PrintButton";
+import PerformanceChart from "./PerformanceChart";
 
 export const metadata: Metadata = {
   title: "THOR International Model Portfolio Factsheet",
@@ -160,6 +162,19 @@ export default function InternationalFactsheetPage() {
           </div>
         </section>
 
+        {/* ── Cumulative Performance Chart ── */}
+        <section>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4 border-b-2 border-gold-400 pb-2 inline-block">
+            Growth of $10,000
+          </h2>
+          <p className="text-sm text-gray-500 mb-4">
+            Hypothetical growth of a $10,000 investment from January 2017 through January 31, 2026. Net of 0.20% management fee.
+          </p>
+          <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6">
+            <PerformanceChart />
+          </div>
+        </section>
+
         {/* ── Performance Summary ── */}
         <section>
           <h2 className="text-2xl font-bold text-navy-800 mb-4 border-b-2 border-gold-400 pb-2 inline-block">
@@ -245,6 +260,80 @@ export default function InternationalFactsheetPage() {
                     <ReturnCell value={row.bench} />
                   </tr>
                 ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* ── Monthly Returns Grid ── */}
+        <section>
+          <h2 className="text-2xl font-bold text-navy-800 mb-4 border-b-2 border-gold-400 pb-2 inline-block">
+            Monthly Returns
+          </h2>
+          <p className="text-xs text-gray-500 mb-3">
+            THOR International (Net) monthly returns. Net of 0.20% management fee.
+          </p>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse text-xs">
+              <thead>
+                <tr className="bg-navy-800 text-white">
+                  <th className="px-2 py-2 text-left font-semibold uppercase tracking-wider">Year</th>
+                  {["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"].map((m) => (
+                    <th key={m} className="px-2 py-2 text-right font-semibold uppercase tracking-wider">{m}</th>
+                  ))}
+                  <th className="px-2 py-2 text-right font-semibold uppercase tracking-wider">Full Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                {(() => {
+                  // Group monthly returns by year
+                  const years = Array.from(new Set(monthlyReturns.map((d) => d.date.slice(0, 4)))).sort();
+                  return years.map((year) => {
+                    const yearData = monthlyReturns.filter((d) => d.date.startsWith(year + "-"));
+                    // Build a map of month index (0-11) to return
+                    const monthMap = new Map<number, number>();
+                    yearData.forEach((d) => {
+                      const monthIdx = parseInt(d.date.split("-")[1], 10) - 1;
+                      monthMap.set(monthIdx, d.thorNet);
+                    });
+                    // Compound full year return
+                    let fullYear = 1;
+                    yearData.forEach((d) => { fullYear *= 1 + d.thorNet / 100; });
+                    const fullYearReturn = (fullYear - 1) * 100;
+                    const isPartial = yearData.length < 12;
+
+                    return (
+                      <tr key={year} className="border-b border-gray-100 even:bg-gray-50/50">
+                        <td className="px-2 py-1.5 font-semibold text-gray-700">
+                          {year}{isPartial ? " YTD" : ""}
+                        </td>
+                        {Array.from({ length: 12 }, (_, i) => {
+                          const val = monthMap.get(i);
+                          if (val === undefined) {
+                            return <td key={i} className="px-2 py-1.5 text-right text-gray-300">—</td>;
+                          }
+                          return (
+                            <td
+                              key={i}
+                              className={`px-2 py-1.5 text-right tabular-nums font-medium ${
+                                val > 0 ? "text-emerald-600" : val < 0 ? "text-red-600" : "text-gray-700"
+                              }`}
+                            >
+                              {val.toFixed(2)}%
+                            </td>
+                          );
+                        })}
+                        <td
+                          className={`px-2 py-1.5 text-right tabular-nums font-bold ${
+                            fullYearReturn > 0 ? "text-emerald-600" : fullYearReturn < 0 ? "text-red-600" : "text-gray-700"
+                          }`}
+                        >
+                          {fullYearReturn.toFixed(2)}%
+                        </td>
+                      </tr>
+                    );
+                  });
+                })()}
               </tbody>
             </table>
           </div>

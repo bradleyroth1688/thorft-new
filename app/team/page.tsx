@@ -4,8 +4,8 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { personSchema, breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Brad Roth — Founder & CIO of THOR Financial Technologies",
-  description: "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies. With over two decades of quantitative finance experience, he built THOR's proprietary signal processing methodology. Host of Behind the Ticker podcast (94+ episodes) and author of 'Little Reasons, Big Consequences.'",
+  title: "Team — THOR Financial Technologies Leadership",
+  description: "Meet the leadership team at THOR Financial Technologies. Brad Roth (Founder & CIO), Tyler Trimbath (Managing Partner & CCO), and Cameron Roth (Managing Partner). Decades of combined experience in quantitative finance, operations, and research.",
   alternates: { canonical: "https://thorft.com/team/" },
 };
 
@@ -37,9 +37,7 @@ export default function TeamPage() {
             {/* Photo/Profile Card */}
             <div className="lg:col-span-1">
               <div className="bg-navy-800 rounded-2xl p-8 text-white text-center sticky top-28">
-                <div className="w-32 h-32 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-5xl font-bold text-gold-400">BR</span>
-                </div>
+                <img src="/images/brad-roth-headshot.jpg" alt="Brad Roth" className="w-32 h-32 rounded-full object-cover mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-1">Brad Roth</h2>
                 <p className="text-gold-400 font-medium mb-6">Founder & Chief Investment Officer</p>
                 
@@ -116,11 +114,87 @@ export default function TeamPage() {
         </div>
       </section>
 
+      {/* Tyler Trimbath */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max mx-auto">
+          <div className="grid lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-1">
+              <div className="bg-navy-800 rounded-2xl p-8 text-white text-center sticky top-28">
+                <div className="w-32 h-32 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-5xl font-bold text-gold-400">TT</span>
+                </div>
+                <h2 className="text-2xl font-bold mb-1">Tyler Trimbath</h2>
+                <p className="text-gold-400 font-medium mb-6">Managing Partner &amp; CCO</p>
+                <div className="space-y-3 text-sm text-gray-300">
+                  <p>Western Pennsylvania</p>
+                  <p>Forbes Business Development Council</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-2 space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-navy-800 mb-4">Background</h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                  Prior to joining THOR, Tyler exemplified his commitment to outside-the-box thinking with leadership positions in technology innovation and investor relations at Proactive Capital Resource Group, a boutique investor relations organization. He served in an administrative role for retail investment services for publicly traded companies.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Mr. Trimbath is a published author and has a history working in politics. He is a member of the Forbes 2020 Business Development Council. He holds a bachelor&apos;s degree in business administration from Mount Aloysius College.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-navy-800 mb-4">Community Involvement</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Tyler currently serves on the Board of Trustees for Mount Aloysius College, sits on the Investment Committee for the Community Foundation of the Alleghenies, is a Sheetz Entrepreneurship Board member at Penn State University, and serves as a Board member of the Pennsylvania (Cambria) Regional Chamber of Commerce.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cameron Roth */}
+      <section className="section-padding bg-white">
+        <div className="container-max mx-auto">
+          <div className="grid lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-1">
+              <div className="bg-navy-800 rounded-2xl p-8 text-white text-center sticky top-28">
+                <div className="w-32 h-32 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-5xl font-bold text-gold-400">CR</span>
+                </div>
+                <h2 className="text-2xl font-bold mb-1">Cameron Roth</h2>
+                <p className="text-gold-400 font-medium mb-6">Managing Partner</p>
+                <div className="space-y-3 text-sm text-gray-300">
+                  <p>Western Pennsylvania</p>
+                  <p>Series 66 &amp; Series 3 Qualified</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-2 space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-navy-800 mb-4">Background</h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                  Cameron is responsible for and assists in the development of THOR&apos;s data analysis and research program. In addition, Cameron works hands-on to help the management team with a variety of client and firm-wide objectives.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Prior to THOR, Cameron worked for Kattan Ferretti Financial as their lead trader.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-navy-800 mb-4">Education &amp; Qualifications</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Cameron graduated from Saint Vincent College with a degree in finance. He is Series 66 and Series 3 qualified.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-gold-400 to-gold-500">
         <div className="container-max mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
-            Connect With Brad
+            Connect With the Team
           </h2>
           <p className="text-lg text-navy-700/80 max-w-2xl mx-auto mb-8">
             Schedule a conversation to discuss how THOR&apos;s systematic approach can benefit your advisory practice and your clients.

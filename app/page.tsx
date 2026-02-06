@@ -297,7 +297,7 @@ export default function HomePage() {
               </div>
               <div className="card border-2 border-navy-100">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">🎙️</span>
+                  <img src="/images/podcast-logo.jpg" alt="Behind the Ticker Podcast" className="w-20 h-20 rounded-lg shadow-md object-cover" />
                   <span className="px-3 py-1 bg-gold-400/10 text-gold-600 rounded-full text-xs font-semibold">Podcast</span>
                 </div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-3">Behind the Ticker</h3>

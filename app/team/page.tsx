@@ -196,7 +196,7 @@ export default function TeamPage() {
             Schedule a conversation to discuss how THOR&apos;s systematic approach can benefit your advisory practice and your clients.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-secondary text-lg px-8 py-4">Schedule a Consultation</Link>
+            <Link href="/contact" className="btn-secondary text-lg px-8 py-4">Open the Black Box</Link>
             <Link href="/podcast" className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy-800 font-semibold rounded-lg hover:bg-gray-50 transition-all text-lg">Listen to the Podcast</Link>
           </div>
         </div>

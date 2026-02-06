@@ -176,7 +176,7 @@ export default function ModelDetailPage({ params }: { params: { slug: string } }
               Schedule a consultation to discuss how this model fits within your clients&apos; portfolios.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4">Schedule a Consultation</Link>
+              <Link href="/contact" className="btn-primary text-lg px-8 py-4">Open the Black Box</Link>
               <Link href="/models" className="btn-outline text-lg px-8 py-4">View All Models</Link>
             </div>
           </div>

@@ -168,7 +168,7 @@ export function Header() {
                 className="btn-primary w-full text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Schedule a Consultation
+                Open the Black Box
               </Link>
             </div>
           </div>

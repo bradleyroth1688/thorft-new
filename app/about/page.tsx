@@ -156,7 +156,7 @@ export default function AboutPage() {
             Discover how THOR&apos;s systematic approach can complement your advisory practice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary text-lg px-8 py-4">Schedule a Consultation</Link>
+            <Link href="/contact" className="btn-primary text-lg px-8 py-4">Open the Black Box</Link>
             <Link href="/models" className="btn-outline text-lg px-8 py-4">Explore Models</Link>
           </div>
         </div>

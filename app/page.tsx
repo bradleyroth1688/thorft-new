@@ -92,7 +92,7 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="btn-primary text-lg px-8 py-4">
-                  Schedule a Consultation
+                  Open the Black Box
                 </Link>
                 <Link href="/models" className="btn-outline text-lg px-8 py-4">
                   Explore Models
@@ -321,7 +321,7 @@ export default function HomePage() {
               Schedule a consultation to learn how THOR&apos;s model portfolios can enhance your practice and deliver better outcomes for your clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">Schedule a Consultation</Link>
+              <Link href="/contact" className="btn-secondary text-lg px-8 py-4">Open the Black Box</Link>
               <Link href="/resources" className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy-800 font-semibold rounded-lg hover:bg-gray-50 transition-all text-lg">Download Resources</Link>
             </div>
           </div>

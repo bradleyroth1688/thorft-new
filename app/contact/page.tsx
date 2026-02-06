@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Contact THOR Financial Technologies — Schedule a Consultation",
+  title: "Contact THOR Financial Technologies — Open the Black Box",
   description: "Schedule a consultation with THOR Financial Technologies to discuss model portfolios, ETFs, and advisor partnerships. Email: welcome@thoranalytics.com. Office: 327 W Pittsburgh St, Greensburg, PA 15601.",
   alternates: { canonical: "https://thorft.com/contact/" },
 };

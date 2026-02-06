@@ -188,10 +188,10 @@ export default function ModelsPage() {
         <div className="container-max mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want to Learn More?</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Download model factsheets or schedule a consultation to discuss implementation.
+            Download model factsheets or book a zoom to discuss implementation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary text-lg px-8 py-4">Schedule a Consultation</Link>
+            <Link href="/contact" className="btn-primary text-lg px-8 py-4">Open the Black Box</Link>
             <Link href="/resources" className="btn-outline text-lg px-8 py-4">Download Factsheets</Link>
           </div>
         </div>

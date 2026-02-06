@@ -80,7 +80,7 @@ export const aboutFaqs: FAQ[] = [
   },
   {
     question: "How do I contact THOR Financial Technologies?",
-    answer: "You can reach THOR at welcome@thoranalytics.com or visit thorft.com/contact/ to schedule a consultation. Office hours are Monday through Friday, 9am to 5pm Eastern Time.",
+    answer: "You can reach THOR at welcome@thoranalytics.com or visit thorft.com/contact/ to open the black box. Office hours are Monday through Friday, 9am to 5pm Eastern Time.",
   },
 ];
 

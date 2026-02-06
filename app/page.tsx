@@ -286,7 +286,7 @@ export default function HomePage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="card border-2 border-navy-100">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">📖</span>
+                  <img src="/images/book-cover.png" alt="Little Reasons, Big Consequences" className="w-20 h-auto rounded shadow-md" />
                   <span className="px-3 py-1 bg-gold-400/10 text-gold-600 rounded-full text-xs font-semibold">The Book</span>
                 </div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-3">Little Reasons, Big Consequences</h3>

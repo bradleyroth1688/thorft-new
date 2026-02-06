@@ -62,22 +62,12 @@ export default function BookPage() {
                 </Link>
               </div>
             </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-10 text-center">
-              <div className="text-7xl mb-6">📖</div>
-              <h2 className="text-3xl font-bold mb-2">12 Chapters</h2>
-              <p className="text-gray-300 mb-4">
-                A complete framework for understanding why investors fail — and what to do about it.
-              </p>
-              <div className="grid grid-cols-2 gap-4 mt-6 text-sm">
-                <div className="bg-white/5 rounded-lg p-3">
-                  <div className="text-gold-400 font-bold text-lg">~10,600</div>
-                  <div className="text-gray-400">Words</div>
-                </div>
-                <div className="bg-white/5 rounded-lg p-3">
-                  <div className="text-gold-400 font-bold text-lg">12</div>
-                  <div className="text-gray-400">Chapters</div>
-                </div>
-              </div>
+            <div className="flex justify-center">
+              <img
+                src="/images/book-cover.png"
+                alt="Little Reasons, Big Consequences by Brad Roth"
+                className="rounded-xl shadow-2xl max-h-[500px] w-auto"
+              />
             </div>
           </div>
         </div>

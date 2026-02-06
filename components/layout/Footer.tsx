@@ -36,7 +36,7 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="space-y-6">
             <Image
-              src="/images/thor-logo-white.png"
+              src="/images/logos/thor-ft-white.png"
               alt="THOR Financial Technologies"
               width={180}
               height={42}

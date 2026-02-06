@@ -120,9 +120,7 @@ export default function TeamPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1">
               <div className="bg-navy-800 rounded-2xl p-8 text-white text-center sticky top-28">
-                <div className="w-32 h-32 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-5xl font-bold text-gold-400">TT</span>
-                </div>
+                <img src="/images/tyler-trimbath-headshot.jpg" alt="Tyler Trimbath" className="w-32 h-32 rounded-full object-cover mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-1">Tyler Trimbath</h2>
                 <p className="text-gold-400 font-medium mb-6">Managing Partner &amp; CCO</p>
                 <div className="space-y-3 text-sm text-gray-300">
@@ -158,9 +156,7 @@ export default function TeamPage() {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-1">
               <div className="bg-navy-800 rounded-2xl p-8 text-white text-center sticky top-28">
-                <div className="w-32 h-32 bg-gold-400/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-5xl font-bold text-gold-400">CR</span>
-                </div>
+                <img src="/images/cameron-roth-headshot.jpg" alt="Cameron Roth" className="w-32 h-32 rounded-full object-cover mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-1">Cameron Roth</h2>
                 <p className="text-gold-400 font-medium mb-6">Managing Partner</p>
                 <div className="space-y-3 text-sm text-gray-300">

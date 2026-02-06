@@ -50,7 +50,7 @@ export const models: ModelData[] = [
     minimum: "$25,000",
     etf: { ticker: "THLV", name: "Thor Equal Weight Low Volatility ETF", index: "Thor Low Volatility Index" },
     inception: "2009",
-    factsheetUrl: "/documents/thor-sector-100-factsheet.pdf",
+    factsheetUrl: "/models/sector-100/factsheet",
     category: "Domestic Equity",
   },
   {
@@ -86,7 +86,7 @@ export const models: ModelData[] = [
     benchmark: "S&P 500",
     minimum: "$5,000",
     etf: { ticker: "THIR", name: "Thor SDQ Index Rotation ETF", index: "Thor SDQ Rotation Index" },
-    factsheetUrl: "/documents/thor-low-volatility-sdq-factsheet.pdf",
+    factsheetUrl: "/models/low-volatility-sdq/factsheet",
     category: "Domestic Equity",
   },
   {
@@ -154,7 +154,7 @@ export const models: ModelData[] = [
     allocation: "Up to 140% Equity Exposure",
     benchmark: "S&P 500",
     minimum: "$5,000",
-    factsheetUrl: "/documents/thor-levered-index-factsheet.pdf",
+    factsheetUrl: "/models/levered-index/factsheet",
     category: "Enhanced Domestic Equity",
   },
   {
@@ -188,7 +188,7 @@ export const models: ModelData[] = [
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "Growth Innovation",
     minimum: "$50,000",
-    factsheetUrl: "/documents/thor-nextgen-stock-factsheet.pdf",
+    factsheetUrl: "/models/nextgen-stock/factsheet",
     category: "Growth Equity",
   },
   {
@@ -222,7 +222,7 @@ export const models: ModelData[] = [
     allocation: "60/40 Gold/Silver",
     benchmark: "Precious Metals Basket",
     minimum: "$5,000",
-    factsheetUrl: "/documents/thor-dollar-alt-factsheet.pdf",
+    factsheetUrl: "/models/dollar-alt/factsheet",
     category: "Alternatives",
   },
 ];

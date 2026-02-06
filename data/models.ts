@@ -120,7 +120,7 @@ export const models: ModelData[] = [
     allocation: "100/0 Equity/Fixed Income",
     benchmark: "Total World Stock",
     minimum: "$5,000",
-    factsheetUrl: "/documents/thor-international-factsheet.pdf",
+    factsheetUrl: "/models/international/factsheet",
     category: "International Equity",
   },
   {

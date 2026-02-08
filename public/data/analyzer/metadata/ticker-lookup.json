@@ -352,5 +352,35 @@
     "name": "Schwab Value Advantage Money Fund",
     "type": "mutual_fund",
     "sector": "Money Market"
+  },
+  "SECTOR100": {
+    "ticker": "SECTOR100",
+    "name": "THOR Sector 100 Model",
+    "type": "model",
+    "sector": "Domestic Equity"
+  },
+  "SDQ": {
+    "ticker": "SDQ",
+    "name": "THOR Low Volatility SDQ Model",
+    "type": "model",
+    "sector": "Domestic Equity"
+  },
+  "LEVERED": {
+    "ticker": "LEVERED",
+    "name": "THOR Levered Index Model",
+    "type": "model",
+    "sector": "Domestic Equity"
+  },
+  "NEXTGEN": {
+    "ticker": "NEXTGEN",
+    "name": "THOR NextGen Stock Model",
+    "type": "model",
+    "sector": "Growth"
+  },
+  "DOLLARALT": {
+    "ticker": "DOLLARALT",
+    "name": "THOR Dollar ALT Model",
+    "type": "model",
+    "sector": "Alternatives"
   }
 }

@@ -14,12 +14,12 @@ export interface ThorModel {
 }
 
 export const THOR_MODELS: ThorModel[] = [
-  { id: 'sector100',   name: 'Sector 100',        subtitle: 'S&P 500 sector rotation, can go 100% cash', ticker: 'THLV', color: '#d69e2e', maxPct: 25 },
-  { id: 'sdq',         name: 'Low Volatility SDQ', subtitle: 'SPY/DIA/QQQ rotation, cascading risk-off',  ticker: 'THIR', color: '#1a365d', maxPct: 25 },
-  { id: 'intl',        name: 'International',      subtitle: 'Global equity, top countries by market cap', ticker: 'EFA',  color: '#2b6cb0', maxPct: 25 },
-  { id: 'levered',     name: 'Levered Index',      subtitle: 'Enhanced S&P 500 with leveraged exposure',   ticker: 'SPY',  color: '#e53e3e', maxPct: 25 },
-  { id: 'nextgen',     name: 'NextGen Stock',      subtitle: '8-12 high-growth stocks, systematic risk mgmt', ticker: 'ARKK', color: '#805ad5', maxPct: 25 },
-  { id: 'dollaralt',   name: 'Dollar ALT',         subtitle: '60% gold / 40% silver, dollar diversification', ticker: 'GLD',  color: '#dd6b20', maxPct: 25 },
+  { id: 'sector100',   name: 'Sector 100',        subtitle: 'S&P 500 sector rotation, can go 100% cash', ticker: 'SECTOR100', color: '#d69e2e', maxPct: 25 },
+  { id: 'sdq',         name: 'Low Volatility SDQ', subtitle: 'SPY/DIA/QQQ rotation, cascading risk-off',  ticker: 'SDQ',       color: '#1a365d', maxPct: 25 },
+  { id: 'intl',        name: 'International',      subtitle: 'Global equity, top countries by market cap', ticker: 'EFA',       color: '#2b6cb0', maxPct: 25 },
+  { id: 'levered',     name: 'Levered Index',      subtitle: 'Enhanced S&P 500 with leveraged exposure',   ticker: 'LEVERED',   color: '#e53e3e', maxPct: 25 },
+  { id: 'nextgen',     name: 'NextGen Stock',      subtitle: '8-12 high-growth stocks, systematic risk mgmt', ticker: 'NEXTGEN',   color: '#805ad5', maxPct: 25 },
+  { id: 'dollaralt',   name: 'Dollar ALT',         subtitle: '60% gold / 40% silver, dollar diversification', ticker: 'DOLLARALT', color: '#dd6b20', maxPct: 25 },
 ];
 
 export const MAX_TOTAL_THOR = 50;

@@ -382,5 +382,11 @@
     "name": "THOR Dollar ALT Model",
     "type": "model",
     "sector": "Alternatives"
+  },
+  "INTL": {
+    "ticker": "INTL",
+    "name": "THOR International Model",
+    "type": "model",
+    "sector": "International Equity"
   }
 }

@@ -32,6 +32,7 @@ const navigation = [
   { name: "Blog", href: "/blog" },
   { name: "Book", href: "/book" },
   { name: "Press", href: "/press" },
+  { name: "Portfolio Analyzer", href: "/analyze" },
   { name: "Resources", href: "/resources" },
   { name: "Contact", href: "/contact" },
 ];

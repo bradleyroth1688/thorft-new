@@ -310,6 +310,18 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Portfolio Analyzer CTA */}
+        <section className="section-padding bg-navy-800 text-white" aria-label="Portfolio Risk Analyzer">
+          <div className="container-max mx-auto text-center">
+            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">Free Portfolio Analysis</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Risky Is Your Portfolio?</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+              Get an instant risk score for your portfolio and see how THOR&apos;s systematic models can improve your risk-adjusted returns.
+            </p>
+            <Link href="/analyze" className="btn-primary btn-lg">Analyze My Portfolio →</Link>
+          </div>
+        </section>
+
         {/* FAQ */}
         <FaqSection faqs={homeFaqs} className="bg-gray-50" />
 

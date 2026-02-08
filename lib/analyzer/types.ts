@@ -49,6 +49,7 @@ export interface OptimizationResult {
   holdings: Holding[];
   metrics: PortfolioMetrics;
   riskScore: number;
+  modelAllocations?: Record<string, number>;
 }
 
 export interface PortfolioTemplate {

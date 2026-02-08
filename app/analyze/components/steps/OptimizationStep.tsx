@@ -131,21 +131,17 @@ export default function OptimizationStep({ onContinue, onBack }: Props) {
               </div>
             </div>
 
-            {THOR_MODELS.map(model => {
-              const otherTotal = total - (modelAllocations[model.id] || 0);
-              const maxForThis = Math.min(model.maxPct, 50 - otherTotal);
-              return (
+            {THOR_MODELS.map(model => (
                 <SliderInput
                   key={model.id}
                   label={model.name}
                   subtitle={model.subtitle}
                   value={modelAllocations[model.id] || 0}
-                  max={maxForThis}
+                  max={model.maxPct}
                   color={model.color}
                   onChange={(v) => setModelPct(model.id, v)}
                 />
-              );
-            })}
+            ))}
 
             {/* Allocation Bar */}
             <div className="mt-4">

@@ -198,6 +198,18 @@ export default function HomePage() {
                 See <Link href="/disclosures" className="text-gold-600 underline">full disclosures</Link>.
               </p>
             </div>
+
+            {/* Analyzer CTA within Models section */}
+            <div className="mt-12 bg-navy-800 rounded-2xl p-8 md:p-10 text-center">
+              <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">Free Tool</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">See How These Models Fit Your Portfolio</h3>
+              <p className="text-gray-300 max-w-2xl mx-auto mb-6">
+                Upload your current holdings and get an instant risk analysis — plus see how adding THOR models could improve your risk-adjusted returns.
+              </p>
+              <Link href="/analyze" className="btn-primary btn-lg">
+                Analyze My Portfolio →
+              </Link>
+            </div>
           </div>
         </section>
 

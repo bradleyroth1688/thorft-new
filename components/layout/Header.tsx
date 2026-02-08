@@ -25,6 +25,7 @@ const navigation = [
       { name: "Levered Index", href: "/models/levered-index" },
       { name: "NextGen Stock", href: "/models/nextgen-stock" },
       { name: "Dollar ALT", href: "/models/dollar-alt" },
+      { name: "Portfolio Analyzer", href: "/analyze" },
     ],
   },
   { name: "Funds", href: "/funds" },
@@ -32,7 +33,6 @@ const navigation = [
   { name: "Blog", href: "/blog" },
   { name: "Book", href: "/book" },
   { name: "Press", href: "/press" },
-  { name: "Portfolio Analyzer", href: "/analyze" },
   { name: "Resources", href: "/resources" },
   { name: "Contact", href: "/contact" },
 ];

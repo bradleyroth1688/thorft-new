@@ -25,7 +25,7 @@ export default function LeadGateStep({ onContinue, onBack }: Props) {
     setIsSubmitting(true);
 
     try {
-      await fetch('/api/analyzer-lead', {
+      await fetch('https://thorfunds-new.vercel.app/api/analyzer-lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

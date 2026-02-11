@@ -1,40 +1,59 @@
-import Link from "next/link";
-import type { Metadata } from "next";
-import { JsonLd } from "@/components/ui/JsonLd";
-import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
+"use client";
 
-export const metadata: Metadata = {
-  title: "THOR Funds — THLV & THIR Active ETFs",
-  description: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF) and THIR (Thor SDQ Index Rotation ETF). Both use THOR's proprietary signal processing for systematic risk management.",
-  alternates: { canonical: "https://thorft.com/funds/" },
-};
+import { useState } from "react";
+import Link from "next/link";
+
+function RedirectModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  if (!open) return null;
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+      <div className="bg-white rounded-2xl shadow-xl max-w-md w-full mx-4 p-8 text-center">
+        <div className="text-4xl mb-4">🔗</div>
+        <h3 className="text-xl font-bold text-navy-800 mb-3">You Are Leaving This Site</h3>
+        <p className="text-gray-600 mb-6">
+          You are being redirected away from THOR Financial Technologies and directed to THOR Funds, a separate entity. THOR Financial Technologies is not responsible for the content on the THOR Funds website.
+        </p>
+        <div className="flex gap-3 justify-center">
+          <button
+            onClick={onClose}
+            className="px-6 py-2.5 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 font-medium"
+          >
+            Cancel
+          </button>
+          <a
+            href="https://thorfunds.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 rounded-lg bg-navy-800 text-white hover:bg-navy-700 font-medium"
+          >
+            Continue to THOR Funds
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 const funds = [
   {
     ticker: "THLV",
     name: "Thor Equal Weight Low Volatility ETF",
-    description:
-      "An actively managed ETF that trades S&P 500 sector ETFs using THOR's proprietary signal processing technology. Equally weighted sectors with systematic de-risking to short-duration treasuries when risk is elevated.",
-    strategy: "Same systematic methodology as the Sector 100 model portfolio",
-    index: "Thor Low Volatility Index",
     category: "Domestic Equity — Sector-Based",
   },
   {
     ticker: "THIR",
     name: "Thor SDQ Index Rotation ETF",
-    description:
-      "An actively managed ETF that trades the S&P 500, Dow Jones Industrial Average, and Nasdaq 100 with adaptive rotation and cascading risk management. Overweights the best-performing index while de-risking weaker positions.",
-    strategy: "Same systematic methodology as the Low Volatility SDQ model portfolio",
-    index: "Thor SDQ Rotation Index",
     category: "Domestic Equity — Index Rotation",
   },
 ];
 
 export default function FundsPage() {
+  const [showRedirect, setShowRedirect] = useState(false);
+
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "THOR Funds", url: "/funds/" }])} />
-      <JsonLd data={webPageSchema({ name: "THOR Funds — Active ETFs", description: "Two actively managed ETFs bringing THOR's systematic methodology to the public markets.", url: "/funds/" })} />
+      <RedirectModal open={showRedirect} onClose={() => setShowRedirect(false)} />
+
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">
@@ -45,9 +64,8 @@ export default function FundsPage() {
             Active ETFs Powered by <span className="text-gold-400">THOR</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-            Two actively managed ETFs bringing THOR&apos;s proprietary signal processing and systematic risk management to the public markets.
+            Two actively managed ETFs bringing THOR Financial Technologies&apos; proprietary signal processing and systematic risk management to the public markets.
           </p>
-          
         </div>
       </section>
 
@@ -65,62 +83,15 @@ export default function FundsPage() {
                     {fund.category}
                   </span>
                 </div>
-                <h2 className="text-2xl font-bold text-navy-800 mb-3">{fund.name}</h2>
-                <p className="text-gray-600 mb-4">{fund.description}</p>
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-start gap-2 text-sm text-gray-600">
-                    <svg className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                    </svg>
-                    {fund.strategy}
-                  </div>
-                  <div className="flex items-start gap-2 text-sm text-gray-600">
-                    <svg className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                    </svg>
-                    Tracks the {fund.index}
-                  </div>
-                  <div className="flex items-start gap-2 text-sm text-gray-600">
-                    <svg className="w-5 h-5 text-gold-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                    </svg>
-                    Actively managed with daily signal evaluation
-                  </div>
-                </div>
-                <a
-                  href="https://thorfunds.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary w-full text-center"
+                <h2 className="text-2xl font-bold text-navy-800 mb-6">{fund.name}</h2>
+                <button
+                  onClick={() => setShowRedirect(true)}
+                  className="btn-primary w-full text-center cursor-pointer"
                 >
                   Full Details at thorfunds.com →
-                </a>
+                </button>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why ETFs */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max mx-auto text-center">
-          <h2 className="text-3xl font-bold text-navy-800 mb-8">Why Active ETFs?</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="card text-center">
-              <div className="text-3xl mb-4">📊</div>
-              <h3 className="font-bold text-navy-800 mb-2">Transparency</h3>
-              <p className="text-sm text-gray-600">Daily portfolio visibility with exchange-traded liquidity and intraday pricing</p>
-            </div>
-            <div className="card text-center">
-              <div className="text-3xl mb-4">💰</div>
-              <h3 className="font-bold text-navy-800 mb-2">Tax Efficiency</h3>
-              <p className="text-sm text-gray-600">ETF structure provides potential tax advantages through in-kind creation/redemption</p>
-            </div>
-            <div className="card text-center">
-              <div className="text-3xl mb-4">⚡</div>
-              <h3 className="font-bold text-navy-800 mb-2">Active Management</h3>
-              <p className="text-sm text-gray-600">THOR&apos;s proprietary signal processing drives real-time adaptive positioning</p>
-            </div>
           </div>
         </div>
       </section>
@@ -134,7 +105,12 @@ export default function FundsPage() {
               All investments are subject to risks, including the possible loss of principal. ETFs trade like stocks, are subject to investment risk,
               fluctuate in market value and may trade at prices above or below the ETF&apos;s net asset value. For full fund details, prospectus,
               and performance information, visit{" "}
-              <a href="https://thorfunds.com" target="_blank" rel="noopener noreferrer" className="text-gold-600 underline">thorfunds.com</a>.
+              <button
+                onClick={() => setShowRedirect(true)}
+                className="text-gold-600 underline cursor-pointer"
+              >
+                thorfunds.com
+              </button>.
             </p>
           </div>
           <div className="text-center">

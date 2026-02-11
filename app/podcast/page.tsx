@@ -8,7 +8,7 @@ import { podcastSeriesSchema, breadcrumbSchema, faqSchema } from "@/data/schemas
 
 export const metadata: Metadata = {
   title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
-  description: "Behind the Ticker is a podcast hosted by Brad Roth, Founder & CIO of THOR Financial Technologies. 94+ episodes featuring in-depth conversations with the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.",
+  description: "Behind the Ticker is a podcast hosted by Brad Roth, Founder & CIO of THOR Financial Technologies. 95+ episodes featuring in-depth conversations with the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.",
   alternates: { canonical: "https://thorft.com/podcast/" },
 };
 

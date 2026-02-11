@@ -114,7 +114,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold text-navy-800 mb-3">Proprietary Technology</h3>
               <p className="text-gray-600">
-                Our signal processing technology is built in-house — not licensed, not off-the-shelf. It detects market regime changes that traditional indicators miss.
+                Our signal processing technology is built in-house — not licensed, not off-the-shelf. It detects market regime changes that traditional indicators may miss.
               </p>
             </div>
             <div className="text-center">

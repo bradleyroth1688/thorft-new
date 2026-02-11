@@ -53,7 +53,7 @@ export default function PodcastPage() {
             Behind the <span className="text-gold-400">Ticker</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Real conversations with the people building today&apos;s most innovative ETFs — strategy, structure, and the stories behind each fund.
+            Real conversations with the people building some of today&apos;s most innovative ETFs — strategy, structure, and the stories behind each fund.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

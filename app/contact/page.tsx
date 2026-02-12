@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
+import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact THOR Financial Technologies — Open the Black Box",
@@ -112,93 +113,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-gray-50 rounded-2xl p-8 md:p-10">
-                <h2 className="text-2xl font-bold text-navy-800 mb-6">Send Us a Message</h2>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="first-name" className="block text-sm font-medium text-navy-800 mb-2">First Name *</label>
-                      <input
-                        type="text"
-                        id="first-name"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                        placeholder="First name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="last-name" className="block text-sm font-medium text-navy-800 mb-2">Last Name *</label>
-                      <input
-                        type="text"
-                        id="last-name"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                        placeholder="Last name"
-                      />
-                    </div>
-                  </div>
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-navy-800 mb-2">Email *</label>
-                      <input
-                        type="email"
-                        id="email"
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                        placeholder="you@firm.com"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-navy-800 mb-2">Phone</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                        placeholder="(555) 555-5555"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="firm" className="block text-sm font-medium text-navy-800 mb-2">Firm Name</label>
-                    <input
-                      type="text"
-                      id="firm"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                      placeholder="Your advisory firm"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="interest" className="block text-sm font-medium text-navy-800 mb-2">I&apos;m Interested In</label>
-                    <select
-                      id="interest"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400 bg-white"
-                    >
-                      <option value="">Select an option</option>
-                      <option value="models">Model Portfolios</option>
-                      <option value="etfs">THOR ETFs</option>
-                      <option value="consultation">General Consultation</option>
-                      <option value="partnership">Advisor Partnership</option>
-                      <option value="media">Media / Speaking</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-navy-800 mb-2">Message</label>
-                    <textarea
-                      id="message"
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-gold-400 focus:ring-1 focus:ring-gold-400"
-                      placeholder="Tell us about your practice and what you're looking for..."
-                    />
-                  </div>
-                  <button type="submit" className="btn-primary text-lg px-8 py-4 w-full md:w-auto">
-                    Send Message
-                  </button>
-                </form>
-                <p className="text-xs text-gray-500 mt-4">
-                  By submitting this form, you agree to our privacy policy. We will not share your information with third parties.
-                </p>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </div>

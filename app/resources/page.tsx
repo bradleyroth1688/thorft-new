@@ -2,11 +2,23 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/data/schemas";
+import WhitepaperForm from "@/components/WhitepaperForm";
 
 export const metadata: Metadata = {
   title: "Advisor Resources — Factsheets, Whitepaper & Educational Content",
   description: "Download THOR model portfolio factsheets for all six strategies, access the Signal Processing 101 whitepaper, and explore educational resources. All factsheets include full hypothetical performance disclosures.",
   alternates: { canonical: "https://thorft.com/resources/" },
+  openGraph: {
+    title: "Advisor Resources | THOR Financial Technologies",
+    description: "Signal Processing 101: How THOR's systematic approach filters market noise to detect regime changes. Download the whitepaper.",
+    images: [{ url: "/images/signal-processing-og.png", width: 1200, height: 600, alt: "Signal Processing 101 - THOR Whitepaper" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Advisor Resources | THOR Financial Technologies",
+    description: "Signal Processing 101: How THOR's systematic approach filters market noise to detect regime changes.",
+    images: ["/images/signal-processing-og.png"],
+  },
 };
 
 const factsheets = [
@@ -56,42 +68,7 @@ export default function ResourcesPage() {
                 </p>
               </div>
               <div className="bg-white/5 rounded-xl p-8 border border-white/10">
-                <h3 className="text-xl font-bold mb-4">Request Access</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label htmlFor="wp-name" className="block text-sm text-gray-300 mb-1">Full Name</label>
-                    <input
-                      type="text"
-                      id="wp-name"
-                      className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-gold-400"
-                      placeholder="John Smith"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="wp-email" className="block text-sm text-gray-300 mb-1">Business Email</label>
-                    <input
-                      type="email"
-                      id="wp-email"
-                      className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-gold-400"
-                      placeholder="john@firm.com"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="wp-firm" className="block text-sm text-gray-300 mb-1">Firm Name</label>
-                    <input
-                      type="text"
-                      id="wp-firm"
-                      className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-gold-400"
-                      placeholder="Wealth Management Co."
-                    />
-                  </div>
-                  <button type="submit" className="btn-primary w-full">
-                    Download Whitepaper
-                  </button>
-                </form>
-                <p className="text-xs text-gray-400 mt-3 text-center">
-                  We respect your privacy. No spam, ever.
-                </p>
+                <WhitepaperForm />
               </div>
             </div>
           </div>

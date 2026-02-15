@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Advisor Resources | THOR Financial Technologies",
     description: "Signal Processing 101: How THOR's systematic approach filters market noise to detect regime changes. Download the whitepaper.",
-    images: [{ url: "https://thorft.com/images/signal-processing-og.png", width: 1200, height: 600, alt: "Signal Processing 101 - THOR Whitepaper" }],
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "Signal Processing 101 - THOR Whitepaper" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Advisor Resources | THOR Financial Technologies",
     description: "Signal Processing 101: How THOR's systematic approach filters market noise to detect regime changes.",
-    images: ["https://thorft.com/images/signal-processing-og.png"],
+    images: ["https://thorft.com/images/whitepaper-og.png"],
   },
 };
 

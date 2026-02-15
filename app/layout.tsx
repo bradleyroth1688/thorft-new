@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     title: "THOR Financial Technologies | Technology-Driven Investment Solutions",
     description:
       "Proprietary, technology-driven model portfolios and ETFs for RIA advisors. Systematic risk management powered by signal processing.",
-    images: [{ url: "https://thorft.com/images/signal-processing-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Bradr_thor",
     creator: "@Bradr_thor",
-    images: ["https://thorft.com/images/signal-processing-og.png"],
+    images: ["https://thorft.com/images/whitepaper-og.png"],
   },
   robots: {
     index: true,

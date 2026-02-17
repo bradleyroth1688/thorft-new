@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://thorft.com/podcast/" },
 };
 
+function thumbUrl(youtubeId: string) {
+  return youtubeId
+    ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
+    : "/images/podcast-logo.jpg";
+}
+
 function fmtDate(iso: string) {
   return new Date(iso + "T12:00:00").toLocaleDateString("en-US", {
     year: "numeric",
@@ -115,7 +121,7 @@ export default function PodcastPage() {
                 {/* YouTube thumbnail */}
                 <div className="relative aspect-video rounded-lg overflow-hidden mb-4 bg-navy-100">
                   <img
-                    src={`https://img.youtube.com/vi/${ep.youtubeId}/mqdefault.jpg`}
+                    src={thumbUrl(ep.youtubeId)}
                     alt={ep.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"

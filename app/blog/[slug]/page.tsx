@@ -9,6 +9,12 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
+function thumbUrl(youtubeId: string) {
+  return youtubeId
+    ? `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`
+    : "https://thorft.com/images/podcast-logo.jpg";
+}
+
 function fmtDate(iso: string) {
   return new Date(iso + "T12:00:00").toLocaleDateString("en-US", {
     year: "numeric",
@@ -37,7 +43,7 @@ export function generateMetadata({
       authors: ["Brad Roth"],
       images: [
         {
-          url: `https://img.youtube.com/vi/${post.youtubeId}/maxresdefault.jpg`,
+          url: thumbUrl(post.youtubeId),
           width: 1280,
           height: 720,
           alt: post.title,
@@ -49,7 +55,7 @@ export function generateMetadata({
       title: post.title,
       description: post.metaDescription,
       images: [
-        `https://img.youtube.com/vi/${post.youtubeId}/maxresdefault.jpg`,
+        thumbUrl(post.youtubeId),
       ],
     },
   };
@@ -107,7 +113,7 @@ export default function BlogPostPage({
             },
           },
           url: `https://thorft.com/blog/${post.slug}/`,
-          image: `https://img.youtube.com/vi/${post.youtubeId}/maxresdefault.jpg`,
+          image: thumbUrl(post.youtubeId),
           mainEntityOfPage: `https://thorft.com/blog/${post.slug}/`,
           keywords: post.topics.join(", "),
           wordCount: post.wordCount,
@@ -200,26 +206,40 @@ export default function BlogPostPage({
               {/* Podcast embed */}
               <div className="mt-12 p-6 bg-navy-50 rounded-xl border border-navy-100">
                 <h3 className="text-lg font-bold text-navy-800 mb-3">
-                  🎧 Watch the Full Episode
+                  🎧 {post.youtubeId ? "Watch" : "Listen to"} the Full Episode
                 </h3>
-                <div className="aspect-video rounded-lg overflow-hidden bg-black">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${post.youtubeId}`}
-                    title={post.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
-                </div>
+                {post.youtubeId ? (
+                  <div className="aspect-video rounded-lg overflow-hidden bg-black">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${post.youtubeId}`}
+                      title={post.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                ) : post.buzzsproutId ? (
+                  <div className="rounded-lg overflow-hidden">
+                    <iframe
+                      src={`https://www.buzzsprout.com/2162961/${post.buzzsproutId}?client_source=small_player&iframe=true`}
+                      title={post.title}
+                      width="100%"
+                      height="200"
+                      className="rounded-lg"
+                    />
+                  </div>
+                ) : null}
                 <div className="mt-4 flex gap-4">
-                  <a
-                    href={`https://www.youtube.com/watch?v=${post.youtubeId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-gold-600 hover:text-gold-700 font-medium"
-                  >
-                    Watch on YouTube →
-                  </a>
+                  {post.youtubeId && (
+                    <a
+                      href={`https://www.youtube.com/watch?v=${post.youtubeId}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-gold-600 hover:text-gold-700 font-medium"
+                    >
+                      Watch on YouTube →
+                    </a>
+                  )}
                   <a
                     href="https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS"
                     target="_blank"

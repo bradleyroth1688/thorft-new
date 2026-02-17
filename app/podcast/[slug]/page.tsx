@@ -59,17 +59,30 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
           </Link>
 
           <div className="grid lg:grid-cols-5 gap-10 items-start">
-            {/* Video Embed */}
+            {/* Video/Audio Embed */}
             <div className="lg:col-span-3">
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-black">
-                <iframe
-                  src={`https://www.youtube.com/embed/${ep.youtubeId}`}
-                  title={ep.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
-              </div>
+              {ep.youtubeId ? (
+                <div className="relative aspect-video rounded-xl overflow-hidden bg-black">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${ep.youtubeId}`}
+                    title={ep.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
+                  />
+                </div>
+              ) : ep.audioUrl ? (
+                <div className="rounded-xl overflow-hidden bg-navy-700 p-8 flex flex-col items-center justify-center aspect-video">
+                  <img src="/images/podcast-logo.jpg" alt="Behind the Ticker" className="w-32 h-32 rounded-xl mb-6" />
+                  <audio controls className="w-full max-w-lg" preload="none">
+                    <source src={ep.audioUrl} type="audio/mpeg" />
+                  </audio>
+                </div>
+              ) : (
+                <div className="rounded-xl overflow-hidden bg-navy-700 p-8 flex items-center justify-center aspect-video">
+                  <img src="/images/podcast-logo.jpg" alt="Behind the Ticker" className="w-32 h-32 rounded-xl" />
+                </div>
+              )}
             </div>
 
             {/* Info */}
@@ -89,17 +102,19 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
 
               {/* Listen Links */}
               <div className="space-y-3">
-                <a
-                  href={`https://www.youtube.com/watch?v=${ep.youtubeId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-gray-300 hover:text-gold-400 transition-colors"
-                >
-                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                  </svg>
-                  Watch on YouTube
-                </a>
+                {ep.youtubeId && (
+                  <a
+                    href={`https://www.youtube.com/watch?v=${ep.youtubeId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-gold-400 transition-colors"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                    </svg>
+                    Watch on YouTube
+                  </a>
+                )}
                 <a
                   href="https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS"
                   target="_blank"

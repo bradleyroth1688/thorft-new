@@ -240,7 +240,7 @@ export default function OptimizationStep({ onContinue, onBack }: Props) {
         <p className="text-gray-300 mb-6 max-w-xl mx-auto italic">
           &ldquo;Understanding Risk-Managed Investing: How Systematic Strategies Protect and Grow Your Portfolio&rdquo;
         </p>
-        <Link href="/resources/white-papers" className="btn-primary btn-lg">
+        <Link href="/resources" className="btn-primary btn-lg">
           Download White Paper →
         </Link>
       </div>

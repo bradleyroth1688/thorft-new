@@ -124,7 +124,7 @@ export default function ResourcesPage() {
       <section className="section-padding bg-white">
         <div className="container-max mx-auto">
           <h2 className="text-3xl font-bold text-navy-800 mb-8 text-center">More Resources</h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Link href="/podcast" className="card group text-center hover:border-gold-400/50">
               <div className="text-4xl mb-4">🎙️</div>
               <h3 className="font-bold text-navy-800 group-hover:text-gold-600 transition-colors mb-2">
@@ -146,6 +146,13 @@ export default function ResourcesPage() {
               </h3>
               <p className="text-sm text-gray-600">In-depth strategy descriptions for all 6 models</p>
             </Link>
+            <a href="https://thorft.beehiiv.com" target="_blank" rel="noopener noreferrer" className="card group text-center hover:border-gold-400/50">
+              <div className="text-4xl mb-4">📡</div>
+              <h3 className="font-bold text-navy-800 group-hover:text-gold-600 transition-colors mb-2">
+                The Signal
+              </h3>
+              <p className="text-sm text-gray-600">Daily market brief from Brad Roth — positioning, risk signals, and the CIO&apos;s view</p>
+            </a>
           </div>
         </div>
       </section>

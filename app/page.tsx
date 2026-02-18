@@ -322,6 +322,31 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Newsletter CTA */}
+        <section className="section-padding bg-white" aria-label="Newsletter Signup">
+          <div className="container-max mx-auto">
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-4">Daily Market Intelligence</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">The Signal</h2>
+              <p className="text-lg text-gray-600 mb-3">
+                Brad Roth&apos;s daily market brief — positioning updates, risk signals, and the CIO&apos;s view on what matters. No fluff, no sales pitch. Just signal.
+              </p>
+              <p className="text-sm text-gray-500 mb-8">
+                Published every weekday morning before the open. Read by advisors managing billions.
+              </p>
+              <a
+                href="https://thorft.beehiiv.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary btn-lg inline-flex items-center gap-2"
+              >
+                Subscribe Free →
+              </a>
+              <p className="text-xs text-gray-400 mt-4">Free. Unsubscribe anytime. No spam.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Portfolio Analyzer CTA */}
         <section className="section-padding bg-navy-800 text-white" aria-label="Portfolio Risk Analyzer">
           <div className="container-max mx-auto text-center">

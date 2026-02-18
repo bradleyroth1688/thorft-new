@@ -19,6 +19,7 @@ const footerNavigation = {
     { name: "Contact", href: "/contact" },
   ],
   resources: [
+    { name: "The Signal (Newsletter)", href: "https://thorft.beehiiv.com" },
     { name: "Podcast", href: "/podcast" },
     { name: "Book", href: "/book" },
     { name: "Resources", href: "/resources" },

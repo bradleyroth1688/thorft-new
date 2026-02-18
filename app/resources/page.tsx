@@ -151,7 +151,7 @@ export default function ResourcesPage() {
               <h3 className="font-bold text-navy-800 group-hover:text-gold-600 transition-colors mb-2">
                 The Signal
               </h3>
-              <p className="text-sm text-gray-600">Daily market brief from Brad Roth — positioning, risk signals, and the CIO&apos;s view</p>
+              <p className="text-sm text-gray-600">Our daily market brief — positioning, risk signals, and the CIO&apos;s view</p>
             </a>
           </div>
         </div>

@@ -329,7 +329,7 @@ export default function HomePage() {
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-4">Daily Market Intelligence</p>
               <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">The Signal</h2>
               <p className="text-lg text-gray-600 mb-3">
-                Brad Roth&apos;s daily market brief — positioning updates, risk signals, and the CIO&apos;s view on what matters. No fluff, no sales pitch. Just signal.
+                Our daily market brief — positioning updates, risk signals, and the CIO&apos;s view on what matters. No fluff, no sales pitch. Just signal.
               </p>
               <p className="text-sm text-gray-500 mb-8">
                 Published every weekday morning before the open. Read by advisors managing billions.

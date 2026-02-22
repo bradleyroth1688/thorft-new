@@ -78,7 +78,7 @@ export default function BradRothPage() {
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <a
-                  href="https://www.linkedin.com/in/brad-roth-8a4a8619a/"
+                  href="https://www.linkedin.com/in/brad-roth-thor/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-gold-400/20 border border-white/20 rounded-lg text-sm font-medium transition-colors"

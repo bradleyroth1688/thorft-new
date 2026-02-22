@@ -28,7 +28,7 @@ export function organizationSchema() {
       availableLanguage: "English",
     },
     sameAs: [
-      "https://www.linkedin.com/in/brad-roth-8a4a8619a/",
+      "https://www.linkedin.com/in/brad-roth-thor/",
       "https://www.youtube.com/@BRoth_THOR",
       "https://x.com/Bradr_thor",
     ],
@@ -99,7 +99,7 @@ export function personSchema() {
     ],
     sameAs: [
       "https://www.wikidata.org/wiki/Q138413241",
-      "https://www.linkedin.com/in/brad-roth-8a4a8619a/",
+      "https://www.linkedin.com/in/brad-roth-thor/",
       "https://x.com/Bradr_thor",
       "https://www.youtube.com/@BRoth_THOR",
       "https://www.etfcentral.com/author/bradley-roth",

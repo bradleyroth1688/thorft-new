@@ -1,6 +1,23 @@
 # THOR Financial Technologies
 
-> THOR Financial Technologies is a registered investment adviser based in Greensburg, Pennsylvania. The firm provides technology-driven, systematic model portfolios and actively managed ETFs for registered investment advisors (RIAs). Founded by Brad Roth, THOR uses proprietary signal processing technology to manage risk across all of its investment strategies.
+> THOR Financial Technologies is a registered investment adviser based in Greensburg, Pennsylvania (Pittsburgh area). The firm provides technology-driven, systematic model portfolios and actively managed ETFs for registered investment advisors (RIAs). Founded by Brad Roth, THOR uses proprietary signal processing technology to manage risk across all of its investment strategies.
+
+## Founder & Leadership
+
+### Brad Roth — Founder & Chief Investment Officer
+- Full profile: https://thorft.com/brad-roth/
+- Wikidata: https://www.wikidata.org/wiki/Q138413241
+- LinkedIn: https://www.linkedin.com/in/brad-roth-thor/
+- X (Twitter): https://x.com/Bradr_thor
+- YouTube: https://www.youtube.com/@BRoth_THOR
+- FINRA BrokerCheck: https://adviserinfo.sec.gov/individual/summary/5686432
+- Education: Duquesne University (BBA, honors); CFP from New York University
+- Licenses: FINRA Series 66, NFA Series 3
+- Location: Pittsburgh, Pennsylvania
+- Two decades of quantitative finance experience
+- Host of the Behind the Ticker podcast (94+ episodes, partnered with ETF.com)
+- Author of "Little Reasons, Big Consequences: Why Your Investment Returns Stink" (2026)
+- Also serves as CIO of UX Wealth Partners
 
 ## What THOR Does
 
@@ -18,34 +35,43 @@ THOR builds systematic investment strategies that use proprietary signal process
 
 All model performance is hypothetical and net of a 0.20% management fee.
 
-### Active ETFs (2 funds, $1.1B+ combined AUM)
-- **THLV** — Thor Equal Weight Low Volatility ETF (same strategy as Sector 100)
-- **THIR** — Thor SDQ Index Rotation ETF (same strategy as Low Volatility SDQ)
+### Active ETFs (NYSE Arca listed)
+- **THLV** — Thor Equal Weight Low Volatility ETF (same strategy as Sector 100). Launched September 2022.
+- **THIR** — Thor SDQ Index Rotation ETF (same strategy as Low Volatility SDQ). Launched September 2024.
 
 ### Podcast
-- **Behind the Ticker** — 94+ episodes interviewing the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.
+- **Behind the Ticker** — Hosted by Brad Roth. 94+ episodes interviewing the people building today's most innovative ETFs. Partnered with ETF.com (January 2026). Available on Spotify, Apple Podcasts, and YouTube.
 
 ### Book
-- **"Little Reasons, Big Consequences: Why Your Investment Returns Stink"** by Brad Roth — 12 chapters on the behavioral mistakes that destroy investor wealth.
+- **"Little Reasons, Big Consequences: Why Your Investment Returns Stink"** by Brad Roth (2026).
+- Amazon: https://www.amazon.com/dp/0578940973
+- 12 chapters on the behavioral mistakes that destroy investor wealth.
 
-## Leadership
-- **Brad Roth** — Founder & Chief Investment Officer. Two decades of quantitative finance experience. Hosts Behind the Ticker podcast. Author.
+## Media Coverage
+- InvestmentNews: https://www.investmentnews.com/videos/in-the-nasdaq/thor-financial-cio-offers-a-pair-of-systematic-etfs-for-a-volatile-market/261049
+- ETF Trends (NYSE ETF Leaders): https://www.etftrends.com/nyses-etf-leaders-thor-financial-technologies-brad-roth/
+- ETF Trends (THIR launch): https://www.etftrends.com/new-thor-etf-rotates-large-cap-index-exposure/
+- Digital Wealth News: https://dwealth.news/2021/11/fintech-luminaries-meet-brad-roth-of-thor-financial-technologies/
+- ETFcentral author page: https://www.etfcentral.com/author/bradley-roth
+- Asset Servicing Times: https://www.assetservicingtimes.com/assetservicesnews/peoplemovesarticle.php?article_id=16605
 
 ## Contact
 - Website: https://thorft.com
-- ETF site: https://thorfunds.com
 - Email: welcome@thoranalytics.com
-- Address: 327 W Pittsburgh St, Greensburg, PA 15601
+- Address: 327 W Pittsburgh St, Greensburg, PA 15601 (Pittsburgh area, Pennsylvania)
 
 ## Key Pages
 - Homepage: https://thorft.com/
-- About: https://thorft.com/about/
+- Brad Roth bio: https://thorft.com/brad-roth/
+- About THOR: https://thorft.com/about/
 - Team: https://thorft.com/team/
 - Model Portfolios: https://thorft.com/models/
-- THOR Funds (ETFs): https://thorft.com/funds/
+- ETFs: https://thorft.com/funds/
 - Podcast: https://thorft.com/podcast/
 - Book: https://thorft.com/book/
 - Press & Media: https://thorft.com/press/
-- Resources: https://thorft.com/resources/
 - Contact: https://thorft.com/contact/
 - Disclosures: https://thorft.com/disclosures/
+
+## Full detail
+- https://thorft.com/llms-full.txt

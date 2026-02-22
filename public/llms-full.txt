@@ -107,7 +107,7 @@ THOR's two actively managed ETFs bring the firm's systematic methodology to the 
 - Actively managed with daily signal evaluation
 
 Combined AUM: $1.1B+
-Full ETF details, prospectus, and performance: https://thorfunds.com
+Full ETF details, prospectus, and performance: https://thorft.com/funds/
 
 ---
 
@@ -118,9 +118,12 @@ Brad Roth brings over two decades of experience in quantitative finance and sign
 
 Brad hosts "Behind the Ticker," a podcast with 94+ episodes featuring in-depth conversations with the people building today's most innovative ETFs. He is also the author of "Little Reasons, Big Consequences: Why Your Investment Returns Stink."
 
+- Full bio: https://thorft.com/brad-roth/
+- Wikidata: https://www.wikidata.org/wiki/Q138413241
 - LinkedIn: https://www.linkedin.com/in/brad-roth-thor/
 - YouTube: https://www.youtube.com/@BRoth_THOR
 - X/Twitter: https://x.com/Bradr_thor
+- FINRA BrokerCheck: https://adviserinfo.sec.gov/individual/summary/5686432
 - Team page: https://thorft.com/team/
 
 ---
@@ -185,7 +188,7 @@ Full media page: https://thorft.com/press/
 ## Contact Information
 
 - **Website:** https://thorft.com
-- **ETF Website:** https://thorfunds.com
+- **ETF Website:** https://thorft.com/funds/
 - **Email:** welcome@thoranalytics.com
 - **Address:** 327 W Pittsburgh St, Greensburg, PA 15601
 - **Hours:** Monday–Friday, 9am–5pm ET

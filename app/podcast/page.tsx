@@ -37,7 +37,7 @@ function truncate(str: string, max = 140) {
 
 const SPOTIFY = "https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS";
 const YOUTUBE = "https://youtube.com/playlist?list=PL6wvA-EH7M41bn5LPaWA9kpZgI5_Pxzyn";
-const APPLE = "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1681873507";
+const APPLE = "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1682702118";
 
 export default function PodcastPage() {
   const sorted = [...episodes].sort(

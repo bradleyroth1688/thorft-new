@@ -130,7 +130,7 @@ export function podcastSeriesSchema() {
     author: personSchema(),
     webFeed: [
       "https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS",
-      "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1681873507",
+      "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1682702118",
     ],
     image: "https://thorft.com/images/thor-logo-white.png",
     numberOfEpisodes: 94,

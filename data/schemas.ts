@@ -98,6 +98,7 @@ export function personSchema() {
       },
     ],
     sameAs: [
+      "https://www.wikidata.org/wiki/Q138413241",
       "https://www.linkedin.com/in/brad-roth-8a4a8619a/",
       "https://x.com/Bradr_thor",
       "https://www.youtube.com/@BRoth_THOR",

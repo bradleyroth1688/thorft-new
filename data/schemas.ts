@@ -4,6 +4,7 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "FinancialService",
+    "@id": "https://thorft.com/#organization",
     name: "THOR Financial Technologies",
     alternateName: "THOR Financial Technologies, LLC",
     url: "https://thorft.com",
@@ -30,7 +31,6 @@ export function organizationSchema() {
       "https://www.linkedin.com/in/brad-roth-8a4a8619a/",
       "https://www.youtube.com/@BRoth_THOR",
       "https://x.com/Bradr_thor",
-      "https://thorfunds.com",
     ],
     areaServed: "US",
     knowsAbout: [
@@ -50,17 +50,61 @@ export function organizationSchema() {
 export function personSchema() {
   return {
     "@type": "Person",
+    "@id": "https://thorft.com/brad-roth/#person",
     name: "Brad Roth",
+    givenName: "Brad",
+    familyName: "Roth",
     jobTitle: "Founder & Chief Investment Officer",
+    description:
+      "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Greensburg, Pennsylvania (Pittsburgh area). With over two decades of experience in quantitative finance, he built THOR's proprietary signal processing methodology for detecting market regime changes. He hosts the Behind the Ticker podcast (94+ episodes, partnered with ETF.com) and authored 'Little Reasons, Big Consequences.' Graduate of Duquesne University, Pittsburgh.",
+    image: "https://thorft.com/images/brad-roth-headshot.jpg",
+    url: "https://thorft.com/brad-roth/",
     worksFor: {
       "@type": "Organization",
+      "@id": "https://thorft.com/#organization",
       name: "THOR Financial Technologies",
     },
-    url: "https://thorft.com/team/",
+    homeLocation: {
+      "@type": "Place",
+      name: "Pittsburgh, Pennsylvania",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pittsburgh",
+        addressRegion: "PA",
+        addressCountry: "US",
+      },
+    },
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Duquesne University",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pittsburgh",
+        addressRegion: "PA",
+      },
+    },
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "Certified Financial Planner (CFP)",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "FINRA Series 66",
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "NFA Series 3",
+      },
+    ],
     sameAs: [
       "https://www.linkedin.com/in/brad-roth-8a4a8619a/",
-      "https://www.youtube.com/@BRoth_THOR",
       "https://x.com/Bradr_thor",
+      "https://www.youtube.com/@BRoth_THOR",
+      "https://www.etfcentral.com/author/bradley-roth",
+      "https://www.etftrends.com/nyses-etf-leaders-thor-financial-technologies-brad-roth/",
+      "https://www.amazon.com/dp/0578940973",
+      "https://adviserinfo.sec.gov/individual/summary/5686432",
     ],
     knowsAbout: [
       "quantitative finance",
@@ -68,9 +112,9 @@ export function personSchema() {
       "systematic investing",
       "risk management",
       "ETFs",
+      "model portfolios",
+      "behavioral finance",
     ],
-    description:
-      "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies. With over two decades of experience in quantitative finance, he built THOR's proprietary signal processing methodology for detecting market regime changes. He hosts the Behind the Ticker podcast (94+ episodes) and authored 'Little Reasons, Big Consequences.'",
   };
 }
 

@@ -47,6 +47,9 @@ export default function TeamPage() {
                 </div>
 
                 {/* Social Links */}
+                <Link href="/brad-roth/" className="block w-full text-center py-2 px-4 bg-gold-400/20 hover:bg-gold-400/30 text-gold-400 rounded-lg text-sm font-medium transition-colors mb-4">
+                  Full profile →
+                </Link>
                 <div className="flex justify-center gap-4">
                   <a href="https://www.linkedin.com/in/brad-roth-8a4a8619a/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-gold-400/20 transition-colors">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

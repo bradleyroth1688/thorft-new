@@ -1,5 +1,27 @@
 [
   {
+    "title": "David Nicholas - X Funds",
+    "date": "2026-02-22",
+    "guest": "David Nicholas",
+    "company": "X Funds",
+    "duration": "30 min",
+    "youtubeId": "",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/18697294-david-nicholas-x-funds.mp3",
+    "description": "<p>David Nicholas, founder of Nicholas X Funds and a financial advisor with nearly 20 years of experience running a private wealth practice in Atlanta, joins the show to break down how he's building one of the more ambitious ETF suites in the smaller issuer space. David walks through the origin story of X Funds, which started during COVID when he saw an opportunity to recreate insurance company balance sheets in a liquid ETF wrapper. His first fund FIAX was designed as a liquid alternative to fixed annuities, pairing a treasury underlay with short spreads on HYG to harvest junk bond yield, then using that income to buy long index call options for equity upside exposure. The fund attracted institutional investors including foreign governments and became the launchpad for everything that followed.</p><p>From there, David built GIAX and then BLOX, a crypto fund that has now grown to just under 250 million in assets. The firm has since launched four new thematic funds — silver (SLVX), gold (GLDN), defense (Weapon), and nuclear — with two more Bitcoin-based products in the pipeline, an overnight fund and a Bitcoin tail hedge fund. The common architecture across the entire suite pairs roughly 50 percent commodity or core asset exposure with 50 percent equity positions in companies that benefit from that commodity, all layered with an active options overlay. In SLVX, that means silver spot exposure through ETFs like SLV and PSLV alongside miners like First Majestic, Pan American, and Wheaton. In Weapon, the commodity sleeve is rare earth materials used in defense manufacturing, balanced with traditional defense companies.</p><p>David goes deep on why he built the options strategy around short put spreads rather than traditional covered calls. His core argument is that covered call strategies almost never beat their underlying in rising markets because the short call caps your upside. With put spreads on the equity side, the fund collects premium while preserving full upside participation. On the commodity ETF side, the team sells call spreads but also buys long calls above the spread to recapture gains on sharp moves higher. None of the funds track an index — they are all actively managed with the ability to switch between calls and puts, add protective hedges, or take them off at any time.</p><p>The conversation also tackles NAV decline head on. David distinguishes between NAV decline caused by underlying positions dropping versus decline caused by over-distribution, and uses BLOX as a case study. The fund generates roughly 50 percent yield from options but only distributes 36 percent, targeting an 80 percent success rate on trades. Bitcoin is down 20 to 30 percent since inception yet BLOX has remained roughly flat, meaning the fund is outperforming its underlying without the distribution dragging the NAV. He could declare a higher yield like some competitor crypto funds but considers that irresponsible if the options income doesn't support it.</p><p>David also gets real about the business side of scaling a smaller issuer — reinvesting essentially all revenue from the first three funds into launching six new products, navigating the compliance minefield of ETF marketing, and the leadership transition from having his fingerprints on everything to hiring specialized talent who can push the firm beyond his own ceiling. For advisors, he frames the funds through a picks and shovels lens: rather than just buying the commodity, own the entire ecosystem around it with an income-generating overlay on top.</p>",
+    "slug": "david-nicholas-x-funds"
+  },
+  {
+    "title": "Bob Elliott - Unlimited Funds ",
+    "date": "2026-02-15",
+    "guest": "Bob Elliott",
+    "company": "Unlimited Funds",
+    "duration": "39 min",
+    "youtubeId": "",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/18665193-bob-elliott-unlimited-funds.mp3",
+    "description": "<p>Bob Elliott, co-founder and CIO of Unlimited, returns to break down how his firm is bringing Vanguard-style indexing to the hedge fund world. After spending the bulk of his career at Bridgewater building proprietary investment strategies, Bob launched Unlimited on two truths the industry wouldn't say out loud — institutional hedge funds are largely no better than their peers over time, and managers take nearly all the alpha in fees. His solution: diversify across managers, cut fees to a fraction, and deliver it all through liquid ETFs.</p><p>We get into the nuts and bolts of how Unlimited's third-generation replication technology actually works, why Bayesian machine learning picks up tactical alpha that older rolling regression approaches miss, and what separates strategies built by real money managers from those designed by academics and technologists. Bob walks through his full product suite — HFND, HFEQ, HFMF, and HFGM — explains why the 2X target return products are resonating with advisors, and makes the case for moving from 60-40 to 50-30-20. We also talk about the realities of growing a boutique ETF business on a guerrilla marketing budget and why the biggest risk for startup issuers is spending too much too fast.</p><p>Learn more at unlimitedetfs.com. Read Bob's Substack \"Non-Consensus\" and follow him on social media at BobEUnlimited.</p>",
+    "slug": "bob-elliott-unlimited-funds"
+  },
+  {
     "title": "David Auerbach - Hoya Capital - HOMZ & RIET",
     "date": "2026-02-08",
     "guest": "David Auerbach",
@@ -88,15 +110,15 @@
     "slug": "rob-thummel-tortoise-capital"
   },
   {
-    "title": "Bob Elliot - Unlimited Funds",
+    "title": "Bob Elliott - Unlimited Funds",
     "date": "2025-05-25",
-    "guest": "Bob Elliot",
+    "guest": "Bob Elliott",
     "company": "Unlimited Funds",
     "duration": "31 min",
     "youtubeId": "",
-    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/17222141-bob-elliot-unlimited-funds.mp3",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/17222141-bob-elliott-unlimited-funds.mp3",
     "description": "<p>In a recent episode of <em>Behind the Ticker</em>, Bob Elliott, co-founder and Chief Investment Officer of Unlimited, discussed the firm’s mission to democratize hedge fund strategies through innovative ETF structures. Drawing on his experience managing strategies at Bridgewater Associates and running a $125 million venture capital fund, Elliott launched Unlimited to address what he sees as fundamental inefficiencies in traditional hedge funds—high fees, limited access, and tax-inefficient vehicles. Unlimited’s approach uses proprietary technology to replicate hedge fund strategies at lower costs, inside liquid, tax-efficient ETFs.</p><p><br/></p><p>The firm’s latest offering, the Unlimited HFGM ETF (ticker: HFGM), seeks to replicate the returns of global macro hedge funds, offering a 2x exposure to the strategy at just 95 basis points. Elliott explained that global macro is one of the most attractive and diversifying hedge fund styles due to its flexibility across asset classes—currencies, commodities, rates, equities—and its historically low correlation to traditional 60/40 portfolios. By leveraging a machine learning-driven process, HFGM infers the positioning of roughly 500 macro hedge fund managers in near real-time, using public market data and return streams to replicate their exposures.</p><p><br/></p><p>Elliott emphasized that HFGM is fully systematic, with daily updates to inferred manager positioning and weekly average rebalancing. The ETF primarily uses futures contracts for efficiency, allowing both long and short exposure across global macro markets while benefiting from tax-friendly ETF structuring. Elliott stressed that the firm avoids “black box” opacity by grounding its machine learning in intuitive, transparent modeling—essentially scaling the same logic any investor might use to reverse-engineer a manager’s trades, but with far greater accuracy and breadth.</p><p><br/></p><p>He positioned HFGM and Unlimited’s broader ETF suite as part of a shift in portfolio construction—from the old 60/40 model to a more modern 50/30/20 framework, where 20% is allocated to alternatives, including both liquid and illiquid strategies. HFGM, with its manager-diversified exposure, ease of execution, and lack of paperwork or K-1s, offers a compelling way for advisors and institutions to gain hedge fund-like exposure without the drawbacks of traditional LP structures.</p>",
-    "slug": "bob-elliot-unlimited-funds"
+    "slug": "bob-elliott-unlimited-funds"
   },
   {
     "title": "Brad Neuman - Alger",

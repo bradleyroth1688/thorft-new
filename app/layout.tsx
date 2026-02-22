@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     "THOR Financial Technologies delivers proprietary, technology-driven model portfolios and ETFs for RIA advisors. Systematic risk management powered by signal processing.",
   keywords: [
     "THOR Financial Technologies",
+    "Brad Roth",
+    "Brad Roth Pittsburgh",
+    "Brad Roth THOR",
+    "Brad Roth CIO",
     "model portfolios",
     "RIA",
     "investment adviser",
@@ -26,7 +30,7 @@ export const metadata: Metadata = {
     "THLV",
     "THIR",
   ],
-  authors: [{ name: "THOR Financial Technologies" }],
+  authors: [{ name: "Brad Roth", url: "https://thorft.com/brad-roth/" }],
   openGraph: {
     type: "website",
     locale: "en_US",

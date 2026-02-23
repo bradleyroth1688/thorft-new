@@ -73,6 +73,10 @@ export default function RootLayout({
             gtag('config', 'G-MWXP9F3QTC');
           `}
         </Script>
+        <Script
+          src="https://app.advizorpro.com/i/kOVu3E.ap.js"
+          strategy="afterInteractive"
+        />
         <Script id="linkedin-insight" strategy="afterInteractive">
           {`
             _linkedin_partner_id = "86s9628nsfk0o3";

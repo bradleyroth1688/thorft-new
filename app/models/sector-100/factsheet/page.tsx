@@ -134,7 +134,7 @@ export default function Sector100FactsheetPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-3">
               <div className="text-xs text-gray-400 uppercase tracking-wider">Management Fee</div>
-              <div className="text-sm font-semibold mt-1">0.20%</div>
+              <div className="text-sm font-semibold mt-1">0.49%</div>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function Sector100FactsheetPage() {
             Growth of $10,000
           </h2>
           <p className="text-sm text-gray-500 mb-4">
-            Hypothetical growth of a $10,000 investment from February 2005 through January 31, 2026. Net of 0.20% management fee.
+            Hypothetical growth of a $10,000 investment from February 2005 through January 31, 2026. Net of 0.49% management fee.
           </p>
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6">
             <PerformanceChart />
@@ -175,7 +175,7 @@ export default function Sector100FactsheetPage() {
             Performance Summary
           </h2>
           <p className="text-xs text-gray-500 mb-3">
-            Returns for periods greater than one year are annualized. Net of 0.20% management fee.
+            Returns for periods greater than one year are annualized. Net of 0.49% management fee.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
@@ -266,7 +266,7 @@ export default function Sector100FactsheetPage() {
             Monthly Returns
           </h2>
           <p className="text-xs text-gray-500 mb-3">
-            THOR Sector 100 (Net) monthly returns. Net of 0.20% management fee.
+            THOR Sector 100 (Net) monthly returns. Net of 0.49% management fee.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-xs">
@@ -461,7 +461,7 @@ export default function Sector100FactsheetPage() {
                 desc: "Can move entirely to short-duration treasuries when systemic risk is elevated.",
               },
               {
-                title: "0.20% Management Fee",
+                title: "0.49% Management Fee",
                 desc: "Low, transparent fee structure. All performance shown is net of the annual management fee.",
               },
             ].map((feature) => (

@@ -194,7 +194,7 @@ export default function HomePage() {
             </div>
             <div className="text-center mt-8">
               <p className="text-xs text-gray-500">
-                All model performance is hypothetical and net of 0.20% management fee. Past performance is not indicative of future results.
+                All model performance is hypothetical and net of 0.49% management fee. Past performance is not indicative of future results.
                 See <Link href="/disclosures" className="text-gold-600 underline">full disclosures</Link>.
               </p>
             </div>

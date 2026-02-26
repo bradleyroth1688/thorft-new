@@ -31,7 +31,7 @@ To eliminate the behavioral biases that destroy investor wealth by replacing emo
 
 ## Model Portfolios (Detailed)
 
-All model portfolio performance is hypothetical, back-tested, and net of a 0.20% management fee. Past performance is not indicative of future results. See thorft.com/disclosures/ for complete hypothetical performance disclaimers.
+All model portfolio performance is hypothetical, back-tested, and net of a 0.49% management fee. Past performance is not indicative of future results. See thorft.com/disclosures/ for complete hypothetical performance disclaimers.
 
 ### 1. Sector 100
 - **Category:** Domestic Equity

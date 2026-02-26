@@ -33,7 +33,7 @@ THOR builds systematic investment strategies that use proprietary signal process
 - **NextGen Stock** — Concentrated 8–12 high-growth stocks with systematic de-risk. Minimum: $50,000. Benchmark: Growth Innovation.
 - **Dollar ALT** — 60% gold / 40% silver with precious metals risk management. Minimum: $5,000. Benchmark: Precious Metals Basket.
 
-All model performance is hypothetical and net of a 0.20% management fee.
+All model performance is hypothetical and net of a 0.49% management fee.
 
 ### Active ETFs (NYSE Arca listed)
 - **THLV** — Thor Equal Weight Low Volatility ETF (same strategy as Sector 100). Launched September 2022.
@@ -44,7 +44,7 @@ All model performance is hypothetical and net of a 0.20% management fee.
 
 ### Book
 - **"Little Reasons, Big Consequences: Why Your Investment Returns Stink"** by Brad Roth (2026).
-- Amazon: https://www.amazon.com/dp/0578940973
+- Barnes & Noble: https://www.barnesandnoble.com/w/little-reasons-big-consequences-brad-roth/1149363789?ean=9798279648504
 - 12 chapters on the behavioral mistakes that destroy investor wealth.
 
 ## Media Coverage

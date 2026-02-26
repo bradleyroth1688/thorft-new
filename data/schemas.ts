@@ -104,7 +104,7 @@ export function personSchema() {
       "https://www.youtube.com/@BRoth_THOR",
       "https://www.etfcentral.com/author/bradley-roth",
       "https://www.etftrends.com/nyses-etf-leaders-thor-financial-technologies-brad-roth/",
-      "https://www.amazon.com/dp/0578940973",
+      "https://www.barnesandnoble.com/w/little-reasons-big-consequences-brad-roth/1149363789?ean=9798279648504",
       "https://adviserinfo.sec.gov/individual/summary/5686432",
     ],
     knowsAbout: [
@@ -206,7 +206,7 @@ export function modelProductSchema(model: {
     category: model.category,
     offers: {
       "@type": "Offer",
-      description: `Minimum investment: ${model.minimum}. Management fee: 0.20%.`,
+      description: `Minimum investment: ${model.minimum}. Management fee: 0.49%.`,
     },
   };
 }

@@ -7,7 +7,7 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "Model Portfolios — Systematic Investment Strategies for Advisors",
-  description: "THOR Financial Technologies offers six adaptive model portfolios for RIA advisors: Sector 100, Low Volatility SDQ, International, Levered Index, NextGen Stock, and Dollar ALT. All use proprietary signal processing with the ability to go to 100% cash. Management fee: 0.20%.",
+  description: "THOR Financial Technologies offers six adaptive model portfolios for RIA advisors: Sector 100, Low Volatility SDQ, International, Levered Index, NextGen Stock, and Dollar ALT. All use proprietary signal processing with the ability to go to 100% cash. Management fee: 0.49%.",
   alternates: { canonical: "https://thorft.com/models/" },
 };
 
@@ -170,7 +170,7 @@ export default function ModelsPage() {
 
           <div className="text-center mt-10 bg-white rounded-xl p-6 border border-gray-200">
             <p className="text-sm text-gray-500 mb-2">
-              <strong>Important:</strong> All model performance is hypothetical, back-tested, and net of 0.20% management fee. Past performance is not indicative of future results.
+              <strong>Important:</strong> All model performance is hypothetical, back-tested, and net of 0.49% management fee. Past performance is not indicative of future results.
             </p>
             <p className="text-sm text-gray-500">
               Hypothetical results have inherent limitations and do not represent actual trading. See{" "}

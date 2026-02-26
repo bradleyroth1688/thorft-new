@@ -22,7 +22,7 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "What is the management fee for THOR's model portfolios?",
-    answer: "THOR charges a 0.20% management fee on all model portfolios. Additional platform and custodial fees may apply depending on the advisor's custodian and platform.",
+    answer: "THOR charges a 0.49% management fee on all model portfolios. Additional platform and custodial fees may apply depending on the advisor's custodian and platform.",
   },
   {
     question: "Can THOR's models go to 100% cash?",

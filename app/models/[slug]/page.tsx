@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!model) return {};
   return {
     title: `${model.name} Model Portfolio — ${model.tagline}`,
-    description: `The THOR ${model.name} model portfolio is a ${model.category.toLowerCase()} strategy for RIA advisors. ${model.description[0].substring(0, 200)} Benchmark: ${model.benchmark}. Minimum: ${model.minimum}. Fee: 0.20%.`,
+    description: `The THOR ${model.name} model portfolio is a ${model.category.toLowerCase()} strategy for RIA advisors. ${model.description[0].substring(0, 200)} Benchmark: ${model.benchmark}. Minimum: ${model.minimum}. Fee: 0.49%.`,
     alternates: { canonical: `https://thorft.com/models/${model.slug}/` },
   };
 }
@@ -70,7 +70,7 @@ export default function ModelDetailPage({ params }: { params: { slug: string } }
               </div>
               <div className="bg-white/5 rounded-xl p-4 border border-white/10">
                 <div className="text-sm text-gray-400 mb-1">Management Fee</div>
-                <div className="text-lg font-semibold">0.20%</div>
+                <div className="text-lg font-semibold">0.49%</div>
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function ModelDetailPage({ params }: { params: { slug: string } }
             <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
               <h4 className="text-sm font-bold text-navy-800 mb-2">Important Disclosures</h4>
               <p className="text-xs text-gray-500 leading-relaxed">
-                All model performance is hypothetical, back-tested, and net of a 0.20% management fee. Past performance is not indicative of future results.
+                All model performance is hypothetical, back-tested, and net of a 0.49% management fee. Past performance is not indicative of future results.
                 Hypothetical performance has inherent limitations — unlike actual performance records, simulated results do not represent actual trading.
                 All investments involve risk, including possible loss of principal. There is no guarantee that the strategy will achieve its objectives.
                 For complete hypothetical performance disclosures, please review our{" "}

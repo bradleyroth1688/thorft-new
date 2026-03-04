@@ -133,24 +133,30 @@ export function podcastSeriesSchema() {
       "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1682702118",
     ],
     image: "https://thorft.com/images/thor-logo-white.png",
-    numberOfEpisodes: 94,
+    numberOfEpisodes: 98,
   };
 }
 
 export function podcastEpisodeSchema(ep: {
   guest: string;
+  company: string;
   title: string;
   date: string;
   duration: string;
   youtubeId: string;
+  audioUrl: string;
   slug: string;
   description: string;
+  summary?: string;
+  keyTopics?: string[];
 }) {
-  return {
+  const cleanDesc = ep.description.replace(/<[^>]*>/g, "").replace(/&[^;]+;/g, " ").trim();
+
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: `${ep.guest} — Behind the Ticker`,
-    description: ep.description.replace(/<[^>]*>/g, "").substring(0, 300),
+    description: cleanDesc.substring(0, 300),
     url: `https://thorft.com/podcast/${ep.slug}/`,
     datePublished: ep.date,
     duration: ep.duration,
@@ -159,11 +165,77 @@ export function podcastEpisodeSchema(ep: {
       name: "Behind the Ticker",
       url: "https://thorft.com/podcast/",
     },
-    associatedMedia: {
+    performer: {
+      "@type": "Person",
+      name: ep.guest,
+      worksFor: ep.company ? { "@type": "Organization", name: ep.company } : undefined,
+    },
+    about: ep.keyTopics?.map((topic) => ({ "@type": "Thing", name: topic })),
+  };
+
+  if (ep.youtubeId) {
+    schema.associatedMedia = {
       "@type": "VideoObject",
       name: ep.title,
       embedUrl: `https://www.youtube.com/embed/${ep.youtubeId}`,
+      thumbnailUrl: `https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`,
       uploadDate: ep.date,
+    };
+  }
+
+  if (ep.audioUrl) {
+    schema.audio = {
+      "@type": "AudioObject",
+      contentUrl: ep.audioUrl,
+      encodingFormat: "audio/mpeg",
+    };
+  }
+
+  return schema;
+}
+
+export function videoObjectSchema(video: {
+  title: string;
+  description: string;
+  youtubeId: string;
+  date: string;
+  duration?: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`,
+    uploadDate: video.date,
+    embedUrl: `https://www.youtube.com/embed/${video.youtubeId}`,
+    contentUrl: `https://www.youtube.com/watch?v=${video.youtubeId}`,
+    ...(video.duration ? { duration: `PT${Math.round(video.duration / 60)}M` } : {}),
+  };
+}
+
+export function newsArticleSchema(article: {
+  title: string;
+  outlet: string;
+  description: string;
+  date: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    headline: article.title,
+    description: article.description,
+    datePublished: article.date,
+    url: article.url,
+    publisher: {
+      "@type": "Organization",
+      name: article.outlet,
+    },
+    about: {
+      "@type": "Organization",
+      "@id": "https://thorft.com/#organization",
+      name: "THOR Financial Technologies",
     },
   };
 }
@@ -180,6 +252,12 @@ export function bookSchema() {
     genre: "Business & Finance",
     numberOfPages: 12,
     inLanguage: "en",
+    isbn: "9798279648504",
+    bookFormat: "https://schema.org/Paperback",
+    publisher: {
+      "@type": "Organization",
+      name: "THOR Financial Technologies",
+    },
   };
 }
 

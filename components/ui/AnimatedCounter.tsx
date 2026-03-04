@@ -24,12 +24,32 @@ export function AnimatedCounter({
   const elementRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    const runAnimation = () => {
+      const startTime = Date.now();
+      const startValue = 0;
+
+      const updateCount = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+        const currentValue = startValue + (end - startValue) * easeOutCubic;
+        setCount(currentValue);
+        if (progress < 1) {
+          requestAnimationFrame(updateCount);
+        } else {
+          setCount(end);
+        }
+      };
+
+      requestAnimationFrame(updateCount);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            animateCount();
+            runAnimation();
           }
         });
       },
@@ -41,7 +61,7 @@ export function AnimatedCounter({
     }
 
     return () => observer.disconnect();
-  }, [hasAnimated, end]);
+  }, [hasAnimated, end, duration]);
 
   const animateCount = () => {
     const startTime = Date.now();

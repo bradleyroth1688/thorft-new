@@ -2,7 +2,14 @@
 /**
  * Fetches the Buzzsprout RSS feed and writes data/episodes.json
  * in the exact format the podcast pages expect.
- * 
+ *
+ * Features:
+ * - Syncs new episodes from Buzzsprout RSS
+ * - Preserves existing youtubeIds, summaries, keyTopics, highlights
+ * - Auto-matches YouTube IDs from youtube-ids-reference.json by guest name
+ * - De-duplicates slugs to prevent routing conflicts
+ * - Logs unmatched episodes for manual review
+ *
  * Run: node scripts/sync-episodes.js
  * Or: automatically via "prebuild" npm script
  */
@@ -13,6 +20,7 @@ const https = require('https');
 
 const RSS_URL = 'https://feeds.buzzsprout.com/2162961.rss';
 const OUTPUT = path.join(__dirname, '..', 'data', 'episodes.json');
+const YT_REF = path.join(__dirname, '..', 'data', 'youtube-ids-reference.json');
 
 function fetch(url) {
   return new Promise((resolve, reject) => {
@@ -38,14 +46,12 @@ function extractBetween(str, start, end) {
 }
 
 function extractCDATA(str, tag) {
-  // Try CDATA first
   const cdataStart = str.indexOf(`<${tag}>`);
   if (cdataStart === -1) return null;
   const contentStart = cdataStart + tag.length + 2;
   const cdataEnd = str.indexOf(`</${tag}>`, contentStart);
   if (cdataEnd === -1) return null;
   let content = str.substring(contentStart, cdataEnd);
-  // Strip CDATA wrapper if present
   if (content.includes('<![CDATA[')) {
     content = content.replace('<![CDATA[', '').replace(']]>', '');
   }
@@ -62,10 +68,6 @@ function decodeEntities(str) {
     .replace(/&#39;/g, "'");
 }
 
-function stripHtml(html) {
-  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
 function formatDuration(seconds) {
   const mins = Math.round(seconds / 60);
   return `${mins} min`;
@@ -79,86 +81,167 @@ function makeSlug(title) {
     .substring(0, 80);
 }
 
+function normalizeForMatch(str) {
+  return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Try to match a YouTube ID from the reference file by guest name.
+ */
+function matchYoutubeId(guest, company, ytReference, usedIds) {
+  const guestNorm = normalizeForMatch(guest);
+
+  for (const [ytId, ref] of Object.entries(ytReference)) {
+    if (usedIds.has(ytId)) continue;
+    if (ref.isShort) continue; // Skip shorts
+
+    const refGuestNorm = normalizeForMatch(ref.guest);
+    const refTitleNorm = normalizeForMatch(ref.title);
+
+    // Exact guest name match
+    if (guestNorm === refGuestNorm) {
+      return ytId;
+    }
+
+    // Guest name appears in YouTube title
+    if (refTitleNorm.includes(guestNorm) && guestNorm.length > 5) {
+      return ytId;
+    }
+  }
+
+  return null;
+}
+
 async function main() {
   console.log('Fetching RSS feed...');
   const rss = await fetch(RSS_URL);
-  
+
   const itemRegex = /<item>([\s\S]*?)<\/item>/g;
   const episodes = [];
   let match;
-  
+
   while ((match = itemRegex.exec(rss)) !== null) {
     const item = match[1];
-    
-    const rawTitle = extractBetween(item, '<title>', '</title>') || 
+
+    const rawTitle = extractBetween(item, '<title>', '</title>') ||
                      extractBetween(item, '<itunes:title>', '</itunes:title>') || '';
     const title = decodeEntities(rawTitle);
-    
-    // Parse "Guest - Company - Topic" format
+
     const parts = title.split(' - ');
     const guest = parts[0]?.trim() || title;
     const company = parts.slice(1).join(' - ').trim() || '';
-    
-    // Description
-    const descHtml = extractCDATA(item, 'description') || 
+
+    const descHtml = extractCDATA(item, 'description') ||
                      extractCDATA(item, 'content:encoded') || '';
     const description = decodeEntities(descHtml);
-    
-    // Pub date
+
     const pubDate = extractBetween(item, '<pubDate>', '</pubDate>') || '';
     const date = pubDate ? new Date(pubDate).toISOString().split('T')[0] : '';
-    
-    // Duration
+
     const durationStr = extractBetween(item, '<itunes:duration>', '</itunes:duration>') || '0';
     const durationSec = parseInt(durationStr, 10) || 0;
     const duration = formatDuration(durationSec);
-    
-    // Audio URL
+
     const enclosureMatch = item.match(/enclosure[^>]+url="([^"]+)"/);
     const audioUrl = enclosureMatch ? enclosureMatch[1] : '';
-    
-    // Slug
+
     const slug = makeSlug(title);
-    
+
     episodes.push({
       title,
       date,
       guest,
       company,
       duration,
-      youtubeId: '',  // Not available from RSS — can be filled manually
+      youtubeId: '',
       audioUrl,
       description,
       slug,
     });
   }
-  
-  // Load existing episodes to preserve youtubeIds
+
+  // De-duplicate slugs by appending year
+  const slugCount = {};
+  for (const ep of episodes) {
+    slugCount[ep.slug] = (slugCount[ep.slug] || 0) + 1;
+  }
+  for (const [slug, count] of Object.entries(slugCount)) {
+    if (count > 1) {
+      const dupes = episodes.filter(ep => ep.slug === slug);
+      // Sort by date newest first — keep newest slug, suffix older ones
+      dupes.sort((a, b) => b.date.localeCompare(a.date));
+      for (let i = 1; i < dupes.length; i++) {
+        const year = dupes[i].date.substring(0, 4);
+        dupes[i].slug = `${slug}-${year}`;
+        console.log(`  De-duped slug: ${slug} → ${dupes[i].slug} (${dupes[i].date})`);
+      }
+    }
+  }
+
+  // Load existing episodes to preserve enriched data
   let existing = [];
   try {
     existing = JSON.parse(fs.readFileSync(OUTPUT, 'utf8'));
   } catch (e) {
     // First run
   }
-  
+
   const existingBySlug = {};
   for (const ep of existing) {
     existingBySlug[ep.slug] = ep;
   }
-  
-  // Merge: keep youtubeIds from existing data
+
+  // Load YouTube reference for auto-matching
+  let ytReference = {};
+  try {
+    ytReference = JSON.parse(fs.readFileSync(YT_REF, 'utf8'));
+  } catch (e) {
+    console.log('  No youtube-ids-reference.json found — skipping auto-match');
+  }
+
+  // Track used YouTube IDs to avoid double-assignment
+  const usedIds = new Set();
+  for (const ep of existing) {
+    if (ep.youtubeId) usedIds.add(ep.youtubeId);
+  }
+
+  // Merge: preserve existing enriched data
+  const unmatched = [];
   for (const ep of episodes) {
     const old = existingBySlug[ep.slug];
-    if (old && old.youtubeId) {
-      ep.youtubeId = old.youtubeId;
+    if (old) {
+      // Preserve all existing enriched fields
+      if (old.youtubeId) ep.youtubeId = old.youtubeId;
+      if (old.summary) ep.summary = old.summary;
+      if (old.keyTopics) ep.keyTopics = old.keyTopics;
+      if (old.highlights) ep.highlights = old.highlights;
+    }
+
+    // Auto-match YouTube ID if still missing
+    if (!ep.youtubeId && Object.keys(ytReference).length > 0) {
+      const matched = matchYoutubeId(ep.guest, ep.company, ytReference, usedIds);
+      if (matched) {
+        ep.youtubeId = matched;
+        usedIds.add(matched);
+        console.log(`  Auto-matched YouTube: ${ep.guest} → ${matched}`);
+      } else {
+        unmatched.push(ep.title);
+      }
     }
   }
-  
+
   fs.writeFileSync(OUTPUT, JSON.stringify(episodes, null, 2));
   console.log(`Wrote ${episodes.length} episodes to ${OUTPUT}`);
-  
+
   if (episodes.length > 0) {
     console.log(`Latest: ${episodes[0].title} (${episodes[0].date})`);
+  }
+
+  if (unmatched.length > 0) {
+    console.log(`\nUnmatched episodes (need manual YouTube ID):`);
+    for (const t of unmatched) {
+      console.log(`  - ${t}`);
+    }
   }
 }
 

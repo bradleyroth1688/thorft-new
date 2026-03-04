@@ -5,6 +5,12 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { podcastEpisodeSchema, breadcrumbSchema } from "@/data/schemas";
 
+type Episode = (typeof episodes)[number] & {
+  summary?: string;
+  keyTopics?: string[];
+  highlights?: string[];
+};
+
 export function generateStaticParams() {
   return episodes.map((ep) => ({ slug: ep.slug }));
 }
@@ -22,20 +28,30 @@ function stripHtml(html: string) {
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const ep = episodes.find((e) => e.slug === params.slug);
+  const ep = episodes.find((e) => e.slug === params.slug) as Episode | undefined;
   if (!ep) return {};
+  const plainDesc = stripHtml(ep.description);
   return {
     title: `${ep.guest} (${ep.company}) — Behind the Ticker Podcast`,
-    description: `Brad Roth interviews ${ep.guest} of ${ep.company} on the Behind the Ticker podcast. ${stripHtml(ep.description).substring(0, 120)}`,
+    description: `Brad Roth interviews ${ep.guest} of ${ep.company} on the Behind the Ticker podcast. ${plainDesc.substring(0, 120)}`,
     alternates: { canonical: `https://thorft.com/podcast/${ep.slug}/` },
+    openGraph: {
+      title: `${ep.guest} — Behind the Ticker with Brad Roth`,
+      description: plainDesc.substring(0, 200),
+      url: `https://thorft.com/podcast/${ep.slug}/`,
+      type: "article",
+      ...(ep.youtubeId ? {
+        images: [`https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`],
+      } : {}),
+    },
   };
 }
 
 export default function EpisodePage({ params }: { params: { slug: string } }) {
-  const ep = episodes.find((e) => e.slug === params.slug);
+  const ep = (episodes as Episode[]).find((e) => e.slug === params.slug);
   if (!ep) notFound();
 
-  const sorted = [...episodes].sort(
+  const sorted = [...(episodes as Episode[])].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
   const currentIndex = sorted.findIndex((e) => e.slug === ep.slug);
@@ -55,7 +71,7 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
       <section className="gradient-navy text-white py-16 md:py-20">
         <div className="container-max mx-auto">
           <Link href="/podcast" className="text-gray-400 hover:text-gold-400 transition-colors text-sm mb-6 inline-block">
-            ← All Episodes
+            &larr; All Episodes
           </Link>
 
           <div className="grid lg:grid-cols-5 gap-10 items-start">
@@ -100,6 +116,17 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
                 <span>{ep.duration}</span>
               </div>
 
+              {/* Key Topics */}
+              {ep.keyTopics && ep.keyTopics.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {ep.keyTopics.map((topic) => (
+                    <span key={topic} className="px-2.5 py-1 bg-navy-700 text-gray-300 rounded-full text-xs font-medium border border-navy-600">
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              )}
+
               {/* Listen Links */}
               <div className="space-y-3">
                 {ep.youtubeId && (
@@ -113,6 +140,19 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
                       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                     </svg>
                     Watch on YouTube
+                  </a>
+                )}
+                {ep.audioUrl && (
+                  <a
+                    href={ep.audioUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-gold-400 transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                    </svg>
+                    Listen to Audio
                   </a>
                 )}
                 <a
@@ -131,6 +171,25 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      {/* Key Takeaways */}
+      {ep.highlights && ep.highlights.length > 0 && (
+        <section className="py-10 bg-navy-50 border-b border-navy-100">
+          <div className="container-max mx-auto">
+            <h2 className="text-xl font-bold text-navy-800 mb-4">Key Takeaways</h2>
+            <ul className="space-y-3 max-w-4xl">
+              {ep.highlights.map((highlight, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="w-6 h-6 bg-gold-400 text-navy-800 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                    {i + 1}
+                  </span>
+                  <span className="text-gray-700">{highlight}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* Description */}
       <section className="section-padding bg-white">

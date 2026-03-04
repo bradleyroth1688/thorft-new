@@ -59,16 +59,18 @@ export default function PressPage() {
         })} />
       ))}
 
-      {/* NewsArticle schema for articles */}
-      {articles.map((a, i) => (
-        <JsonLd key={`article-schema-${i}`} data={newsArticleSchema({
-          title: a.title,
-          outlet: a.outlet,
-          description: a.description,
-          date: a.date.length === 4 ? `${a.date}-01-01` : a.date,
-          url: a.url,
-        })} />
-      ))}
+      {/* NewsArticle schema — only for true editorial content, not books or author pages */}
+      {articles
+        .filter((a) => a.type === "article" || a.type === "press-release" || a.type === "podcast")
+        .map((a, i) => (
+          <JsonLd key={`article-schema-${i}`} data={newsArticleSchema({
+            title: a.title,
+            outlet: a.outlet,
+            description: a.description,
+            date: a.date.length === 4 ? `${a.date}-01-01` : a.date,
+            url: a.url,
+          })} />
+        ))}
 
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">

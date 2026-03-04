@@ -106,7 +106,7 @@ export default function NewsletterPage({
           url: `https://thorft.com/blog/${nl.slug}/`,
           ...(nl.thumbnailUrl ? { image: nl.thumbnailUrl } : {}),
           mainEntityOfPage: `https://thorft.com/blog/${nl.slug}/`,
-          wordCount: nl.wordCount,
+          ...(nl.wordCount ? { wordCount: nl.wordCount } : {}),
           isPartOf: {
             "@type": "Blog",
             name: "The Signal Newsletter Archive",

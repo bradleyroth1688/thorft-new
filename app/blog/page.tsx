@@ -126,7 +126,7 @@ export default function BlogIndexPage() {
                 <div className="flex items-center gap-3 text-xs text-gray-500 mt-auto pt-3 border-t border-gray-100">
                   <time dateTime={nl.date}>{fmtDate(nl.date)}</time>
                   <span>&middot;</span>
-                  <span>{Math.ceil(nl.wordCount / 200)} min read</span>
+                  <span>{nl.wordCount ? `${Math.ceil(nl.wordCount / 200)} min read` : ""}</span>
                 </div>
               </Link>
             ))}
@@ -165,7 +165,7 @@ export default function BlogIndexPage() {
                   <div className="flex items-center gap-3 text-xs text-gray-500">
                     <time dateTime={nl.date}>{fmtDate(nl.date)}</time>
                     <span>&middot;</span>
-                    <span>{Math.ceil(nl.wordCount / 200)} min read</span>
+                    <span>{nl.wordCount ? `${Math.ceil(nl.wordCount / 200)} min read` : ""}</span>
                   </div>
                 </div>
               </Link>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import episodes from "@/data/episodes.json";
+import blogPosts from "@/data/blog-posts.json";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { podcastEpisodeSchema, breadcrumbSchema } from "@/data/schemas";
@@ -50,6 +51,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function EpisodePage({ params }: { params: { slug: string } }) {
   const ep = (episodes as Episode[]).find((e) => e.slug === params.slug);
   if (!ep) notFound();
+
+  const matchingPost = blogPosts.find(
+    (p) => p.podcastSlug === ep.slug || p.slug === ep.slug
+  );
 
   const sorted = [...(episodes as Episode[])].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
@@ -203,6 +208,32 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
+
+      {/* Full Episode Write-Up */}
+      {matchingPost && (
+        <section className="section-padding bg-gray-50 border-t border-gray-100">
+          <div className="container-max mx-auto">
+            <div className="max-w-4xl">
+              <h2 className="text-2xl font-bold text-navy-800 mb-6">Full Episode Write-Up</h2>
+              <div
+                className="prose prose-lg max-w-none text-gray-700
+                  prose-headings:text-navy-800 prose-headings:font-bold
+                  prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
+                  prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+                  prose-p:leading-relaxed prose-p:mb-4
+                  prose-blockquote:border-l-4 prose-blockquote:border-gold-400
+                  prose-blockquote:bg-gold-50 prose-blockquote:py-4 prose-blockquote:px-6
+                  prose-blockquote:rounded-r-lg prose-blockquote:not-italic
+                  prose-blockquote:text-navy-700
+                  prose-li:text-gray-700
+                  prose-a:text-gold-600 prose-a:underline
+                  prose-ul:my-4 prose-ul:space-y-2"
+                dangerouslySetInnerHTML={{ __html: matchingPost.content }}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Prev/Next */}
       <section className="py-8 px-4 bg-gray-50">

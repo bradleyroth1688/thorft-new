@@ -30,7 +30,7 @@ const navigation = [
   },
   { name: "Funds", href: "/funds" },
   { name: "Podcast", href: "/podcast" },
-  { name: "Blog", href: "/blog" },
+  { name: "The Signal", href: "/blog" },
   { name: "Book", href: "/book" },
   { name: "Press", href: "/press" },
   { name: "Resources", href: "/resources" },

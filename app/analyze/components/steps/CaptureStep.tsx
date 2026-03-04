@@ -124,9 +124,7 @@ export default function CaptureStep({ onReset, onBack }: Props) {
             15-minute consultation with a THOR specialist to discuss your optimized portfolio.
           </p>
           <a
-            href="https://calendly.com/thorfunds/consultation"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="btn-secondary w-full inline-flex items-center justify-center"
           >
             Pick a Time →
@@ -143,10 +141,10 @@ export default function CaptureStep({ onReset, onBack }: Props) {
           investors achieve better risk-adjusted returns since 2019.
         </p>
         <div className="flex flex-wrap gap-4">
-          <a href="/funds/thir" className="btn-outline text-gold-500 border-gold-500 hover:bg-gold-500 hover:text-navy-900">
+          <a href="/funds" className="btn-outline text-gold-500 border-gold-500 hover:bg-gold-500 hover:text-navy-900">
             Learn About THIR
           </a>
-          <a href="/funds/thlv" className="btn-outline text-gold-500 border-gold-500 hover:bg-gold-500 hover:text-navy-900">
+          <a href="/funds" className="btn-outline text-gold-500 border-gold-500 hover:bg-gold-500 hover:text-navy-900">
             Learn About THLV
           </a>
         </div>

@@ -6,7 +6,7 @@ import { breadcrumbSchema, webPageSchema, videoObjectSchema, newsArticleSchema }
 
 export const metadata: Metadata = {
   title: "Press & Media — THOR Financial Technologies in the News",
-  description: "THOR Financial Technologies has been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews, read articles, and see Behind the Ticker clips.",
+  description: "THOR Financial Technologies has been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles.",
   alternates: { canonical: "https://thorft.com/press/" },
 };
 
@@ -29,7 +29,7 @@ type Appearance = (typeof mediaData.mediaAppearances)[number] & {
   pullQuote?: string;
 };
 
-type VideoShort = (typeof mediaData.videoShorts)[number];
+// VideoShort type removed — clips section deleted
 
 export default function PressPage() {
   const appearances = (mediaData.mediaAppearances as Appearance[]).sort(
@@ -42,12 +42,12 @@ export default function PressPage() {
 
   const videos = appearances.filter((a) => a.type === "video");
   const articles = appearances.filter((a) => a.type === "article" || a.type === "press-release" || a.type === "author-page" || a.type === "book");
-  const shorts = mediaData.videoShorts as VideoShort[];
+
 
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Press & Media", url: "/press/" }])} />
-      <JsonLd data={webPageSchema({ name: "Press & Media", description: "THOR Financial Technologies press coverage, media appearances, and Behind the Ticker video clips.", url: "/press/" })} />
+      <JsonLd data={webPageSchema({ name: "Press & Media", description: "THOR Financial Technologies press coverage and media appearances.", url: "/press/" })} />
 
       {/* VideoObject schema for each video with youtubeId */}
       {videos.filter(v => v.youtubeId).map((v, i) => (
@@ -153,48 +153,7 @@ export default function PressPage() {
         </div>
       </section>
 
-      {/* Video Shorts */}
-      {shorts.length > 0 && (
-        <section className="section-padding bg-gray-50">
-          <div className="container-max mx-auto">
-            <h2 className="text-3xl font-bold text-navy-800 mb-2">Behind the Ticker Clips</h2>
-            <p className="text-gray-600 mb-8">Short clips and highlights from the Behind the Ticker podcast.</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {shorts.map((short, i) => (
-                <a
-                  key={i}
-                  href={short.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <div className="relative aspect-video rounded-lg overflow-hidden mb-2 bg-gray-200">
-                    <img
-                      src={`https://i.ytimg.com/vi/${short.youtubeId}/hqdefault.jpg`}
-                      alt={short.title}
-                      className="absolute inset-0 w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
-                      <svg className="w-8 h-8 text-white/80" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                    <span className="absolute bottom-1 right-1 bg-black/70 text-white text-xs px-1.5 py-0.5 rounded">
-                      {Math.floor(short.duration / 60)}:{String(short.duration % 60).padStart(2, '0')}
-                    </span>
-                  </div>
-                  <h3 className="text-sm font-medium text-navy-800 group-hover:text-gold-600 transition-colors line-clamp-2">
-                    {short.title}
-                  </h3>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Articles */}
+            {/* Articles */}
       {articles.length > 0 && (
         <section className="section-padding bg-white">
           <div className="container-max mx-auto">

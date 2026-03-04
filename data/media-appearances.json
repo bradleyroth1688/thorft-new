@@ -1,12 +1,38 @@
 {
   "mediaAppearances": [
     {
+      "title": "Behind the Ticker Podcast Launches on ETF.com",
+      "outlet": "Yahoo Finance / Business Wire",
+      "type": "article",
+      "date": "2026-01-15",
+      "url": "https://finance.yahoo.com/news/thor-financial-technologies-brad-roth-130000403.html",
+      "description": "Announcement of Behind the Ticker podcast launching on ETF.com.",
+      "pullQuote": "Behind the Ticker gives advisors a front-row seat to how the most innovative ETFs are actually built and managed."
+    },
+    {
+      "title": "THOR Financial Technologies: Brad Roth Brings Behind the Ticker Podcast to ETF.com",
+      "outlet": "Business Wire",
+      "type": "press-release",
+      "date": "2026-01-15",
+      "url": "https://www.businesswire.com/news/home/20260115097057/en/THOR-Financial-Technologies-Brad-Roth-Brings-Behind-the-Ticker-Podcast-to-ETF.com",
+      "description": "Announcement of the Behind the Ticker podcast's new distribution partnership with ETF.com."
+    },
+    {
+      "title": "Defense in a Volatile Market with the THIR ETF",
+      "outlet": "Schwab Network",
+      "type": "video",
+      "date": "2025-08-20",
+      "url": "https://schwabnetwork.com/video/defense-in-a-volatile-market-with-the-thir-etf",
+      "description": "Brad Roth discusses defensive positioning strategies using systematic rotation during periods of elevated market volatility."
+    },
+    {
       "title": "THOR Financial CIO offers a pair of systematic ETFs for a volatile market",
       "outlet": "InvestmentNews",
       "type": "video",
       "date": "2025-06-24",
       "url": "https://www.investmentnews.com/videos/in-the-nasdaq/thor-financial-cio-offers-a-pair-of-systematic-etfs-for-a-volatile-market/261049",
-      "description": "Brad Roth sits down with InvestmentNews to highlight the systematic approach of THOR ETFs in a volatile market."
+      "description": "Brad Roth sits down with InvestmentNews to highlight the systematic approach of THOR ETFs in a volatile market.",
+      "pullQuote": "We built these ETFs to do one thing — take emotion out of the equation and let the data drive every decision."
     },
     {
       "title": "Investment Strategies for the Modern Market",
@@ -14,7 +40,9 @@
       "type": "video",
       "date": "2025-06-23",
       "url": "https://www.youtube.com/watch?v=2UGpPVGcKBQ",
-      "description": "Brad Roth discusses investment strategies with Ryan Nauman of Zephyr."
+      "youtubeId": "2UGpPVGcKBQ",
+      "description": "Brad Roth discusses investment strategies with Ryan Nauman of Zephyr.",
+      "pullQuote": "The biggest edge an advisor can give their clients isn't stock picking — it's removing behavioral bias from the process."
     },
     {
       "title": "ETF 360: Brad Roth of THOR Funds discusses THLV and THIR",
@@ -22,15 +50,25 @@
       "type": "video",
       "date": "2025-05-01",
       "url": "https://www.youtube.com/watch?v=VMyrCjFoDtQ",
-      "description": "In-depth discussion of both THOR ETF strategies."
+      "youtubeId": "VMyrCjFoDtQ",
+      "description": "In-depth discussion of both THOR ETF strategies.",
+      "pullQuote": "Our signal processing technology was built to detect regime changes before they show up in the headlines."
     },
     {
-      "title": "Behind the Ticker Podcast Launches on ETF.com",
-      "outlet": "Yahoo Finance / Business Wire",
+      "title": "Q&A with Brad Roth, CIO of UX Wealth Partners and Co-Founder of THOR Financial Technologies",
+      "outlet": "CityBiz",
       "type": "article",
-      "date": "2026-01-15",
-      "url": "https://finance.yahoo.com/news/thor-financial-technologies-brad-roth-130000403.html",
-      "description": "Announcement of Behind the Ticker podcast launching on ETF.com."
+      "date": "2025-04-15",
+      "url": "https://www.citybiz.co/article/680122/qa-with-brad-roth-chief-investment-officer-of-ux-wealth-partners-and-cio-co-founder-of-thor-financial-technologies/",
+      "description": "In-depth Q&A interview covering Brad Roth's dual role as CIO of UX Wealth Partners and co-founder of THOR Financial Technologies."
+    },
+    {
+      "title": "UX Wealth Partners Welcomes Brad Roth as Chief Investment Officer",
+      "outlet": "Business Wire",
+      "type": "press-release",
+      "date": "2025-04-02",
+      "url": "https://www.businesswire.com/news/home/20250402175643/en/UX-Wealth-Partners-Welcomes-Brad-Roth-as-Chief-Investment-Officer",
+      "description": "Announcement of Brad Roth's appointment as CIO of UX Wealth Partners."
     },
     {
       "title": "Thor Financial Technologies: Using Smart Algorithms to Tackle Market Volatility",
@@ -38,7 +76,8 @@
       "type": "video",
       "date": "2024-10-09",
       "url": "https://fintech.tv/thor-financial-technologies-using-smart-algorithms-to-tackle-market-volatility-with-brad-roth-founder-cio-thor-financial-technologies/",
-      "description": "Live at NYSE discussing algorithmic strategies for managing market volatility."
+      "description": "Live at NYSE discussing algorithmic strategies for managing market volatility.",
+      "pullQuote": "Every other industry uses technology to improve outcomes. It's time investing did the same."
     },
     {
       "title": "Schwab Network's The Watch List - Market Breadth Expanding",
@@ -46,7 +85,8 @@
       "type": "video",
       "date": "2024-10-09",
       "url": "https://schwabnetwork.com/video/market-breadth-expanding-beyond-the-mag-7",
-      "description": "Discussion on market breadth widening beyond the Magnificent 7."
+      "description": "Discussion on market breadth widening beyond the Magnificent 7.",
+      "pullQuote": "Market breadth expanding is a healthy sign — it means the rally has legs beyond just a handful of names."
     },
     {
       "title": "Rotation Out of Large Caps Healthy; Tech Reached Its Limit For Now",
@@ -54,47 +94,40 @@
       "type": "video",
       "date": "2024-10-08",
       "url": "https://schwabnetwork.com/video/roth-rotation-out-of-large-caps-healthy-tech-reached-its-limit-for-now",
-      "description": "Brad discusses rotation out of large caps and tech limits."
+      "description": "Brad discusses rotation out of large caps and tech limits.",
+      "pullQuote": "Rotation out of large caps is healthy — tech reached its limit for now, and the market is telling you to look elsewhere."
     },
     {
-      "title": "Risk Management Strategies: Hard Assets and Low-Volatility ETFs",
-      "outlet": "Schwab Network",
+      "title": "BX Partners Adds THOR SDQ 25 Strategy",
+      "outlet": "BX Partners",
+      "type": "press-release",
+      "date": "2024-09-15",
+      "url": "https://bxindex.com/press-release-bx-partners-adds-thor-sdq-25-strategy/",
+      "description": "BX Partners announces the addition of THOR's SDQ 25 strategy to their platform."
+    },
+    {
+      "title": "Will Inflation Data Prevent Fed Rate Cuts? Insights from Brad Roth",
+      "outlet": "Fintech.TV",
       "type": "video",
-      "date": "2022-04-20",
-      "url": "https://schwabnetwork.com/video/risk-management-strategies-hard-assets-and-low-volatility-etfs",
-      "description": "Discussion on value investing, commodities, and hard assets for portfolio hedging."
+      "date": "2024-06-15",
+      "url": "https://fintech.tv/will-inflation-data-prevent-fed-rate-cuts-insights-from-brad-roth-cio-of-thor-financial-technologies/",
+      "description": "Brad Roth provides analysis on inflation dynamics and their potential impact on Federal Reserve rate policy."
     },
     {
-      "title": "ETF Leaders: Brad Roth at Exchange 2023",
-      "outlet": "NYSE / ETF Leaders",
-      "type": "video",
-      "date": "2023-04-05",
-      "url": "https://www.youtube.com/watch?v=nuAF3r73nIc",
-      "description": "NYSE's Judy Shaw interviews Brad Roth at Exchange 2023 conference."
+      "title": "Little Reasons, Big Consequences",
+      "outlet": "Barnes & Noble",
+      "type": "book",
+      "date": "2024-06-01",
+      "url": "https://www.barnesandnoble.com/w/little-reasons-big-consequences-brad-roth/1149363789?ean=9798279648504",
+      "description": "Brad Roth's book on how small decisions compound into significant outcomes in investing and life."
     },
     {
-      "title": "What's the Fund?: THOR Low Volatility ETF",
-      "outlet": "What's the Fund?",
-      "type": "video",
-      "date": "2023-02-04",
-      "url": "https://www.youtube.com/watch?v=DxATMMej8b8",
-      "description": "Deep dive into the THOR Low Volatility ETF strategy."
-    },
-    {
-      "title": "THOR Debuts With Volatility-Focused ETF",
-      "outlet": "ETF.com / Yahoo Finance",
-      "type": "article",
-      "date": "2022-09-13",
-      "url": "https://www.yahoo.com/video/thor-debuts-volatility-focused-etf-211500350.html",
-      "description": "Launch coverage of THLV ETF."
-    },
-    {
-      "title": "Fintech Luminaries - Meet Brad Roth of THOR Financial Technologies",
-      "outlet": "DWealth News",
-      "type": "article",
-      "date": "2021-11-22",
-      "url": "https://dwealth.news/2021/11/fintech-luminaries-meet-brad-roth-of-thor-financial-technologies/",
-      "description": "Profile feature on Brad Roth and THOR's mission."
+      "title": "Bradley Roth — ETF Central Author",
+      "outlet": "ETF Central",
+      "type": "author-page",
+      "date": "2024-01-01",
+      "url": "https://www.etfcentral.com/author/bradley-roth",
+      "description": "Brad Roth's author page on ETF Central, featuring his Ask the Manager column and ETF industry analysis."
     },
     {
       "title": "Trading 360",
@@ -102,7 +135,217 @@
       "type": "video",
       "date": "2024",
       "url": "https://www.youtube.com/watch?v=H6-nyqtEmCs",
+      "youtubeId": "H6-nyqtEmCs",
       "description": "Trading and market discussion."
+    },
+    {
+      "title": "NYSE's ETF Leaders: THOR Financial Technologies & Brad Roth",
+      "outlet": "ETF Trends / VettaFi",
+      "type": "article",
+      "date": "2023-10-15",
+      "url": "https://www.etftrends.com/nyses-etf-leaders-thor-financial-technologies-brad-roth/",
+      "description": "Feature profile on Brad Roth and THOR Financial Technologies as part of NYSE's ETF Leaders series, covering the firm's systematic approach to risk management."
+    },
+    {
+      "title": "THOR Moves Its Low Volatility ETF (THLV) to NYSE",
+      "outlet": "PR Newswire",
+      "type": "press-release",
+      "date": "2023-06-20",
+      "url": "https://www.prnewswire.com/news-releases/thor-moves-its-low-volatility-etf-thlv-to-nyse-301732762.html",
+      "description": "Announcement of the THOR Equal Weight Low Volatility ETF listing transfer to NYSE Arca."
+    },
+    {
+      "title": "ETF Leaders: Brad Roth at Exchange 2023",
+      "outlet": "NYSE / ETF Leaders",
+      "type": "video",
+      "date": "2023-04-05",
+      "url": "https://www.youtube.com/watch?v=nuAF3r73nIc",
+      "youtubeId": "nuAF3r73nIc",
+      "description": "NYSE's Judy Shaw interviews Brad Roth at Exchange 2023 conference.",
+      "pullQuote": "Signal processing in finance works the same way it does in defense — filter the noise, find the signal."
+    },
+    {
+      "title": "What's the Fund?: THOR Low Volatility ETF",
+      "outlet": "What's the Fund?",
+      "type": "video",
+      "date": "2023-02-04",
+      "url": "https://www.youtube.com/watch?v=DxATMMej8b8",
+      "youtubeId": "DxATMMej8b8",
+      "description": "Deep dive into the THOR Low Volatility ETF strategy.",
+      "pullQuote": "Low volatility doesn't mean low returns — it means smarter returns with less drawdown."
+    },
+    {
+      "title": "Behind the Ticker Podcast",
+      "outlet": "Apple Podcasts",
+      "type": "podcast",
+      "date": "2023-01-01",
+      "url": "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1682702118",
+      "description": "Behind the Ticker podcast hosted by Brad Roth, featuring conversations with ETF industry leaders and innovators."
+    },
+    {
+      "title": "Behind the Ticker Podcast",
+      "outlet": "Spotify",
+      "type": "podcast",
+      "date": "2023-01-01",
+      "url": "https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS",
+      "description": "Behind the Ticker podcast on Spotify — 100+ episodes with ETF founders, portfolio managers, and industry experts."
+    },
+    {
+      "title": "THOR Debuts With Volatility-Focused ETF",
+      "outlet": "ETF.com / Yahoo Finance",
+      "type": "article",
+      "date": "2022-09-13",
+      "url": "https://www.yahoo.com/video/thor-debuts-volatility-focused-etf-211500350.html",
+      "description": "Launch coverage of THLV ETF.",
+      "pullQuote": "THOR's debut brings a systematic, volatility-focused approach to the ETF market."
+    },
+    {
+      "title": "Risk Management Strategies: Hard Assets and Low-Volatility ETFs",
+      "outlet": "Schwab Network",
+      "type": "video",
+      "date": "2022-04-20",
+      "url": "https://schwabnetwork.com/video/risk-management-strategies-hard-assets-and-low-volatility-etfs",
+      "description": "Discussion on value investing, commodities, and hard assets for portfolio hedging.",
+      "pullQuote": "Hard assets and low-volatility strategies are the foundation of real risk management."
+    },
+    {
+      "title": "Fintech Luminaries - Meet Brad Roth of THOR Financial Technologies",
+      "outlet": "DWealth News",
+      "type": "article",
+      "date": "2021-11-22",
+      "url": "https://dwealth.news/2021/11/fintech-luminaries-meet-brad-roth-of-thor-financial-technologies/",
+      "description": "Profile feature on Brad Roth and THOR's mission.",
+      "pullQuote": "We're applying signal processing technology — the same type used in defense and telecommunications — to financial markets."
+    }
+  ],
+  "videoShorts": [
+    {
+      "title": "AI Momentum in Stock Picking",
+      "youtubeId": "g8jAyGJGqdE",
+      "type": "short",
+      "duration": 71,
+      "url": "https://www.youtube.com/watch?v=g8jAyGJGqdE",
+      "description": "How artificial intelligence is changing the way stocks are selected and portfolios are built."
+    },
+    {
+      "title": "From Merrill Lynch to Wealth Trust",
+      "youtubeId": "g-SlaPpsyqQ",
+      "type": "short",
+      "duration": 61,
+      "url": "https://www.youtube.com/watch?v=g-SlaPpsyqQ",
+      "description": "The journey from traditional wirehouse to building an independent wealth management practice."
+    },
+    {
+      "title": "Outperforming the Market with WLTG",
+      "youtubeId": "WL47CzzetTA",
+      "type": "short",
+      "duration": 64,
+      "url": "https://www.youtube.com/watch?v=WL47CzzetTA",
+      "description": "Breaking down how WLTG aims to outperform broad market benchmarks."
+    },
+    {
+      "title": "A New Era in Structured Credit",
+      "youtubeId": "Q_3mBmiWd7w",
+      "type": "short",
+      "duration": 66,
+      "url": "https://www.youtube.com/watch?v=Q_3mBmiWd7w",
+      "description": "The evolution of structured credit and what it means for modern portfolios."
+    },
+    {
+      "title": "ETF Ideal for Retirement Planning",
+      "youtubeId": "Jc-rz7xvHuw",
+      "type": "short",
+      "duration": 61,
+      "url": "https://www.youtube.com/watch?v=Jc-rz7xvHuw",
+      "description": "Why certain ETF structures are perfectly suited for retirement-focused portfolios."
+    },
+    {
+      "title": "Generating Income with Low Volatility",
+      "youtubeId": "zAfR_re8MRk",
+      "type": "short",
+      "duration": 75,
+      "url": "https://www.youtube.com/watch?v=zAfR_re8MRk",
+      "description": "Strategies for generating consistent income while keeping portfolio volatility low."
+    },
+    {
+      "title": "Reducing Volatility for Long Term Gains",
+      "youtubeId": "mJ0Fw8BYBTM",
+      "type": "short",
+      "duration": 62,
+      "url": "https://www.youtube.com/watch?v=mJ0Fw8BYBTM",
+      "description": "Why reducing volatility leads to better long-term compound returns."
+    },
+    {
+      "title": "Achieving High Income with Low Volatility",
+      "youtubeId": "jGh9dkjtjoE",
+      "type": "short",
+      "duration": 76,
+      "url": "https://www.youtube.com/watch?v=jGh9dkjtjoE",
+      "description": "How to build a portfolio that delivers high income without excessive risk."
+    },
+    {
+      "title": "Using Innovator ETFs for Stability",
+      "youtubeId": "0zgQO16f34I",
+      "type": "short",
+      "duration": 65,
+      "url": "https://www.youtube.com/watch?v=0zgQO16f34I",
+      "description": "How Innovator ETFs and defined-outcome strategies provide portfolio stability."
+    },
+    {
+      "title": "From Accountant to Trend Following Trader",
+      "youtubeId": "KYcVTSvbhVk",
+      "type": "short",
+      "duration": 62,
+      "url": "https://www.youtube.com/watch?v=KYcVTSvbhVk",
+      "description": "An unconventional career path from accounting to systematic trend following."
+    },
+    {
+      "title": "Mastering Stop Losses in Trend Following",
+      "youtubeId": "PyCLUYLze_Q",
+      "type": "short",
+      "duration": 77,
+      "url": "https://www.youtube.com/watch?v=PyCLUYLze_Q",
+      "description": "How to use stop losses effectively in a trend following framework."
+    },
+    {
+      "title": "Let Your Profits Run: Key to Success",
+      "youtubeId": "z3z0zZKQa6k",
+      "type": "short",
+      "duration": 69,
+      "url": "https://www.youtube.com/watch?v=z3z0zZKQa6k",
+      "description": "Why cutting losses short and letting winners run is the foundation of trend following."
+    },
+    {
+      "title": "Embrace Losses and Ride Winning Trends",
+      "youtubeId": "Gmuvenl73Pg",
+      "type": "short",
+      "duration": 70,
+      "url": "https://www.youtube.com/watch?v=Gmuvenl73Pg",
+      "description": "The mental discipline required to accept small losses and hold onto winning positions."
+    },
+    {
+      "title": "Balancing Long and Short Exposures",
+      "youtubeId": "pWqUbM9jbB8",
+      "type": "short",
+      "duration": 73,
+      "url": "https://www.youtube.com/watch?v=pWqUbM9jbB8",
+      "description": "How to balance long and short positions for better risk-adjusted returns."
+    },
+    {
+      "title": "Mastering Trend Following",
+      "youtubeId": "14pYZgYI_so",
+      "type": "short",
+      "duration": 67,
+      "url": "https://www.youtube.com/watch?v=14pYZgYI_so",
+      "description": "Key principles of trend following and why it works across asset classes."
+    },
+    {
+      "title": "Introduction to Behind the Ticker",
+      "youtubeId": "wgroXeUvMr0",
+      "type": "short",
+      "duration": 60,
+      "url": "https://www.youtube.com/watch?v=wgroXeUvMr0",
+      "description": "Meet Brad Roth and learn what Behind the Ticker podcast is all about."
     }
   ]
 }

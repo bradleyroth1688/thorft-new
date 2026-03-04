@@ -150,7 +150,7 @@ export default function NewsletterPage({
               <span>&middot;</span>
               <time dateTime={nl.date}>{fmtDate(nl.date)}</time>
               <span>&middot;</span>
-              <span>{Math.ceil(nl.wordCount / 200)} min read</span>
+              {nl.wordCount ? <span>{Math.ceil(nl.wordCount / 200)} min read</span> : null}
               <span>&middot;</span>
               <a
                 href={nl.beehiivUrl}

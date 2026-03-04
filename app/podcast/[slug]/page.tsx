@@ -177,44 +177,11 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      {/* Key Takeaways */}
-      {ep.highlights && ep.highlights.length > 0 && (
-        <section className="py-10 bg-navy-50 border-b border-navy-100">
-          <div className="container-max mx-auto">
-            <h2 className="text-xl font-bold text-navy-800 mb-4">Key Takeaways</h2>
-            <ul className="space-y-3 max-w-4xl">
-              {ep.highlights.map((highlight, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-gold-400 text-navy-800 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
-                    {i + 1}
-                  </span>
-                  <span className="text-gray-700">{highlight}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {/* Description */}
-      <section className="section-padding bg-white">
-        <div className="container-max mx-auto">
-          <div className="max-w-4xl">
-            <h2 className="text-2xl font-bold text-navy-800 mb-6">Episode Summary</h2>
-            <div
-              className="prose prose-lg max-w-none text-gray-600 [&_a]:text-gold-600 [&_a]:underline"
-              dangerouslySetInnerHTML={{ __html: ep.description }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Full Episode Write-Up */}
-      {matchingPost && (
-        <section className="section-padding bg-gray-50 border-t border-gray-100">
+      {/* Episode Write-Up */}
+      {matchingPost ? (
+        <section className="section-padding bg-white">
           <div className="container-max mx-auto">
             <div className="max-w-4xl">
-              <h2 className="text-2xl font-bold text-navy-800 mb-6">Full Episode Write-Up</h2>
               <div
                 className="prose prose-lg max-w-none text-gray-700
                   prose-headings:text-navy-800 prose-headings:font-bold
@@ -229,6 +196,17 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
                   prose-a:text-gold-600 prose-a:underline
                   prose-ul:my-4 prose-ul:space-y-2"
                 dangerouslySetInnerHTML={{ __html: matchingPost.content }}
+              />
+            </div>
+          </div>
+        </section>
+      ) : (
+        <section className="section-padding bg-white">
+          <div className="container-max mx-auto">
+            <div className="max-w-4xl">
+              <div
+                className="prose prose-lg max-w-none text-gray-600 [&_a]:text-gold-600 [&_a]:underline"
+                dangerouslySetInnerHTML={{ __html: ep.description }}
               />
             </div>
           </div>

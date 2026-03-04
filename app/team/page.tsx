@@ -95,7 +95,7 @@ export default function TeamPage() {
               <div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-4">Behind the Ticker Podcast</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Brad hosts <em>Behind the Ticker</em>, a podcast featuring in-depth conversations with the people building today&apos;s most innovative ETFs. With 94+ episodes and counting, the show has become a go-to resource for advisors and investors seeking to understand the strategies and structures behind modern fund offerings. Available on Spotify, Apple Podcasts, and YouTube.
+                  Brad hosts <em>Behind the Ticker</em>, a podcast featuring in-depth conversations with the people building today&apos;s most innovative ETFs. With new episodes dropping weekly, the show has become a go-to resource for advisors and investors seeking to understand the strategies and structures behind modern fund offerings. Available on Spotify, Apple Podcasts, and YouTube.
                 </p>
               </div>
 

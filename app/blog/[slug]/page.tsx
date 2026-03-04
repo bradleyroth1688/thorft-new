@@ -232,7 +232,7 @@ export default function NewsletterPage({
             Get The Signal Every Morning
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-            Brad Roth's daily market brief — systematic signals, ETF
+            Brad Roth&apos;s daily market brief — systematic signals, ETF
             positioning, and what the data is actually showing. Free to
             subscribe.
           </p>

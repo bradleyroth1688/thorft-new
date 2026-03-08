@@ -959,9 +959,34 @@
     "duration": 60.0,
     "isShort": true
   },
-  "David Allen": "kR5X0YQuyHM",
-  "Raymond Micaletti": "VyUfPt1oPuE",
-  "David Nicholas": "I_PusDKZ5i8",
-  "Bob Elliott": "njBKCDAkDOQ",
-  "David Auerbach": "vTCfHVVlvjQ"
+  "kR5X0YQuyHM": {
+    "youtubeId": "kR5X0YQuyHM",
+    "guest": "David Allen",
+    "title": "David Allen - Behind the Ticker",
+    "company": ""
+  },
+  "VyUfPt1oPuE": {
+    "youtubeId": "VyUfPt1oPuE",
+    "guest": "Raymond Micaletti",
+    "title": "Raymond Micaletti - Behind the Ticker",
+    "company": ""
+  },
+  "I_PusDKZ5i8": {
+    "youtubeId": "I_PusDKZ5i8",
+    "guest": "David Nicholas",
+    "title": "David Nicholas - Behind the Ticker",
+    "company": ""
+  },
+  "njBKCDAkDOQ": {
+    "youtubeId": "njBKCDAkDOQ",
+    "guest": "Bob Elliott",
+    "title": "Bob Elliott - Behind the Ticker",
+    "company": ""
+  },
+  "vTCfHVVlvjQ": {
+    "youtubeId": "vTCfHVVlvjQ",
+    "guest": "David Auerbach",
+    "title": "David Auerbach - Behind the Ticker",
+    "company": ""
+  }
 }

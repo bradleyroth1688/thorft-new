@@ -93,7 +93,9 @@ function matchYoutubeId(guest, company, ytReference, usedIds) {
 
   for (const [ytId, ref] of Object.entries(ytReference)) {
     if (usedIds.has(ytId)) continue;
+    if (typeof ref === 'string') continue; // Skip legacy "name": "id" entries
     if (ref.isShort) continue; // Skip shorts
+    if (!ref.guest || !ref.title) continue; // Skip entries missing required fields
 
     const refGuestNorm = normalizeForMatch(ref.guest);
     const refTitleNorm = normalizeForMatch(ref.title);

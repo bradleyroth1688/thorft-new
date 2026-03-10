@@ -4,7 +4,8 @@ import episodes from "@/data/episodes.json";
 import blogPosts from "@/data/blog-posts.json";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
-import { podcastEpisodeSchema, breadcrumbSchema } from "@/data/schemas";
+import { SignalCTA } from "@/components/ui/SignalCTA";
+import { podcastEpisodeSchema, videoObjectSchema, breadcrumbSchema } from "@/data/schemas";
 
 type Episode = (typeof episodes)[number] & {
   summary?: string;
@@ -45,6 +46,12 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
         images: [`https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`],
       } : {}),
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${ep.guest} — Behind the Ticker Podcast`,
+      description: plainDesc.substring(0, 200),
+      ...(ep.youtubeId ? { images: [`https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`] } : {}),
+    },
   };
 }
 
@@ -66,6 +73,14 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
   return (
     <>
       <JsonLd data={podcastEpisodeSchema(ep)} />
+      {ep.youtubeId && (
+        <JsonLd data={videoObjectSchema({
+          title: ep.title,
+          description: stripHtml(ep.description).substring(0, 300),
+          youtubeId: ep.youtubeId,
+          date: ep.date,
+        })} />
+      )}
       <JsonLd data={breadcrumbSchema([
         { name: "Home", url: "/" },
         { name: "Podcast", url: "/podcast/" },
@@ -213,8 +228,17 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
         </section>
       )}
 
+      {/* Newsletter CTA */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max mx-auto">
+          <div className="max-w-4xl">
+            <SignalCTA variant="compact" />
+          </div>
+        </div>
+      </section>
+
       {/* Prev/Next */}
-      <section className="py-8 px-4 bg-gray-50">
+      <section className="py-8 px-4 bg-white">
         <div className="container-max mx-auto">
           <div className="flex flex-col sm:flex-row justify-between gap-4">
             {prev ? (

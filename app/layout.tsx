@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { organizationSchema, personSchema } from "@/data/schemas";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -95,6 +96,20 @@ export default function RootLayout({
         <noscript>
           <img height="1" width="1" style={{display: "none"}} alt="" src="https://px.ads.linkedin.com/collect/?pid=86s9628nsfk0o3&fmt=gif" />
         </noscript>
+
+        {/* Global structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({ "@context": "https://schema.org", ...personSchema() }),
+          }}
+        />
       </head>
       <body className={`${inter.className} antialiased`}>
         <Header />

@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   title: "About THOR Financial Technologies — Our Story & Mission",
   description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages using proprietary signal processing across six model portfolios and two ETFs.",
   alternates: { canonical: "https://thorft.com/about/" },
+  openGraph: {
+    title: "About THOR Financial Technologies — Our Story & Mission",
+    description: "Founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Six model portfolios and two ETFs.",
+    url: "https://thorft.com/about/",
+    type: "website",
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About THOR Financial Technologies",
+    description: "Founded by Brad Roth. Systematic, technology-driven investing with proprietary signal processing.",
+    images: ["https://thorft.com/images/whitepaper-og.png"],
+  },
 };
 
 export default function AboutPage() {

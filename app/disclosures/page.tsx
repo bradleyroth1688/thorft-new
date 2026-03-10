@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   title: "Disclosures — Hypothetical Performance, Privacy Policy & Terms of Use",
   description: "Important disclosures regarding THOR Financial Technologies' hypothetical performance data, including back-testing limitations, fee assumptions, and risks. Also includes privacy policy and terms of use.",
   alternates: { canonical: "https://thorft.com/disclosures/" },
+  openGraph: {
+    title: "Disclosures — THOR Financial Technologies",
+    description: "Important disclosures regarding hypothetical performance data, privacy policy, and terms of use.",
+    url: "https://thorft.com/disclosures/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Disclosures — THOR Financial Technologies",
+    description: "Important disclosures regarding hypothetical performance data, privacy policy, and terms of use.",
+  },
 };
 
 export default function DisclosuresPage() {

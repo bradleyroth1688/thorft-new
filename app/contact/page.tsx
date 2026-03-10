@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   title: "Contact THOR Financial Technologies — Open the Black Box",
   description: "Schedule a consultation with THOR Financial Technologies to discuss model portfolios, ETFs, and advisor partnerships. Email: welcome@thoranalytics.com. Office: 327 W Pittsburgh St, Greensburg, PA 15601.",
   alternates: { canonical: "https://thorft.com/contact/" },
+  openGraph: {
+    title: "Contact THOR Financial Technologies",
+    description: "Schedule a consultation to discuss model portfolios, ETFs, and advisor partnerships.",
+    url: "https://thorft.com/contact/",
+    type: "website",
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Contact THOR Financial Technologies",
+    description: "Schedule a consultation to discuss model portfolios, ETFs, and advisor partnerships.",
+  },
 };
 
 export default function ContactPage() {

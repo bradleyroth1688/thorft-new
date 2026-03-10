@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Press & Media — THOR Financial Technologies in the News",
   description: "THOR Financial Technologies has been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles.",
   alternates: { canonical: "https://thorft.com/press/" },
+  openGraph: {
+    title: "Press & Media — THOR Financial Technologies",
+    description: "Featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE.",
+    url: "https://thorft.com/press/",
+    type: "website",
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Press & Media — THOR Financial Technologies",
+    description: "Featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE.",
+    images: ["https://thorft.com/images/whitepaper-og.png"],
+  },
 };
 
 function fmtDate(dateStr: string) {

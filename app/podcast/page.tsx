@@ -10,6 +10,19 @@ export const metadata: Metadata = {
   title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
   description: "Behind the Ticker is a podcast hosted by Brad Roth, Founder & CIO of THOR Financial Technologies. In-depth conversations with the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.",
   alternates: { canonical: "https://thorft.com/podcast/" },
+  openGraph: {
+    title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
+    description: "In-depth conversations with the people building today's most innovative ETFs. Hosted by Brad Roth, Founder & CIO of THOR Financial Technologies.",
+    url: "https://thorft.com/podcast/",
+    type: "website",
+    images: [{ url: "https://thorft.com/images/podcast-logo.jpg", width: 800, height: 800, alt: "Behind the Ticker Podcast" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Behind the Ticker Podcast with Brad Roth",
+    description: "ETF industry conversations — strategy, structure, and the stories behind each fund.",
+    images: ["https://thorft.com/images/podcast-logo.jpg"],
+  },
 };
 
 function thumbUrl(youtubeId: string) {

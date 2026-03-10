@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import newsletters from "@/data/newsletters.json";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { PodcastCTA } from "@/components/ui/PodcastCTA";
 import { breadcrumbSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
@@ -221,6 +222,9 @@ export default function NewsletterPage({
                 Read on Beehiiv →
               </a>
             </div>
+
+            {/* Podcast cross-link */}
+            <PodcastCTA className="mt-6" />
           </div>
         </div>
       </section>

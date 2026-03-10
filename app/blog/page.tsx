@@ -15,6 +15,13 @@ export const metadata: Metadata = {
       "Brad Roth's daily market brief. Systematic signals, ETF positioning, and what the data is actually showing.",
     url: "https://thorft.com/blog/",
     type: "website",
+    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "The Signal Newsletter" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Signal Newsletter Archive",
+    description: "Brad Roth's daily market brief. Systematic signals, ETF positioning, and what the data is actually showing.",
+    images: ["https://thorft.com/images/whitepaper-og.png"],
   },
 };
 

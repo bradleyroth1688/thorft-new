@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "Team — THOR Financial Technologies Leadership",
   description: "Meet the leadership team at THOR Financial Technologies. Brad Roth (Founder & CIO), Tyler Trimbath (Managing Partner & CCO), and Cameron Roth (Managing Partner). Decades of combined experience in quantitative finance, operations, and research.",
   alternates: { canonical: "https://thorft.com/team/" },
+  openGraph: {
+    title: "Team — THOR Financial Technologies Leadership",
+    description: "Meet Brad Roth (Founder & CIO), Tyler Trimbath (Managing Partner & CCO), and Cameron Roth (Managing Partner).",
+    url: "https://thorft.com/team/",
+    type: "website",
+    images: [{ url: "https://thorft.com/images/brad-roth-headshot.jpg", width: 800, height: 800, alt: "Brad Roth, Founder & CIO" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Team — THOR Financial Technologies",
+    description: "Meet the leadership team behind THOR Financial Technologies.",
+    images: ["https://thorft.com/images/brad-roth-headshot.jpg"],
+  },
 };
 
 export default function TeamPage() {

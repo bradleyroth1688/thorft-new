@@ -1,7 +1,7 @@
 // Pre-processed THOR International performance data
 // Source: thor-international-performance.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: January 31, 2026 (last complete month)
+// "As of" date: February 28, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -9,7 +9,7 @@ export interface MonthlyReturn {
   benchmark: number; // monthly return in %
 }
 
-// Monthly returns parsed from CSV (through Jan 2026 — excluding partial Feb 2026)
+// Monthly returns parsed from CSV (through Feb 2026 — excluding partial Feb 2026)
 export const monthlyReturns: MonthlyReturn[] = [
   { date: "2017-01-31", thorNet: 2.8264, benchmark: 3.0000 },
   { date: "2017-02-28", thorNet: 0.9786, benchmark: 2.6898 },
@@ -120,6 +120,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-11-30", thorNet: -0.5216, benchmark: 0.2134 },
   { date: "2025-12-31", thorNet: 3.6885, benchmark: 0.9154 },
   { date: "2026-01-31", thorNet: 7.7129, benchmark: 3.1122 },
+  { date: "2026-02-28", thorNet: 8.69, benchmark: 1.6432 },
 ];
 
 // ─── Helper functions ───
@@ -153,7 +154,7 @@ function getReturnsForPeriod(
 // ─── Standard Period Returns ───
 
 function calcStandardPeriods() {
-  const asOf = "2026-01-31";
+  const asOf = "2026-02-28";
   const data = monthlyReturns;
 
   // MTD = Jan 2026 return (single month)
@@ -168,24 +169,24 @@ function calcStandardPeriods() {
   const ytdThor = mtdThor;
   const ytdBench = mtdBench;
 
-  // 1 Year: Feb 2025 through Jan 2026 (12 months)
-  const oneYearThor = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-01-31", "thorNet"));
-  const oneYearBench = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-01-31", "benchmark"));
+  // 1 Year: Feb 2025 through Feb 2026 (12 months)
+  const oneYearThor = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-02-28", "thorNet"));
+  const oneYearBench = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-02-28", "benchmark"));
 
-  // 3 Year: Feb 2023 through Jan 2026 (36 months)
-  const threeYearCompThor = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-01-31", "thorNet"));
-  const threeYearCompBench = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-01-31", "benchmark"));
+  // 3 Year: Feb 2023 through Feb 2026 (36 months)
+  const threeYearCompThor = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-02-28", "thorNet"));
+  const threeYearCompBench = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-02-28", "benchmark"));
   const threeYearThor = annualizeReturn(threeYearCompThor, 36);
   const threeYearBench = annualizeReturn(threeYearCompBench, 36);
 
-  // 5 Year: Feb 2021 through Jan 2026 (60 months)
-  const fiveYearCompThor = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-01-31", "thorNet"));
-  const fiveYearCompBench = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-01-31", "benchmark"));
+  // 5 Year: Feb 2021 through Feb 2026 (60 months)
+  const fiveYearCompThor = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-02-28", "thorNet"));
+  const fiveYearCompBench = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-02-28", "benchmark"));
   const fiveYearThor = annualizeReturn(fiveYearCompThor, 60);
   const fiveYearBench = annualizeReturn(fiveYearCompBench, 60);
 
-  // Since Inception: Jan 2017 through Jan 2026
-  const siMonths = data.length; // all months through Jan 2026
+  // Since Inception: Jan 2017 through Feb 2026
+  const siMonths = data.length; // all months through Feb 2026
   const siCompThor = compoundReturns(data.map((d) => d.thorNet));
   const siCompBench = compoundReturns(data.map((d) => d.benchmark));
   const siThor = annualizeReturn(siCompThor, siMonths);

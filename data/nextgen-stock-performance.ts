@@ -1,7 +1,7 @@
 // Pre-processed THOR NextGen Stock performance data
 // Source: nextgen-stock.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: January 31, 2026 (last complete month)
+// "As of" date: February 28, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -9,7 +9,7 @@ export interface MonthlyReturn {
   benchmark: number; // monthly return in %
 }
 
-// Monthly returns parsed from CSV (through Jan 2026 — excluding partial Feb 2026)
+// Monthly returns parsed from CSV (through Feb 2026 — excluding partial Feb 2026)
 export const monthlyReturns: MonthlyReturn[] = [
   { date: "2020-01-31", thorNet: 16.51241834040491, benchmark: 3.4965106110748767 },
   { date: "2020-02-29", thorNet: 2.357501912311033, benchmark: 2.007700811409685 },
@@ -84,6 +84,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-11-30", thorNet: -10.930323739280057, benchmark: -10.451785679850866 },
   { date: "2025-12-31", thorNet: 0.31891534733869964, benchmark: -3.463882251832473 },
   { date: "2026-01-31", thorNet: 0.2784832328103226, benchmark: -2.6651070499473017 },
+  { date: "2026-02-28", thorNet: -0.30, benchmark: -2.6179 },
 ];
 
 // ─── Helper functions ───
@@ -116,7 +117,7 @@ function getReturnsForPeriod(
 // ─── Standard Period Returns ───
 
 function calcStandardPeriods() {
-  const asOf = "2026-01-31";
+  const asOf = "2026-02-28";
   const data = monthlyReturns;
 
   const mtdThor = data.find((d) => d.date === asOf)!.thorNet;
@@ -128,16 +129,16 @@ function calcStandardPeriods() {
   const ytdThor = mtdThor;
   const ytdBench = mtdBench;
 
-  const oneYearThor = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-01-31", "thorNet"));
-  const oneYearBench = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-01-31", "benchmark"));
+  const oneYearThor = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-02-28", "thorNet"));
+  const oneYearBench = compoundReturns(getReturnsForPeriod(data, "2025-02-01", "2026-02-28", "benchmark"));
 
-  const threeYearCompThor = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-01-31", "thorNet"));
-  const threeYearCompBench = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-01-31", "benchmark"));
+  const threeYearCompThor = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-02-28", "thorNet"));
+  const threeYearCompBench = compoundReturns(getReturnsForPeriod(data, "2023-02-01", "2026-02-28", "benchmark"));
   const threeYearThor = annualizeReturn(threeYearCompThor, 36);
   const threeYearBench = annualizeReturn(threeYearCompBench, 36);
 
-  const fiveYearCompThor = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-01-31", "thorNet"));
-  const fiveYearCompBench = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-01-31", "benchmark"));
+  const fiveYearCompThor = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-02-28", "thorNet"));
+  const fiveYearCompBench = compoundReturns(getReturnsForPeriod(data, "2021-02-01", "2026-02-28", "benchmark"));
   const fiveYearThor = annualizeReturn(fiveYearCompThor, 60);
   const fiveYearBench = annualizeReturn(fiveYearCompBench, 60);
 

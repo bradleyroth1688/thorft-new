@@ -371,7 +371,7 @@ export default function Sector100FactsheetPage() {
             Risk Statistics
           </h2>
           <p className="text-xs text-gray-500 mb-3">
-            Calculated from monthly returns, February 2005 – January 2026. Sharpe ratio assumes a 2.00% risk-free rate.
+            Calculated from monthly returns, February 2005 – February 2026. Sharpe ratio assumes a 2.00% risk-free rate.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">

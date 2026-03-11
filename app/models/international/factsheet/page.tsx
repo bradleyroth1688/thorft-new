@@ -380,7 +380,7 @@ export default function InternationalFactsheetPage() {
             Risk Statistics
           </h2>
           <p className="text-xs text-gray-500 mb-3">
-            Calculated from monthly returns, January 2017 – January 2026. Sharpe ratio
+            Calculated from monthly returns, January 2017 – February 2026. Sharpe ratio
             assumes a 2.00% risk-free rate.
           </p>
           <div className="overflow-x-auto">

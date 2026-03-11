@@ -5,17 +5,17 @@ import Image from "next/image";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Home", href: "/" },
   {
     name: "About",
     href: "/about",
     children: [
       { name: "Our Story", href: "/about" },
       { name: "Team", href: "/team" },
+      { name: "Press", href: "/press" },
     ],
   },
   {
-    name: "Models",
+    name: "Strategies",
     href: "/models",
     children: [
       { name: "All Models", href: "/models" },
@@ -25,16 +25,21 @@ const navigation = [
       { name: "Levered Index", href: "/models/levered-index" },
       { name: "NextGen Stock", href: "/models/nextgen-stock" },
       { name: "Dollar ALT", href: "/models/dollar-alt" },
+      { name: "Funds", href: "/funds" },
       { name: "Portfolio Analyzer", href: "/analyze" },
     ],
   },
-  { name: "Funds", href: "/funds" },
-  { name: "Podcast", href: "/podcast" },
-  { name: "The Signal", href: "/blog" },
-  { name: "Book", href: "/book" },
-  { name: "Press", href: "/press" },
+  {
+    name: "Insights",
+    href: "/insights",
+    children: [
+      { name: "The Signal", href: "/blog" },
+      { name: "Podcast", href: "/podcast" },
+      { name: "Articles", href: "/insights" },
+      { name: "Book", href: "/book" },
+    ],
+  },
   { name: "Resources", href: "/resources" },
-  { name: "Insights", href: "/insights" },
   { name: "Contact", href: "/contact" },
 ];
 

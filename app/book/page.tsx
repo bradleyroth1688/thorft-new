@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/ui/JsonLd";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { bookFaqs } from "@/data/faqs";
 import { bookSchema, breadcrumbSchema, faqSchema } from "@/data/schemas";
+import BookChapterForm from "@/components/BookChapterForm";
 
 export const metadata: Metadata = {
   title: "Little Reasons, Big Consequences — Why Your Investment Returns Stink | By Brad Roth",
@@ -67,12 +68,12 @@ export default function BookPage() {
                 By Brad Roth &middot; ~10,600 words &middot; 12 Chapters
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="#chapters" className="btn-primary">
+                <a href="#download" className="btn-primary">
+                  Download Chapter 1 Free
+                </a>
+                <a href="#chapters" className="btn-outline">
                   Explore Chapters
                 </a>
-                <Link href="/contact" className="btn-outline">
-                  Request a Copy
-                </Link>
               </div>
             </div>
             <div className="flex justify-center">
@@ -166,16 +167,12 @@ export default function BookPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-gradient-to-br from-gold-400 to-gold-500">
-        <div className="container-max mx-auto text-center">
-          <h2 className="text-3xl font-bold text-navy-800 mb-4">Interested in the Book?</h2>
-          <p className="text-lg text-navy-700/80 max-w-2xl mx-auto mb-8">
-            Contact us to request a copy or learn more about the ideas behind THOR&apos;s systematic investment philosophy.
-          </p>
-          <Link href="/contact" className="btn-secondary text-lg px-8 py-4">
-            Get in Touch
-          </Link>
+      {/* Chapter 1 Download */}
+      <section id="download" className="section-padding gradient-navy text-white">
+        <div className="container-max mx-auto">
+          <div className="max-w-md mx-auto bg-white/5 border border-white/10 rounded-2xl p-8">
+            <BookChapterForm />
+          </div>
         </div>
       </section>
     </>

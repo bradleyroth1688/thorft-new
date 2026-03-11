@@ -34,6 +34,7 @@ const navigation = [
   { name: "Book", href: "/book" },
   { name: "Press", href: "/press" },
   { name: "Resources", href: "/resources" },
+  { name: "Insights", href: "/insights" },
   { name: "Contact", href: "/contact" },
 ];
 

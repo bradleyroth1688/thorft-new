@@ -23,6 +23,7 @@ const footerNavigation = {
     { name: "Podcast", href: "/podcast" },
     { name: "Book", href: "/book" },
     { name: "Resources", href: "/resources" },
+    { name: "Insights", href: "/insights" },
     { name: "Disclosures", href: "/disclosures" },
   ],
 };

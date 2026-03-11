@@ -109,6 +109,12 @@ function matchYoutubeId(guest, company, ytReference, usedIds) {
     if (refTitleNorm.includes(guestNorm) && guestNorm.length > 5) {
       return ytId;
     }
+
+    // YouTube reference guest name appears in episode guest/title field
+    // (handles case where ep.guest is the full episode title, not just guest name)
+    if (guestNorm.includes(refGuestNorm) && refGuestNorm.length > 5) {
+      return ytId;
+    }
   }
 
   return null;

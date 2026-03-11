@@ -988,5 +988,21 @@
     "guest": "David Auerbach",
     "title": "David Auerbach - Behind the Ticker",
     "company": ""
+  },
+  "bt5s1PBlFmk": {
+    "youtubeId": "bt5s1PBlFmk",
+    "guest": "Michael Monaghan",
+    "company": "Founders ETFs",
+    "title": "Michael Monaghan - Founders ETFs",
+    "duration": 1782.0,
+    "isShort": false
+  },
+  "NHLtyYNKn3U": {
+    "youtubeId": "NHLtyYNKn3U",
+    "guest": "Sam Klar",
+    "company": "GMO",
+    "title": "Sam Klar - GMO",
+    "duration": 2100.0,
+    "isShort": false
   }
 }

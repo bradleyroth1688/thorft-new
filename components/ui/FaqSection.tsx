@@ -7,7 +7,7 @@ export function FaqSection({ faqs, title = "Frequently Asked Questions", classNa
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className={`section-padding ${className}`} itemScope itemType="https://schema.org/FAQPage">
+    <section className={`section-padding ${className}`}>
       <div className="container-max mx-auto">
         <h2 className="text-3xl font-bold text-navy-800 mb-8 text-center">{title}</h2>
         <div className="max-w-3xl mx-auto space-y-3">
@@ -15,16 +15,13 @@ export function FaqSection({ faqs, title = "Frequently Asked Questions", classNa
             <div
               key={i}
               className="bg-white rounded-xl border border-gray-200 overflow-hidden"
-              itemScope
-              itemProp="mainEntity"
-              itemType="https://schema.org/Question"
             >
               <button
                 className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors"
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
               >
-                <h3 className="text-lg font-semibold text-navy-800 pr-4" itemProp="name">
+                <h3 className="text-lg font-semibold text-navy-800 pr-4">
                   {faq.question}
                 </h3>
                 <svg
@@ -39,11 +36,8 @@ export function FaqSection({ faqs, title = "Frequently Asked Questions", classNa
               </button>
               <div
                 className={`overflow-hidden transition-all duration-300 ${open === i ? "max-h-96" : "max-h-0"}`}
-                itemScope
-                itemProp="acceptedAnswer"
-                itemType="https://schema.org/Answer"
               >
-                <p className="px-6 pb-5 text-gray-600 leading-relaxed" itemProp="text">
+                <p className="px-6 pb-5 text-gray-600 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

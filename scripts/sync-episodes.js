@@ -135,9 +135,11 @@ async function main() {
                      extractBetween(item, '<itunes:title>', '</itunes:title>') || '';
     const title = decodeEntities(rawTitle);
 
-    const parts = title.split(' - ');
-    const guest = parts[0]?.trim() || title;
-    const company = parts.slice(1).join(' - ').trim() || '';
+    // Try splitting by ' - ' first, then ' | ' for newer episode title format
+    let parts = title.split(' - ');
+    if (parts.length < 2) parts = title.split(' | ');
+    const guest = parts.length >= 2 ? parts[parts.length - 1]?.trim() : title;
+    const company = parts.length >= 2 ? parts.slice(0, -1).join(' | ').trim() : '';
 
     const descHtml = extractCDATA(item, 'description') ||
                      extractCDATA(item, 'content:encoded') || '';

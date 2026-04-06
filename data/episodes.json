@@ -7,21 +7,21 @@
     "duration": "32 min",
     "youtubeId": "d7DTqVBgUuo",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/18899836-150b-built-on-one-idea-why-cap-weighted-indexing-is-broken-rob-arnott-research-affiliates.mp3",
-    "description": "<p>Rob Arnott chose Wall Street over astrophysics, built his career applying scientific method to markets, and coined the fundamental indexing revolution that now runs $150B+ in assets. He breaks down the hidden drag inside cap-weighted indices -- stocks get added after they soar and deleted after they crash -- and explains how RAFI's rebalancing alpha has beaten cap-weighted value in three out of four years over 20 years live. We dig into RAUS (fundamental selection, cap weighting, 99.9% correlation to the S&P but 90bps ahead in six months at zero fees), the upcoming RAFI Growth index that beats Russell Growth by 4.5% annually over 30 years, and NYXT -- the deletions ETF that buys the names index funds are forced to dump. Plus: why the Mag 7 resembles the dot-com bubble, where the real bargains are, and the CFA monograph proving membership in an index has its privileges.</p>",
+    "description": "<p>Rob Arnott chose Wall Street over astrophysics, built his career applying scientific method to markets, and coined the fundamental indexing revolution that now runs $150B+ in assets. He breaks down the hidden drag inside cap-weighted indices -- stocks get added after they soar and deleted after they crash -- and explains how RAFI's rebalancing alpha has beaten cap-weighted value in three out of four years over 20 years live. We dig into RAUS (fundamental selection, cap weighting, 99.9% correlation to the S&P but 90bps ahead in six months at zero fees), the upcoming RAFI Growth index that beats Russell Growth by 4.5% annually over 30 years, and NIXT -- the deletions ETF that buys the names index funds are forced to dump. Plus: why the Mag 7 resembles the dot-com bubble, where the real bargains are, and the CFA monograph proving membership in an index has its privileges.</p>",
     "slug": "150b-built-on-one-idea-why-cap-weighted-indexing-is-broken-rob-arnott-research-a",
-    "summary": "Rob Arnott left astrophysics for Wall Street, applied the scientific method to markets, and built Research Affiliates into the firm behind $150B+ in fundamental index assets. He explains the structural drag inside cap-weighted indices — stocks get added after they soar and deleted after they crash — and how RAFI rebalancing alpha has beaten cap-weighted value in three out of four years over two decades live. He introduces RAUS, which uses fundamental selection with cap weighting, showing 99.9% correlation to the S&P but 90bps ahead in six months at zero fees. Plus the upcoming RAFI Growth index, NYXT (the deletions ETF), and why the Mag 7 looks like the dot-com bubble.",
+    "summary": "Rob Arnott left astrophysics for Wall Street, applied the scientific method to markets, and built Research Affiliates into the firm behind $150B+ in fundamental index assets. He explains the structural drag inside cap-weighted indices — stocks get added after they soar and deleted after they crash — and how RAFI rebalancing alpha has beaten cap-weighted value in three out of four years over two decades live. He introduces RAUS, which uses fundamental selection with cap weighting, showing 99.9% correlation to the S&P but 90bps ahead in six months at zero fees. Plus the upcoming RAFI Growth index, NIXT (the deletions ETF), and why the Mag 7 looks like the dot-com bubble.",
     "keyTopics": [
       "The Structural Drag Inside Cap-Weighted Indices",
       "RAFI Fundamental Indexing and Rebalancing Alpha",
       "RAUS: Fundamental Selection with Cap Weighting",
-      "NYXT: The Deletions ETF That Buys Index Dumps",
+      "NIXT: The Deletions ETF That Buys Index Dumps",
       "Mag 7 Concentration Risk and Dot-Com Parallels"
     ],
     "highlights": [
       "Cap-weighted indices systematically buy high and sell low — stocks get added after they soar and deleted after they crash, creating a structural performance drag",
       "RAFI rebalancing alpha has beaten cap-weighted value in three out of four years over 20 years of live performance",
       "RAUS has 99.9% correlation to the S&P 500 but ran 90 basis points ahead in its first six months — at zero fees",
-      "NYXT buys the names index funds are forced to dump — the deletions trade that exploits forced selling",
+      "NIXT buys the names index funds are forced to dump — the deletions trade that exploits forced selling",
       "The upcoming RAFI Growth index redefines growth by business expansion rather than valuation multiples, beating Russell Growth by 4.5% annually over 30 years in backtests"
     ]
   },

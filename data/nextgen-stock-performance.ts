@@ -1,7 +1,7 @@
 // Pre-processed THOR NextGen Stock performance data
 // Source: nextgen-stock.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: February 28, 2026 (last complete month)
+// "As of" date: March 31, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -85,6 +85,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-12-31", thorNet: 0.31891534733869964, benchmark: -3.463882251832473 },
   { date: "2026-01-31", thorNet: 0.2784832328103226, benchmark: -2.6651070499473017 },
   { date: "2026-02-28", thorNet: -0.30, benchmark: -2.6179 },
+  { date: "2026-03-31", thorNet: 0.29, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

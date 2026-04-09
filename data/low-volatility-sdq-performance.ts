@@ -1,7 +1,7 @@
 // Pre-processed THOR Low Volatility SDQ performance data
 // Source: low-volatility-sdq.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: February 28, 2026 (last complete month)
+// "As of" date: March 31, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -121,6 +121,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-12-31", thorNet: 0.48410872483757306, benchmark: 0.07716772751418244 },
   { date: "2026-01-31", thorNet: 1.5931963926400838, benchmark: 1.4737555503431032 },
   { date: "2026-02-28", thorNet: -0.29, benchmark: -0.8642 },
+  { date: "2026-03-31", thorNet: -4.93, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

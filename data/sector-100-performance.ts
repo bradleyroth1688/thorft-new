@@ -1,7 +1,7 @@
 // Pre-processed THOR Sector 100 performance data
 // Source: sector-100.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: February 28, 2026 (last complete month)
+// "As of" date: March 31, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -264,6 +264,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-12-31", thorNet: -0.5086096936340323, benchmark: 0.4103163961114209 },
   { date: "2026-01-31", thorNet: 5.540054926992832, benchmark: 3.403607970830902 },
   { date: "2026-02-28", thorNet: 6.06, benchmark: 3.4784 },
+  { date: "2026-03-31", thorNet: -4.11, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

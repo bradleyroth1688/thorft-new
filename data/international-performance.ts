@@ -1,7 +1,7 @@
 // Pre-processed THOR International performance data
 // Source: thor-international-performance.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: February 28, 2026 (last complete month)
+// "As of" date: March 31, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -121,6 +121,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-12-31", thorNet: 3.6885, benchmark: 0.9154 },
   { date: "2026-01-31", thorNet: 7.7129, benchmark: 3.1122 },
   { date: "2026-02-28", thorNet: 8.69, benchmark: 1.6432 },
+  { date: "2026-03-31", thorNet: -10.65, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

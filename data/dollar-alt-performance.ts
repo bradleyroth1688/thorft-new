@@ -1,7 +1,7 @@
 // Pre-processed THOR Dollar ALT performance data
 // Source: dollar-alt.csv
 // All returns are monthly percentages. NET returns used throughout.
-// "As of" date: February 28, 2026 (last complete month)
+// "As of" date: March 31, 2026 (last complete month)
 
 export interface MonthlyReturn {
   date: string; // YYYY-MM-DD
@@ -109,6 +109,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2025-12-31", thorNet: 1.4305423997499789, benchmark: 10.247223473665779 },
   { date: "2026-01-31", thorNet: 8.214618125323248, benchmark: 13.73532623646112 },
   { date: "2026-02-28", thorNet: 6.07, benchmark: 9.6989 },
+  { date: "2026-03-31", thorNet: -7.88, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

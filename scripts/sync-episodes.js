@@ -24,7 +24,7 @@ const YT_REF = path.join(__dirname, '..', 'data', 'youtube-ids-reference.json');
 
 function fetch(url) {
   return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'THOR-Podcast-Sync/1.0' } }, (res) => {
+    https.get(url, { agent: false, headers: { 'User-Agent': 'THOR-Podcast-Sync/1.0' } }, (res) => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         return fetch(res.headers.location).then(resolve).catch(reject);
       }

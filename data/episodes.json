@@ -5,10 +5,23 @@
     "guest": "Mo Sparks, Direxion",
     "company": "$55B Built on Tools for Traders",
     "duration": "33 min",
-    "youtubeId": "",
+    "youtubeId": "zKTjOQmvMjc",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19048382-55b-built-on-tools-for-traders-mo-sparks-direxion.mp3",
     "description": "<p>Mo is the Chief Product Officer at Direxion — and the person who first told Brad to start a podcast instead of a Netflix series. Years later, he's the guest. With a career that ran from Vanguard to the New York Stock Exchange to Raymond James before landing at Direxion, Mo brings a rare cross-sectional view of the ETF industry that few in the space can match.</p><p>In this episode, Mo breaks down how Direxion — now managing roughly $55 billion across 130+ ETFs — builds tools for active traders to express short-term views with leverage. We get into how the daily reset mechanism works and why holding these products beyond a single day changes the math, how the firm decides which single stock names deserve a leveraged wrapper (and whether to offer bull, bear, or both), and why most trader assets still flow overwhelmingly to the bull side. Mo also walks through the new Titan series concentrated basket concept, the right and wrong ways advisors are using these products in client portfolios, and where the category goes from here — including what the team has publicly filed and what they're watching in the tokenization space.</p><p>It's a candid conversation about a corner of the ETF market that is widely misunderstood and underappreciated as a legitimate portfolio tool.</p>",
-    "slug": "55b-built-on-tools-for-traders-mo-sparks-direxion"
+    "slug": "55b-built-on-tools-for-traders-mo-sparks-direxion",
+    "summary": "Mo Sparks runs product at Direxion, where the firm has built roughly $55 billion of AUM across 130-plus ETFs by giving active traders the tools to express short-term, high-conviction views with leverage. Sparks walks through how daily reset actually works on leveraged and inverse products, why the math changes the moment you hold past a single session, and how the team decides which single-stock names get a leveraged wrapper and whether to ship bull, bear, or both. He also unpacks the Titan series concentrated basket concept, the right and wrong ways advisors are deploying these products in client portfolios, and where the category goes next, including the public filings and the team's view on tokenization.",
+    "keyTopics": [
+      "How daily reset works on leveraged and inverse ETFs and why holding period changes the math",
+      "Direxion's framework for picking single-stock names and choosing bull, bear, or both",
+      "Why trader flows still skew overwhelmingly to the bull side",
+      "The Titan series concentrated basket concept",
+      "How advisors are actually using leveraged products inside client portfolios"
+    ],
+    "highlights": [
+      "Sparks traces his path from Vanguard to the NYSE to Raymond James and finally Direxion, the cross-sectional ETF career that shaped his product instincts (~3:00)",
+      "Why daily reset means a 2x product is not a 2x product over multi-day holds, and how Direxion thinks about educating traders on the math (~14:00)",
+      "The case for single-stock leveraged wrappers, why some names get both bull and bear, and where the new Titan concentrated baskets fit in (~24:00)"
+    ]
   },
   {
     "title": "The Multi-Manager ETF Built for Small Cap Alpha | Chris Tessin, Acuitas Investments",

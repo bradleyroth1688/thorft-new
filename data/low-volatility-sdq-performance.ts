@@ -122,6 +122,7 @@ export const monthlyReturns: MonthlyReturn[] = [
   { date: "2026-01-31", thorNet: 1.5931963926400838, benchmark: 1.4737555503431032 },
   { date: "2026-02-28", thorNet: -0.29, benchmark: -0.8642 },
   { date: "2026-03-31", thorNet: -4.93, benchmark: 0 },
+  { date: "2026-04-30", thorNet: 3.48, benchmark: 0 },
 ];
 
 // ─── Helper functions ───

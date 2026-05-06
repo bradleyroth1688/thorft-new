@@ -47,7 +47,7 @@ const funds = [
   },
   {
     ticker: "THMR",
-    name: "Thor Multi-Strategy Return ETF",
+    name: "Thor AdaptiveRisk Dynamic ETF",
     category: "Multi-Strategy — Sub-Advised",
   },
 ];

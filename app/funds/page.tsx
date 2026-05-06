@@ -45,6 +45,11 @@ const funds = [
     name: "Thor SDQ Index Rotation ETF",
     category: "Domestic Equity — Index Rotation",
   },
+  {
+    ticker: "THMR",
+    name: "Thor Multi-Strategy Return ETF",
+    category: "Multi-Strategy — Sub-Advised",
+  },
 ];
 
 export default function FundsPage() {
@@ -64,7 +69,7 @@ export default function FundsPage() {
             Active ETFs Powered by <span className="text-gold-400">THOR</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-            Two actively managed ETFs bringing THOR Financial Technologies&apos; proprietary signal processing and systematic risk management to the public markets.
+            Three actively managed ETFs bringing THOR Financial Technologies&apos; proprietary signal processing and systematic risk management to the public markets.
           </p>
         </div>
       </section>
@@ -72,7 +77,7 @@ export default function FundsPage() {
       {/* Funds */}
       <section className="section-padding bg-white">
         <div className="container-max mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {funds.map((fund) => (
               <div key={fund.ticker} className="bg-white rounded-2xl border-2 border-navy-100 p-8 hover:border-gold-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">

@@ -5,10 +5,23 @@
     "guest": "Steve Laipply, BlackRock iShares",
     "company": "The Entire US Bond Market in One Ticker",
     "duration": "31 min",
-    "youtubeId": "",
+    "youtubeId": "zS6o27cMcts",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19122084-the-entire-us-bond-market-in-one-ticker-steve-laipply-blackrock-ishares.mp3",
     "description": "<p>Steve Laipply is the Global Co-Head of iShares Fixed Income ETFs at BlackRock — overseeing roughly a trillion dollars in bond ETF assets. His path into the category started not with a job posting but with a moment of personal frustration trying to buy a two-year treasury note and a colleague suggesting he just buy a bond ETF instead. That curiosity led him to BGI, the iShares predecessor, where he joined a small team that helped build the bond ETF category from the ground up.</p><p>In this episode, Steve breaks down BTOT — the iShares Total US Fixed Income Market ETF — and makes the case for why the Bloomberg Aggregate, for all its utility, leaves meaningful parts of the bond market on the table. We get into what BTOT includes that the AG doesn't, how to think about duration extension in a world where money markets are still yielding in the high threes, and why Steve believes bond ETF prices function as leading indicators during market stress. He also addresses the individual bond vs. ETF debate head-on, explains how BTOT and BlackRock's active BINC fund are designed to work together, and closes with career advice that's more useful than most.</p>",
-    "slug": "the-entire-us-bond-market-in-one-ticker-steve-laipply-blackrock-ishares"
+    "slug": "the-entire-us-bond-market-in-one-ticker-steve-laipply-blackrock-ishares",
+    "summary": "Steve Laipply, Global Co-Head of iShares Fixed Income ETFs at BlackRock, walks through BTOT, the iShares Total US Fixed Income Market ETF, and the case for why the Bloomberg Aggregate leaves meaningful slices of the U.S. bond market off the table. He explains what BTOT captures that the Agg doesn't, how to frame duration extension when money markets still yield in the high threes, and why bond ETF prices have functioned as leading indicators during market stress. Steve also addresses the individual bond vs. ETF debate, walks through how BTOT and the active BINC fund are built to work together, and reflects on how the product has held up since launching late last year.",
+    "keyTopics": [
+      "The structural gaps in the Bloomberg Aggregate and what BTOT captures beyond it",
+      "Duration extension when money market yields are still in the high threes",
+      "Why bond ETF prices function as leading indicators during stress, including the LQD case study",
+      "The individual bond vs. ETF debate and when each approach actually makes sense",
+      "BTOT as a beta anchor for active fixed income strategies like BINC"
+    ],
+    "highlights": [
+      "Steve recounts the origin story of bond ETFs at BGI and how a personal moment of frustration trying to buy a single Treasury note pulled him into the category (~3:00)",
+      "On the Bloomberg Aggregate leaving meaningful slices of the U.S. bond market unrepresented, and how BTOT was constructed to capture the parts the Agg can't (~12:00)",
+      "Research showing that during the March 2020 stress event, LQD's ETF price discovery was the more accurate signal and the underlying OTC market converged toward the ETF (~22:00)"
+    ]
   },
   {
     "title": "The Only Pure Play Drone ETF on the Market | Bill Birmingham, REX Shares",

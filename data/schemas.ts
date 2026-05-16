@@ -11,7 +11,7 @@ export function organizationSchema() {
     logo: "https://thorft.com/images/thor-logo-white.png",
     description:
       "THOR Financial Technologies is a registered investment adviser providing technology-driven, systematic model portfolios and actively managed ETFs for registered investment advisors. The firm uses proprietary signal processing technology to manage risk across all investment strategies.",
-    foundingDate: "2009",
+    foundingDate: "2020",
     founder: personSchema(),
     address: {
       "@type": "PostalAddress",

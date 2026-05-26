@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://thorft.com/</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://thorft.com/about/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://thorft.com/team/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thorft.com/brad-roth/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://thorft.com/models/</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thorft.com/podcast/</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://thorft.com/blog/</loc><lastmod>2026-05-24</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://thorft.com/press/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/resources/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/funds/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thorft.com/contact/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/book/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/disclosures/</loc><lastmod>2026-05-24</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://thorft.com/analyze/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://thorft.com/models/sector-100/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/sector-100/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/models/low-volatility-sdq/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/low-volatility-sdq/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/models/international/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/international/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/models/nextgen-stock/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/nextgen-stock/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/models/levered-index/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/levered-index/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://thorft.com/models/dollar-alt/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://thorft.com/models/dollar-alt/factsheet/</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://thorft.com/about/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://thorft.com/team/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thorft.com/brad-roth/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://thorft.com/models/</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thorft.com/podcast/</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://thorft.com/blog/</loc><lastmod>2026-05-26</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://thorft.com/press/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/resources/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/funds/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thorft.com/contact/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/book/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/disclosures/</loc><lastmod>2026-05-26</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://thorft.com/analyze/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://thorft.com/models/sector-100/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/sector-100/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/models/low-volatility-sdq/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/low-volatility-sdq/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/models/international/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/international/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/models/nextgen-stock/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/nextgen-stock/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/models/levered-index/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/levered-index/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/models/dollar-alt/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://thorft.com/models/dollar-alt/factsheet/</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/blog/yields-pull-in-hard-utilities-carries-the-grid-side/</loc><lastmod>2026-05-26</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://thorft.com/blog/the-dow-closed-a-record-happy-memorial-day/</loc><lastmod>2026-05-24</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://thorft.com/blog/yields-pull-back-real-estate-holds-the-ai-build-s-landlthe-10-year-eases-to-4-56-the-long-bond-rests/</loc><lastmod>2026-05-22</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://thorft.com/blog/crude-reloads-through-one-hundred-materials-holds-the-inputs-side/</loc><lastmod>2026-05-21</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
@@ -122,6 +123,7 @@
   <url><loc>https://thorft.com/blog/the-signal-monday-february-2-2026/</loc><lastmod>2026-02-02</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://thorft.com/blog/the-weekly-signal-sunday-edition/</loc><lastmod>2026-02-01</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
   <url><loc>https://thorft.com/blog/january-s-over-the-rotation-nobody-repositioned-for/</loc><lastmod>2026-01-31</lastmod><changefreq>never</changefreq><priority>0.6</priority></url>
+  <url><loc>https://thorft.com/podcast/40-years-of-active-management-now-in-an-etf-matt-camuso-baron-capital/</loc><lastmod>2026-05-24</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
   <url><loc>https://thorft.com/podcast/spacex-in-an-etf-here-s-how-they-did-it-yuri-khodjamirian-tema-etfs/</loc><lastmod>2026-05-17</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
   <url><loc>https://thorft.com/podcast/the-entire-us-bond-market-in-one-ticker-steve-laipply-blackrock-ishares/</loc><lastmod>2026-05-10</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>
   <url><loc>https://thorft.com/podcast/the-only-pure-play-drone-etf-on-the-market-bill-birmingham-rex-shares/</loc><lastmod>2026-05-03</lastmod><changefreq>never</changefreq><priority>0.5</priority></url>

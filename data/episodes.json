@@ -5,10 +5,23 @@
     "guest": "Jon Clements, Market Desk",
     "company": "Why Most Momentum Funds Are Looking at the Wrong Data",
     "duration": "32 min",
-    "youtubeId": "",
+    "youtubeId": "NJ4Ot_ql5L8",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19242650-why-most-momentum-funds-are-looking-at-the-wrong-data-jon-clements-market-desk.mp3",
     "description": "<p>Jon Clements built his career in equity research at Goldman Sachs, JP Morgan, and Guggenheim before co-founding Market Desk Research with his brother Matt in 2020. What started as a research and model portfolio platform serving 200 of the largest wealth managers in the country eventually became an ETF issuer — and FMTM, the Focused Momentum ETF, is the result.</p><p>In this episode, Jon breaks down what actually makes FMTM different from legacy momentum products like MTUM and SPMO. We get into why Market Desk uses a six-month lookback instead of the academic standard of twelve, why the algorithm scores the quality and consistency of a stock's price path rather than just its trailing return, and why a concentrated, equal-weighted portfolio of 30 to 50 names ends up with only about 2% overlap with the S&P 500. Jon also takes on the skeptic's question head-on — isn't momentum just performance chasing? — and explains how a fund that stays fully invested with no cash, no shorts, and no hedging still manages risk through holdings selection in a drawdown.</p><p>It's a genuinely substantive conversation about factor investing, what price data really tells you, and how to build a momentum strategy that behaves like a momentum strategy.</p>",
-    "slug": "why-most-momentum-funds-are-looking-at-the-wrong-data-jon-clements-market-desk"
+    "slug": "why-most-momentum-funds-are-looking-at-the-wrong-data-jon-clements-market-desk",
+    "summary": "Jon Clements, co-founder of MarketDesk Research, joins Brad Roth to break down FMTM, the firm's Focused U.S. Momentum ETF, and the research that says most momentum products are reading the wrong data. He explains why MarketDesk uses a six-month lookback that scores the quality and consistency of a stock's price path rather than the academic twelve-month trailing return, and how that produces an equal-weighted thirty-to-fifty stock portfolio with roughly two percent overlap with the S&P 500. The conversation also takes on the obvious skeptic's question, whether momentum is just performance chasing, and how a fully invested strategy with no cash or hedging manages risk through which names it holds.",
+    "keyTopics": [
+      "Why a six-month momentum lookback beats the academic twelve-month standard",
+      "Scoring the quality and consistency of a stock's price path instead of raw trailing return",
+      "The screens behind FMTM: a liquidity filter, a quality cut to roughly 300 names, and an equal-weighted 30-to-50 stock book",
+      "Whether momentum is just performance chasing, and Jon's answer to the skeptic",
+      "Managing risk through holdings selection when a fund stays fully invested with no cash and no hedges"
+    ],
+    "highlights": [
+      "Jon on why a twelve-month lookback bakes in stale data and a six-month window reads the trend that is actually in force",
+      "The roughly two percent overlap with the S&P 500 and what that means for an investor who already owns the index",
+      "Why a fully invested book with no cash and no shorts can still manage a drawdown through the names it chooses to hold"
+    ]
   },
   {
     "title": "40 Years of Active Management, Now in an ETF | Matt Camuso, Baron Capital",

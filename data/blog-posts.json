@@ -1,5 +1,27 @@
 [
   {
+    "slug": "jerry-prior-mount-lucas",
+    "title": "A Forty-Year-Old Index That Still Outperforms in a Crisis | Jerry Prior, Mount Lucas",
+    "date": "2026-06-07",
+    "metaDescription": "Jerry Prior, CIO of Managed Futures Strategies and COO at Mount Lucas Management, breaks down managed futures and the MLM Index, the price-based benchmark built in 1988 that still runs largely unchanged inside KMLM: why the firm keeps equity index futures out of the book, why it refuses volatility targeting, why trend following earns its place when everything else is breaking, and why 2022 showed the 60/40 can no longer lean on bonds as its crisis hedge.",
+    "guest": "Jerry Prior",
+    "company": "Mount Lucas Management",
+    "podcastSlug": "a-forty-year-old-index-that-still-outperforms-in-a-crisis-jerry-prior-mount-luca",
+    "youtubeId": "ya0IHVNYpR8",
+    "duration": "34 min",
+    "buzzsproutId": "19273821",
+    "topics": [
+      "Managed Futures",
+      "Trend Following",
+      "Portfolio Diversification",
+      "Macro",
+      "Risk Management"
+    ],
+    "wordCount": 446,
+    "needsRevision": false,
+    "content": "<p>Jerry Prior has spent nearly thirty years at Mount Lucas Management, a firm that traces its roots to Commodities Corp, the shop that launched Paul Tudor Jones, Louis Bacon, and a good chunk of the modern macro industry. He runs the firm's managed futures strategies as CIO and serves as COO. Mount Lucas built the MLM Index in 1988 to give institutions a price-based benchmark for managed futures, the first of its kind, and nearly four decades later the strategy still runs largely the way it did on day one. Today it sits inside KMLM, the KraneShares Mount Lucas Managed Futures Index Strategy ETF.</p><p>The case Jerry makes is contrarian by design. In a category obsessed with optimization, Mount Lucas treats \"we haven't changed it\" as the whole point. The sector weighting has been stable since 2005. There is no volatility targeting, which is the lever almost every competitor pulls. And there is deliberately no equity index exposure in the book, because the job of the strategy is to do something different from the stocks an advisor already owns, not to quietly correlate with them.</p><p>We get into why managed futures exists as an asset class in the first place. Underneath the price action there is a real economic risk transfer happening, producers and consumers hedging exposure, and trend following is the most efficient way to stand on the other side of those trades and collect the premium. Jerry's argument is that trend works best precisely when everything else is breaking, which is the only time a diversifier actually earns its seat.</p><p>Then there is 2022, the cleanest case study managed futures has had in years. Long commodities, short bonds, positive in a year the 60/40 came apart. Jerry's point is bigger than one good year. Bonds can no longer be assumed to be the crisis hedge that a generation of portfolios was built around, and if that assumption is broken, an advisor needs another diversifier that actually shows up when equities and fixed income fall together. He thinks early 2026 is starting to rhyme with that setup.</p><p>The part most managed futures conversations skip is the one Jerry leans on hardest: liquidity is itself a form of alpha. A diversifying strategy you can actually trade, in size, on the day you need it, is worth more than a slightly better backtest you cannot get out of. For the advisor building the portfolio, the wrapper and the liquidity are not a footnote. They are the edge.</p><p>If you have been trying to figure out where managed futures fits in a modern book, or why a benchmark from 1988 still works, this one is worth your time.</p>"
+  },
+  {
     "slug": "jon-clements-marketdesk",
     "title": "Why Most Momentum Funds Are Looking at the Wrong Data | Jon Clements, MarketDesk",
     "date": "2026-05-31",

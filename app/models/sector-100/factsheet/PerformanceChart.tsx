@@ -12,6 +12,15 @@ import {
 } from "recharts";
 import { monthlyReturns } from "@/data/sector-100-performance";
 
+// Anchor the $10K starting point one month before the first data month.
+// Derived from the data file — zero edits needed when months are appended.
+const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const [firstYear, firstMonth] = monthlyReturns[0].date.split("-").map(Number);
+const anchorYear = firstMonth === 1 ? firstYear - 1 : firstYear;
+const anchorMonth = firstMonth === 1 ? 12 : firstMonth - 1;
+const ANCHOR_DATE = `${anchorYear}-${String(anchorMonth).padStart(2, "0")}-01`;
+const ANCHOR_LABEL = `${MONTH_ABBR[anchorMonth - 1]} ${anchorYear}`;
+
 // Build cumulative growth-of-$10K data
 function buildGrowthData() {
   let thorValue = 10000;
@@ -19,7 +28,7 @@ function buildGrowthData() {
 
   // Start with the initial point before any returns
   const data: { date: string; label: string; thor: number; bench: number }[] = [
-    { date: "2005-01-31", label: "Jan 2005", thor: 10000, bench: 10000 },
+    { date: ANCHOR_DATE, label: ANCHOR_LABEL, thor: 10000, bench: 10000 },
   ];
 
   for (const m of monthlyReturns) {
@@ -48,7 +57,7 @@ const growthData = buildGrowthData();
 
 // Only show year labels on x-axis (Jan of each year + the final point)
 function formatXAxis(date: string) {
-  if (date === "2005-01-31") return "2005";
+  if (date === ANCHOR_DATE) return String(firstYear);
   const [year, month] = date.split("-");
   if (month === "01") return year;
   return "";

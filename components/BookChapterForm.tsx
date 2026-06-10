@@ -39,7 +39,7 @@ export default function BookChapterForm() {
         </div>
         <h3 className="text-xl font-bold mb-2">You&apos;re All Set</h3>
         <p className="text-gray-300 mb-4 text-sm">
-          Chapter 1 should be open in a new tab. We also sent a copy to your email.
+          Chapter 1 should be open in a new tab. Use the button below if it did not.
         </p>
         <p className="text-gray-400 text-xs mb-4">Didn&apos;t open?</p>
         <a

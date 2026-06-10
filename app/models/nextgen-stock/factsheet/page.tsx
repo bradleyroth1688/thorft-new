@@ -7,14 +7,16 @@ import {
   riskStats,
   monthlyReturns,
 } from "@/data/nextgen-stock-performance";
+import { AdvisorGate } from "@/components/AdvisorGate";
 import { PrintButton } from "./PrintButton";
 import PerformanceChart from "./PerformanceChart";
 
 export const metadata: Metadata = {
   title: "THOR NextGen Stock Model Portfolio Factsheet",
   description:
-    "Hypothetical performance factsheet for the THOR NextGen Stock model portfolio. S&P 500 sector-based equal-weight strategy with proprietary risk management.",
+    "Hypothetical performance factsheet for the THOR NextGen Stock model portfolio. Concentrated portfolio of 8–12 high-growth, disruptive stocks with systematic de-risking.",
   alternates: { canonical: "https://thorft.com/models/nextgen-stock/factsheet/" },
+  robots: { index: false },
 };
 
 // ─── Formatting helpers ───
@@ -92,6 +94,7 @@ function StatRow({
 
 export default function Sector100FactsheetPage() {
   return (
+    <AdvisorGate>
     <article className="min-h-screen bg-white print:bg-white">
       {/* ── Header ── */}
       <header className="gradient-navy text-white py-12 md:py-16 px-4 print:py-8 print:bg-navy-800">
@@ -115,7 +118,7 @@ export default function Sector100FactsheetPage() {
               </p>
             </div>
             <div className="text-right text-sm text-gray-300 space-y-1 mt-2">
-              <p className="text-white font-semibold">As of January 31, 2026</p>
+              <p className="text-white font-semibold">As of April 30, 2026</p>
             </div>
           </div>
 
@@ -130,7 +133,7 @@ export default function Sector100FactsheetPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-3">
               <div className="text-xs text-gray-400 uppercase tracking-wider">Inception</div>
-              <div className="text-sm font-semibold mt-1">February 2005</div>
+              <div className="text-sm font-semibold mt-1">January 2020</div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-3">
               <div className="text-xs text-gray-400 uppercase tracking-wider">Management Fee</div>
@@ -162,7 +165,7 @@ export default function Sector100FactsheetPage() {
             Growth of $10,000
           </h2>
           <p className="text-sm text-gray-500 mb-4">
-            Hypothetical growth of a $10,000 investment from February 2005 through January 31, 2026. Net of 0.49% management fee.
+            Hypothetical growth of a $10,000 investment from January 2020 through April 30, 2026. Net of 0.49% management fee.
           </p>
           <div className="bg-white border border-gray-200 rounded-xl p-4 md:p-6">
             <PerformanceChart />
@@ -336,7 +339,7 @@ export default function Sector100FactsheetPage() {
             Growth of $10,000
           </h2>
           <p className="text-sm text-gray-500 mb-4">
-            Hypothetical growth of a $10,000 investment from February 2005 through January 31, 2026.
+            Hypothetical growth of a $10,000 investment from January 2020 through April 30, 2026.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
             <div className="bg-navy-800 rounded-xl p-6 text-white text-center">
@@ -370,7 +373,7 @@ export default function Sector100FactsheetPage() {
             Risk Statistics
           </h2>
           <p className="text-xs text-gray-500 mb-3">
-            Calculated from monthly returns, February 2005 – February 2026. Sharpe ratio assumes a 2.00% risk-free rate.
+            Calculated from monthly returns, January 2020 – April 2026. Sharpe ratio assumes a 2.00% risk-free rate.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
@@ -550,5 +553,6 @@ export default function Sector100FactsheetPage() {
         <PrintButton />
       </div>
     </article>
+    </AdvisorGate>
   );
 }

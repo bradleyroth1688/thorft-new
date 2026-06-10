@@ -53,7 +53,7 @@ const models = [
 
 const stats = [
   { value: "6", label: "Model Portfolios" },
-  { value: "2", label: "Active ETFs" },
+  { value: "3", label: "Active ETFs" },
   { value: "5+ Years", label: "Live Track Record" },
   { value: "100%", label: "Cash Capability" },
 ];
@@ -147,7 +147,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-navy-800 mb-3">Active ETFs</h3>
                 <p className="text-gray-600">
-                  Two actively managed ETFs bringing THOR&apos;s systematic methodology to the public markets, available to advisors and investors on all major platforms.
+                  Three actively managed ETFs bringing THOR&apos;s systematic methodology to the public markets, available to advisors and investors on all major platforms.
                 </p>
               </div>
               <div className="card text-center">
@@ -204,7 +204,7 @@ export default function HomePage() {
               <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">Free Tool</p>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">See How These Models Fit Your Portfolio</h3>
               <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-                Upload your current holdings and get an instant risk analysis — plus see how adding THOR models could improve your risk-adjusted returns.
+                Upload your current holdings and get an instant risk analysis — plus see how THOR models may fit your portfolio.
               </p>
               <Link href="/analyze" className="btn-primary btn-lg">
                 Analyze My Portfolio →
@@ -226,7 +226,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-navy-800 mb-1">Proprietary Signal Processing</h3>
-                      <p className="text-gray-600">Our technology detects regime changes in real time, allowing portfolios to adapt before — not after — risk events unfold.</p>
+                      <p className="text-gray-600">Our technology detects regime changes in real time, allowing portfolios to adapt as market regimes change.</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -353,7 +353,7 @@ export default function HomePage() {
             <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">Free Portfolio Analysis</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How Risky Is Your Portfolio?</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-              Get an instant risk score for your portfolio and see how THOR&apos;s systematic models can improve your risk-adjusted returns.
+              Get an instant risk score and see how THOR&apos;s systematic models could complement your portfolio.
             </p>
             <Link href="/analyze" className="btn-primary btn-lg">Analyze My Portfolio →</Link>
           </div>

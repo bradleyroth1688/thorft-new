@@ -136,9 +136,9 @@ export default function CaptureStep({ onReset, onBack }: Props) {
       <div className="card bg-navy-800 text-white p-8 mb-12">
         <h3 className="text-xl font-bold text-gold-500 mb-4">About THOR&apos;s Approach</h3>
         <p className="text-gray-300 mb-6">
-          THOR models use active risk management to provide downside protection during market
-          corrections while participating in market upside. Our systematic approach has helped
-          investors achieve better risk-adjusted returns since 2019.
+          THOR models use active risk management that seeks to mitigate downside during market
+          corrections while participating in market upside. THOR has been running its systematic
+          strategies live since 2020.
         </p>
         <div className="flex flex-wrap gap-4">
           <a href="/funds" className="btn-outline text-gold-500 border-gold-500 hover:bg-gold-500 hover:text-navy-900">

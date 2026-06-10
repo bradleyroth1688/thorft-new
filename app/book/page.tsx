@@ -103,7 +103,7 @@ export default function BookPage() {
               <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-semibold text-navy-800 mb-3">Why Rules Beat Intelligence</h3>
               <p className="text-gray-600">
-                Smart people make dumb investment decisions. Learn why systematic approaches outperform intuition every time.
+                Smart people make dumb investment decisions. Learn why systematic approaches beat emotional decision-making over time.
               </p>
             </div>
             <div className="card text-center">
@@ -157,7 +157,7 @@ export default function BookPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">About the Author</h2>
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Brad Roth is the founder and CIO of THOR Financial Technologies. With over two decades of experience in quantitative finance and signal processing, he developed THOR&apos;s proprietary methodology for detecting market regime changes. He hosts the &ldquo;Behind the Ticker&rdquo; podcast with 94+ episodes interviewing ETF industry leaders.
+              Brad Roth is the founder and CIO of THOR Financial Technologies. With over two decades of experience in quantitative finance and signal processing, he developed THOR&apos;s proprietary methodology for detecting market regime changes. He hosts the &ldquo;Behind the Ticker&rdquo; podcast with 110+ episodes interviewing ETF industry leaders.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/team" className="btn-primary">Meet Brad</Link>

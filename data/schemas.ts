@@ -56,7 +56,7 @@ export function personSchema() {
     familyName: "Roth",
     jobTitle: "Founder & Chief Investment Officer",
     description:
-      "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Greensburg, Pennsylvania (Pittsburgh area). With over two decades of experience in quantitative finance, he built THOR's proprietary signal processing methodology for detecting market regime changes. He hosts the Behind the Ticker podcast (94+ episodes, partnered with ETF.com) and authored 'Little Reasons, Big Consequences.' Graduate of Duquesne University, Pittsburgh.",
+      "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Greensburg, Pennsylvania (Pittsburgh area). With over two decades of experience in quantitative finance, he built THOR's proprietary signal processing methodology for detecting market regime changes. He hosts the Behind the Ticker podcast (110+ episodes, partnered with ETF.com) and authored 'Little Reasons, Big Consequences.' Graduate of Duquesne University, Pittsburgh.",
     image: "https://thorft.com/images/brad-roth-headshot.jpg",
     url: "https://thorft.com/brad-roth/",
     worksFor: {

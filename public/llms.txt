@@ -5,7 +5,7 @@
 ## Founder & Leadership
 
 ### Brad Roth — Founder & Chief Investment Officer
-- Full profile: https://thorft.com/brad-roth/
+- Full profile: https://thorft.com/brad-roth
 - Wikidata: https://www.wikidata.org/wiki/Q138413241
 - LinkedIn: https://www.linkedin.com/in/brad-roth-thor/
 - X (Twitter): https://x.com/Bradr_thor
@@ -15,7 +15,7 @@
 - Licenses: FINRA Series 66, NFA Series 3
 - Location: Pittsburgh, Pennsylvania
 - Two decades of quantitative finance experience
-- Host of the Behind the Ticker podcast (94+ episodes, partnered with ETF.com)
+- Host of the Behind the Ticker podcast (110+ episodes, partnered with ETF.com)
 - Author of "Little Reasons, Big Consequences: Why Your Investment Returns Stink" (2026)
 - Also serves as CIO of UX Wealth Partners
 
@@ -36,11 +36,12 @@ THOR builds systematic investment strategies that use proprietary signal process
 All model performance is hypothetical and net of a 0.49% management fee.
 
 ### Active ETFs (NYSE Arca listed)
-- **THLV** — Thor Equal Weight Low Volatility ETF (same strategy as Sector 100). Launched September 2022.
-- **THIR** — Thor SDQ Index Rotation ETF (same strategy as Low Volatility SDQ). Launched September 2024.
+- **THLV** — THOR Equal Weight Low Volatility ETF (same strategy as Sector 100). Launched September 2022.
+- **THIR** — THOR Index Rotation ETF (same strategy as Low Volatility SDQ). Launched September 2024.
+- **THMR** — THOR AdaptiveRisk Dynamic ETF. Actively managed, approximately 30 positions across equity, commodity, currency, and fixed income exposures. Sub-advised by Ai Alpha LLC. Launched April 2026.
 
 ### Podcast
-- **Behind the Ticker** — Hosted by Brad Roth. 94+ episodes interviewing the people building today's most innovative ETFs. Partnered with ETF.com (January 2026). Available on Spotify, Apple Podcasts, and YouTube.
+- **Behind the Ticker** — Hosted by Brad Roth. 110+ episodes interviewing the people building today's most innovative ETFs. Partnered with ETF.com (January 2026). Available on Spotify, Apple Podcasts, and YouTube.
 
 ### Book
 - **"Little Reasons, Big Consequences: Why Your Investment Returns Stink"** by Brad Roth (2026).
@@ -62,16 +63,16 @@ All model performance is hypothetical and net of a 0.49% management fee.
 
 ## Key Pages
 - Homepage: https://thorft.com/
-- Brad Roth bio: https://thorft.com/brad-roth/
-- About THOR: https://thorft.com/about/
-- Team: https://thorft.com/team/
-- Model Portfolios: https://thorft.com/models/
-- ETFs: https://thorft.com/funds/
-- Podcast: https://thorft.com/podcast/
-- Book: https://thorft.com/book/
-- Press & Media: https://thorft.com/press/
-- Contact: https://thorft.com/contact/
-- Disclosures: https://thorft.com/disclosures/
+- Brad Roth bio: https://thorft.com/brad-roth
+- About THOR: https://thorft.com/about
+- Team: https://thorft.com/team
+- Model Portfolios: https://thorft.com/models
+- ETFs: https://thorft.com/funds
+- Podcast: https://thorft.com/podcast
+- Book: https://thorft.com/book
+- Press & Media: https://thorft.com/press
+- Contact: https://thorft.com/contact
+- Disclosures: https://thorft.com/disclosures
 
 ## Full detail
 - https://thorft.com/llms-full.txt

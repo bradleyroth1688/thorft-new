@@ -88,7 +88,7 @@ export default function TeamPage() {
               <div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-4">Background</h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                  Brad Roth brings over two decades of experience in quantitative finance and signal processing to his role as Founder and Chief Investment Officer of THOR Financial Technologies. His career has been defined by a singular pursuit: proving that systematic, technology-driven investing consistently outperforms emotionally-driven approaches.
+                  Brad Roth brings over two decades of experience in quantitative finance and signal processing to his role as Founder and Chief Investment Officer of THOR Financial Technologies. His career has been defined by a singular pursuit: building systematic, technology-driven strategies designed to remove the emotional and behavioral errors that erode returns.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Brad built THOR&apos;s proprietary methodology from the ground up, applying signal processing techniques — traditionally used in telecommunications and defense — to financial markets. The result is a suite of systematic strategies that detect market regime changes and adapt portfolio positioning in real time.
@@ -98,7 +98,7 @@ export default function TeamPage() {
               <div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-4">THOR&apos;s Evolution</h3>
                 <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                  What started as a research project into market signal processing has grown into a comprehensive investment platform serving RIA advisors nationwide. Under Brad&apos;s leadership, THOR has launched six distinct model portfolios and two actively managed ETFs.
+                  What started as a research project into market signal processing has grown into a comprehensive investment platform serving RIA advisors nationwide. Under Brad&apos;s leadership, THOR has launched six distinct model portfolios and three actively managed ETFs.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Each strategy reflects Brad&apos;s core philosophy: manage risk first, then compound capital. The ability for THOR&apos;s models to move to 100% cash during periods of elevated systemic risk is a direct expression of this conviction — and a capability most competing approaches lack.
@@ -115,7 +115,7 @@ export default function TeamPage() {
               <div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-4">Author</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Brad is the author of <em>&ldquo;Little Reasons, Big Consequences: Why Your Investment Returns Stink&rdquo;</em> — a 12-chapter exploration of the behavioral mistakes that destroy investor wealth. The book distills decades of experience into actionable insights, making the case that systematic rules consistently outperform human intuition in portfolio management.
+                  Brad is the author of <em>&ldquo;Little Reasons, Big Consequences: Why Your Investment Returns Stink&rdquo;</em> — a 12-chapter exploration of the behavioral mistakes that destroy investor wealth. The book distills decades of experience into actionable insights, making the case that systematic rules help investors avoid the behavioral errors that erode returns.
                 </p>
               </div>
 

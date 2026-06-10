@@ -18,7 +18,7 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "What ETFs does THOR manage?",
-    answer: "THOR manages two actively managed ETFs: THLV (Thor Equal Weight Low Volatility ETF), which follows the Sector 100 strategy, and THIR (Thor SDQ Index Rotation ETF), which follows the Low Volatility SDQ strategy.",
+    answer: "THOR manages three actively managed ETFs: THLV (THOR Equal Weight Low Volatility ETF), which follows the Sector 100 strategy; THIR (THOR Index Rotation ETF), which follows the Low Volatility SDQ strategy; and THMR (THOR AdaptiveRisk Dynamic ETF), an actively managed multi-asset strategy sub-advised by Ai Alpha LLC.",
   },
   {
     question: "What is the management fee for THOR's model portfolios?",
@@ -26,15 +26,15 @@ export const homeFaqs: FAQ[] = [
   },
   {
     question: "Can THOR's models go to 100% cash?",
-    answer: "Yes. A key differentiator of THOR's approach is that all model portfolios can move entirely to short-duration treasuries (effectively 100% cash) when systemic risk is elevated across the board. Most competing strategies cannot or will not make this move.",
+    answer: "Yes. A key differentiator of THOR's approach is that all model portfolios can move entirely to short-duration treasuries (effectively 100% cash) when systemic risk is elevated across the board. Few competing strategies make this move.",
   },
   {
     question: "Who is Brad Roth?",
-    answer: "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies. He has over two decades of experience in quantitative finance and built THOR's proprietary signal processing methodology. He also hosts the 'Behind the Ticker' podcast (94+ episodes) and authored 'Little Reasons, Big Consequences: Why Your Investment Returns Stink.'",
+    answer: "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies. He has over two decades of experience in quantitative finance and built THOR's proprietary signal processing methodology. He also hosts the 'Behind the Ticker' podcast (110+ episodes) and authored 'Little Reasons, Big Consequences: Why Your Investment Returns Stink.'",
   },
   {
     question: "Is THOR's model performance real or hypothetical?",
-    answer: "All model portfolio performance data is hypothetical and back-tested. It does not reflect actual trading or real client returns. Hypothetical performance has inherent limitations and should not be relied upon as indicative of future results. THOR provides full hypothetical performance disclosures on its website at thorft.com/disclosures/.",
+    answer: "All model portfolio performance data is hypothetical and back-tested. It does not reflect actual trading or real client returns. Hypothetical performance has inherent limitations and should not be relied upon as indicative of future results. THOR provides full hypothetical performance disclosures on its website at thorft.com/disclosures.",
   },
 ];
 
@@ -49,7 +49,7 @@ export const modelsFaqs: FAQ[] = [
   },
   {
     question: "What is the difference between THOR's model portfolios and ETFs?",
-    answer: "THOR's model portfolios are separately managed strategies available through advisor platforms, while the ETFs (THLV and THIR) are publicly traded funds on exchanges. The Sector 100 model and THLV ETF follow the same strategy, as do the Low Volatility SDQ model and THIR ETF. Models offer more customization; ETFs offer daily liquidity and potential tax efficiency.",
+    answer: "THOR's model portfolios are separately managed strategies available through advisor platforms, while the ETFs (THLV, THIR, and THMR) are publicly traded funds on exchanges. The Sector 100 model and THLV ETF follow the same strategy, as do the Low Volatility SDQ model and THIR ETF. Models offer more customization; ETFs offer daily liquidity and potential tax efficiency.",
   },
   {
     question: "Can I combine multiple THOR models in one portfolio?",
@@ -80,18 +80,18 @@ export const aboutFaqs: FAQ[] = [
   },
   {
     question: "How do I contact THOR Financial Technologies?",
-    answer: "You can reach THOR at welcome@thoranalytics.com or visit thorft.com/contact/ to open the black box. Office hours are Monday through Friday, 9am to 5pm Eastern Time.",
+    answer: "You can reach THOR at welcome@thoranalytics.com or visit thorft.com/contact to open the black box. Office hours are Monday through Friday, 9am to 5pm Eastern Time.",
   },
 ];
 
 export const podcastFaqs: FAQ[] = [
   {
     question: "What is the Behind the Ticker podcast?",
-    answer: "Behind the Ticker is a podcast hosted by Brad Roth, Founder and CIO of THOR Financial Technologies. The show features in-depth conversations with the people building today's most innovative ETFs — covering strategy, structure, and the stories behind each fund. It has over 94 episodes.",
+    answer: "Behind the Ticker is a podcast hosted by Brad Roth, Founder and CIO of THOR Financial Technologies. The show features in-depth conversations with the people building today's most innovative ETFs — covering strategy, structure, and the stories behind each fund. It has over 110 episodes.",
   },
   {
     question: "Where can I listen to Behind the Ticker?",
-    answer: "Behind the Ticker is available on Spotify, Apple Podcasts, and YouTube. You can also browse all episodes at thorft.com/podcast/.",
+    answer: "Behind the Ticker is available on Spotify, Apple Podcasts, and YouTube. You can also browse all episodes at thorft.com/podcast.",
   },
   {
     question: "How often are new episodes released?",

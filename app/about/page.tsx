@@ -7,11 +7,11 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "About THOR Financial Technologies — Our Story & Mission",
-  description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages using proprietary signal processing across six model portfolios and two ETFs.",
+  description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages using proprietary signal processing across six model portfolios and three ETFs.",
   alternates: { canonical: "https://thorft.com/about/" },
   openGraph: {
     title: "About THOR Financial Technologies — Our Story & Mission",
-    description: "Founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Six model portfolios and two ETFs.",
+    description: "Founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Six model portfolios and three ETFs.",
     url: "https://thorft.com/about/",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
@@ -52,7 +52,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                THOR Financial Technologies was founded with a single conviction: that systematic, technology-driven investing consistently outperforms emotionally-driven decision-making.
+                THOR Financial Technologies was founded with a single conviction: that systematic, technology-driven investing is designed to remove the emotional and behavioral errors that erode returns.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 We build proprietary signal processing systems that detect market regime changes in real time. When conditions shift, our models adapt — not based on feelings or forecasts, but on data.
@@ -66,7 +66,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">5+ Yrs</div>
-                  <div className="text-gray-600">Assets under management across ETFs and model portfolios</div>
+                  <div className="text-gray-600">Running systematic strategies live since 2020</div>
                 </div>
                 <div className="border-t border-gray-200" />
                 <div className="flex items-center gap-4">
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 </div>
                 <div className="border-t border-gray-200" />
                 <div className="flex items-center gap-4">
-                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">2</div>
+                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">3</div>
                   <div className="text-gray-600">Actively managed ETFs available on the public markets</div>
                 </div>
                 <div className="border-t border-gray-200" />
@@ -99,7 +99,7 @@ export default function AboutPage() {
                 THOR Financial Technologies was founded by Brad Roth in Greensburg, Pennsylvania — not in a Wall Street tower, but in the heart of Main Street America. The distance from the financial establishment wasn&apos;t a disadvantage. It was the advantage.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                After two decades in quantitative finance, Brad observed a persistent pattern: investors — even sophisticated ones — consistently underperformed because of behavioral decisions, not bad strategies. The technology to prevent this existed in other fields. Signal processing had transformed telecommunications, defense, and engineering. Why not investing?
+                After two decades in quantitative finance, Brad observed a persistent pattern: investors — even sophisticated ones — consistently underperformed because of behavioral decisions, not bad strategies. The technology to address this existed in other fields. Signal processing had transformed telecommunications, defense, and engineering. Why not investing?
               </p>
               <p className="text-lg leading-relaxed mb-6">
                 THOR was built to answer that question. By applying proprietary signal processing techniques to financial markets, we created a systematic methodology that identifies when to be invested and when to be in cash — removing the human emotions that destroy long-term returns.

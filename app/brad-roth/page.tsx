@@ -6,13 +6,13 @@ import { personSchema, breadcrumbSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "Brad Roth — Founder & CIO, THOR Financial Technologies",
   description:
-    "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Pittsburgh, Pennsylvania. Over two decades in quantitative finance, host of the Behind the Ticker podcast (94+ episodes), and author of Little Reasons, Big Consequences.",
+    "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Pittsburgh, Pennsylvania. Over two decades in quantitative finance, host of the Behind the Ticker podcast (110+ episodes), and author of Little Reasons, Big Consequences.",
   alternates: { canonical: "https://thorft.com/brad-roth/" },
   openGraph: {
     type: "profile",
     title: "Brad Roth — Founder & CIO, THOR Financial Technologies",
     description:
-      "Brad Roth is the Founder and CIO of THOR Financial Technologies, Pittsburgh. Systematic investing, signal processing, 94-episode podcast host, published author.",
+      "Brad Roth is the Founder and CIO of THOR Financial Technologies, Pittsburgh. Systematic investing, signal processing, host of the Behind the Ticker podcast, published author.",
     url: "https://thorft.com/brad-roth/",
     images: [
       {
@@ -152,7 +152,7 @@ export default function BradRothPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-gold-400 mt-0.5">▸</span>
-                    <span>Host: <em>Behind the Ticker</em> podcast (94+ episodes)</span>
+                    <span>Host: <em>Behind the Ticker</em> podcast (110+ episodes)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-gold-400 mt-0.5">▸</span>
@@ -209,8 +209,8 @@ export default function BradRothPage() {
                   </Link>
                   , a registered investment adviser headquartered in Greensburg, Pennsylvania —
                   in the greater Pittsburgh area. He founded THOR with a conviction that
-                  systematic, technology-driven investing consistently outperforms emotionally-driven
-                  decision-making.
+                  systematic, technology-driven investing is designed to remove the emotional and
+                  behavioral errors that erode returns.
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   A honors graduate of Duquesne University in Pittsburgh, Pennsylvania, Brad began
@@ -233,7 +233,7 @@ export default function BradRothPage() {
                   The result is THOR&apos;s proprietary signal processing system — built in-house, not licensed —
                   that detects market regime changes in real time. When conditions shift, THOR&apos;s models adapt.
                   No gut instinct. No forecasts. Just data. Under Brad&apos;s leadership, THOR has grown to manage
-                  assets across six distinct model portfolios and two actively managed ETFs listed on NYSE Arca,
+                  assets across six distinct model portfolios and three actively managed ETFs listed on NYSE Arca,
                   serving RIA advisors nationwide.
                 </p>
               </div>
@@ -248,7 +248,7 @@ export default function BradRothPage() {
                     <em>Behind the Ticker</em>
                   </Link>
                   , a podcast featuring in-depth conversations with the people building today&apos;s most
-                  innovative ETFs. Now partnered with ETF.com, the show has aired 94+ episodes and has
+                  innovative ETFs. Now partnered with ETF.com, the show has aired 110+ episodes and has
                   become a go-to resource for advisors and investors seeking to understand the strategies
                   and structures behind modern fund offerings. Available on Spotify, Apple Podcasts, and
                   YouTube.

@@ -51,7 +51,7 @@ export default function DisclosuresPage() {
               </div>
               <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
                 <p>
-                  This material is prepared by THOR Analytics, LLC (&ldquo;THOR&rdquo;) for informational purposes only. It is not intended to serve as a substitute for personalized investment advice or as a recommendation or solicitation for any particular security, strategy or investment product. The performance results provided herein represent the hypothetical back-test of the criteria of the strategy, do not reflect actual trading by THOR and do not represent the actual performance achieved by any THOR client.
+                  This material is prepared by THOR Financial Technologies, LLC (&ldquo;THOR&rdquo;) for informational purposes only. It is not intended to serve as a substitute for personalized investment advice or as a recommendation or solicitation for any particular security, strategy or investment product. The performance results provided herein represent the hypothetical back-test of the criteria of the strategy, do not reflect actual trading by THOR and do not represent the actual performance achieved by any THOR client.
                 </p>
 
                 <h3 className="text-lg font-bold text-navy-800 mt-6 mb-2">
@@ -75,7 +75,7 @@ export default function DisclosuresPage() {
                   Assumptions on Advisory Fees
                 </h3>
                 <p>
-                  The hypothetical performance results reflect the deduction of an investment platform and manager fee of 0.55%. Advisory fees, however, may vary among clients invested in this strategy. Actual performance results will be reduced by fees including, but not limited to, investment management fees and other costs such as custodial, reporting, evaluation services, other expenses and a possible distribution fee. Actual advisory fees and expenses paid may be higher or lower than model advisory fees.
+                  The hypothetical performance results reflect the deduction of an investment platform and manager fee of 0.49%. Advisory fees, however, may vary among clients invested in this strategy. Actual performance results will be reduced by fees including, but not limited to, investment management fees and other costs such as custodial, reporting, evaluation services, other expenses and a possible distribution fee. Actual advisory fees and expenses paid may be higher or lower than model advisory fees.
                 </p>
                 <p>
                   The investment management fee paid to THOR Financial Technologies is separate and distinct from the internal fees and expenses charged by the respective funds. Prospective clients should consider all of these fees and charges when deciding whether to invest in the program. Performance results for this program do not reflect the impact of taxes. Select programs may engage in a significant amount of trading. Gains or losses will generally be short-term in nature; consequently, such programs will likely not be suitable for clients seeking tax efficiency. THOR Financial Technologies does not provide tax or legal advice.

@@ -23,7 +23,7 @@ export const models: ModelData[] = [
     description: [
       "The Sector 100 model is THOR's flagship strategy, designed to capture the growth potential of S&P 500 sectors while systematically managing downside risk. The portfolio trades sector-based ETFs representing the major sectors of the S&P 500, equally weighted across each position.",
       "THOR's proprietary technology continuously evaluates each sector's risk profile. As individual sectors rotate toward risk-off conditions, the model systematically de-risks — overweighting the strongest performing sectors and moving weaker positions to short-duration treasuries.",
-      "When a majority of sectors signal risk-off, the portfolio can move entirely to 100% short-duration treasuries, providing full capital protection during periods of elevated systemic risk. This cascading de-risk approach allows the model to participate in upside markets while seeking to avoid significant drawdowns.",
+      "When a majority of sectors signal risk-off, the portfolio can move entirely to 100% short-duration treasuries, seeking to preserve capital during periods of elevated systemic risk. This cascading de-risk approach allows the model to participate in upside markets while seeking to avoid significant drawdowns.",
     ],
     howItWorks: [
       "Equally weighted S&P 500 sector ETF positions",
@@ -34,7 +34,7 @@ export const models: ModelData[] = [
       "Can move to 100% short-duration treasuries in extreme conditions",
     ],
     keyFeatures: [
-      { title: "Broad Sector Exposure", description: "Full coverage across S&P 500 sectors with equal weighting eliminates concentration risk" },
+      { title: "Broad Sector Exposure", description: "Coverage across 10 S&P 500 sector ETFs (Communication Services excluded) with equal weighting to reduce concentration risk" },
       { title: "Adaptive De-Risking", description: "Proprietary signals independently evaluate each sector for risk-on/risk-off conditions" },
       { title: "100% Cash Capability", description: "Can move entirely to short-duration treasuries when systemic risk is elevated" },
       { title: "Performance Overweighting", description: "Strongest sectors receive additional allocation as weaker sectors rotate out" },
@@ -59,7 +59,7 @@ export const models: ModelData[] = [
     tagline: "Three-Index Rotation with Cascading Risk Management",
     description: [
       "The Low Volatility SDQ model trades the three largest U.S. equity indices — the S&P 500, Dow Jones Industrial Average, and Nasdaq 100 — using an equally weighted 33/33/33 allocation across each index.",
-      "THOR's proprietary technology evaluates each index independently and dynamically rotates allocation toward the best-performing index while systematically de-risking positions that signal elevated risk. The cascading structure ensures risk is managed progressively rather than as a binary on/off switch.",
+      "THOR's proprietary technology evaluates each index independently and dynamically rotates allocation toward the best-performing index while systematically de-risking positions that signal elevated risk. The cascading structure is designed to manage risk progressively rather than as a binary on/off switch.",
       "The risk-off cascade works as follows: when one index turns risk-off, the remaining two split the allocation 50/50. When two indices turn risk-off, the portfolio moves to 50% in the remaining index and 50% cash. When all three signal risk-off, the portfolio moves to 100% short-duration treasuries.",
     ],
     howItWorks: [
@@ -130,26 +130,26 @@ export const models: ModelData[] = [
     description: [
       "The Levered Index model is designed for advisors seeking enhanced exposure to the S&P 500 with built-in risk management. The strategy uses a dual-signal framework — combining THOR's standard proprietary signal with a faster-responding signal — to determine positioning across three distinct states.",
       "When both signals indicate risk-on, the portfolio allocates to both index and leveraged index ETFs, providing up to approximately 140% S&P 500 exposure. When the standard signal remains risk-on but the fast signal turns risk-off, the portfolio shifts to 60% index exposure and 40% buffer ETF exposure, maintaining market participation with downside cushioning.",
-      "When both signals turn risk-off, the portfolio moves to 100% buffer ETF exposure, providing downside protection while maintaining some upside capture potential. This three-state framework allows the model to be aggressive when conditions warrant, moderate when uncertainty rises, and defensive when risk is elevated.",
+      "When both signals turn risk-off, the portfolio moves to 100% buffer ETF exposure, seeking downside mitigation while maintaining some upside participation potential. This three-state framework allows the model to be aggressive when conditions warrant, moderate when uncertainty rises, and defensive when risk is elevated.",
     ],
     howItWorks: [
       "Dual-signal framework: standard THOR signal + fast-response signal",
       "Both risk-on: up to ~140% S&P 500 exposure via index + leveraged ETFs",
       "Standard on / fast off: 60% index + 40% buffer ETF",
-      "Both risk-off: 100% buffer ETF (downside protection + upside capture)",
+      "Both risk-off: 100% buffer ETF (downside mitigation + upside participation)",
       "Three distinct states provide graduated risk management",
-      "Combines leverage, standard exposure, and buffered protection",
+      "Combines leverage, standard exposure, and buffered exposure",
     ],
     keyFeatures: [
       { title: "Dual-Signal Framework", description: "Two proprietary signals provide more nuanced risk assessment than single-signal approaches" },
       { title: "Enhanced Upside", description: "Up to ~140% S&P 500 exposure when both signals confirm risk-on conditions" },
-      { title: "Buffer Protection", description: "Buffer ETF allocation provides downside cushioning with upside capture when risk is moderate" },
+      { title: "Buffer Allocation", description: "Buffer ETF allocation seeks downside cushioning with upside participation when risk is moderate" },
       { title: "Three-State Design", description: "Graduated positioning — aggressive, moderate, and defensive — instead of binary on/off" },
     ],
     faqs: [
-      { question: "How does the THOR Levered Index model work?", answer: "The Levered Index model uses a dual-signal framework combining THOR's standard signal with a faster-responding signal. When both are risk-on, the portfolio has up to ~140% S&P 500 exposure. When the fast signal turns off, it shifts to 60% index / 40% buffer ETF. When both are off, it moves to 100% buffer ETF for downside protection." },
+      { question: "How does the THOR Levered Index model work?", answer: "The Levered Index model uses a dual-signal framework combining THOR's standard signal with a faster-responding signal. When both are risk-on, the portfolio has up to ~140% S&P 500 exposure. When the fast signal turns off, it shifts to 60% index / 40% buffer ETF. When both are off, it moves to 100% buffer ETF, seeking downside mitigation." },
       { question: "What is the maximum exposure in Levered Index?", answer: "When both signals indicate risk-on, the portfolio allocates to both index and leveraged index ETFs, providing up to approximately 140% S&P 500 exposure." },
-      { question: "What are buffer ETFs?", answer: "Buffer ETFs provide downside protection while maintaining some upside capture potential. In the Levered Index model, buffer ETFs serve as the defensive position when risk signals are elevated." },
+      { question: "What are buffer ETFs?", answer: "Buffer ETFs seek downside mitigation while maintaining some upside participation potential. In the Levered Index model, buffer ETFs serve as the defensive position when risk signals are elevated." },
     ],
     allocation: "Up to 140% Equity Exposure",
     benchmark: "S&P 500",
@@ -164,7 +164,7 @@ export const models: ModelData[] = [
     description: [
       "The NextGen Stock model is THOR's higher-octane satellite strategy, designed for advisors seeking concentrated exposure to high-growth and disruptive companies. The portfolio holds 8–12 positions in innovative companies with significant growth potential.",
       "Despite the concentrated, growth-oriented nature of the holdings, the same proprietary risk management methodology applies. THOR's technology evaluates each position independently and cascades from full equity positions down to 100% short-duration treasuries as risk signals escalate.",
-      "This strategy is designed as a satellite allocation — complementing core holdings with higher-conviction, higher-growth exposure while maintaining the systematic risk management that prevents catastrophic drawdowns common in concentrated growth portfolios.",
+      "This strategy is designed as a satellite allocation — complementing core holdings with higher-conviction, higher-growth exposure while maintaining the systematic risk management that seeks to avoid the major drawdowns common in concentrated growth portfolios.",
     ],
     howItWorks: [
       "Concentrated portfolio of 8–12 high-growth, disruptive stocks",
@@ -177,7 +177,7 @@ export const models: ModelData[] = [
     keyFeatures: [
       { title: "High-Conviction Positions", description: "8–12 concentrated positions in the most innovative and disruptive companies" },
       { title: "Growth Exposure", description: "Focused on companies with significant growth potential and market disruption capability" },
-      { title: "Systematic Risk Guard", description: "Same proprietary de-risk cascade prevents the catastrophic losses typical of concentrated growth" },
+      { title: "Systematic Risk Guard", description: "Same proprietary de-risk cascade is designed to mitigate the large losses typical of concentrated growth" },
       { title: "Satellite Strategy", description: "Designed to complement core holdings, not replace them — adds higher-octane exposure with discipline" },
     ],
     faqs: [
@@ -197,7 +197,7 @@ export const models: ModelData[] = [
     tagline: "Precious Metals Strategy with Systematic Risk Management",
     description: [
       "The Dollar ALT model provides systematic exposure to precious metals — specifically gold and silver — as a dollar diversification and alternative asset strategy. When risk-on, the portfolio maintains a 60% gold / 40% silver allocation through precious metals ETFs.",
-      "THOR's proprietary technology monitors each metals position independently. When either gold or silver signals risk-off, that position rotates to short-duration treasuries (cash). This prevents the portfolio from holding metals during periods of weakness while maintaining exposure during periods of strength.",
+      "THOR's proprietary technology monitors each metals position independently. When either gold or silver signals risk-off, that position rotates to short-duration treasuries (cash). This is designed to avoid holding metals during periods of weakness while maintaining exposure during periods of strength.",
       "The Dollar ALT strategy serves as a true alternative allocation within an advisor's portfolio construction — providing non-correlated exposure to precious metals with the same systematic risk management framework applied across all THOR models.",
     ],
     howItWorks: [

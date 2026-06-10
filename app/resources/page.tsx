@@ -130,7 +130,7 @@ export default function ResourcesPage() {
               <h3 className="font-bold text-navy-800 group-hover:text-gold-600 transition-colors mb-2">
                 Behind the Ticker
               </h3>
-              <p className="text-sm text-gray-600">94+ podcast episodes with ETF industry leaders</p>
+              <p className="text-sm text-gray-600">110+ podcast episodes with ETF industry leaders</p>
             </Link>
             <Link href="/book" className="card group text-center hover:border-gold-400/50">
               <div className="text-4xl mb-4">📖</div>

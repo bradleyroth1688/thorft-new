@@ -9,11 +9,11 @@ import { podcastSeriesSchema, breadcrumbSchema, faqSchema } from "@/data/schemas
 export const metadata: Metadata = {
   title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
   description: "Behind the Ticker is a podcast hosted by Brad Roth, Founder & CIO of THOR Financial Technologies. In-depth conversations with the people building today's most innovative ETFs. Available on Spotify, Apple Podcasts, and YouTube.",
-  alternates: { canonical: "https://thorft.com/podcast/" },
+  alternates: { canonical: "https://thorft.com/podcast" },
   openGraph: {
     title: "Behind the Ticker Podcast — ETF Industry Conversations with Brad Roth",
     description: "In-depth conversations with the people building today's most innovative ETFs. Hosted by Brad Roth, Founder & CIO of THOR Financial Technologies.",
-    url: "https://thorft.com/podcast/",
+    url: "https://thorft.com/podcast",
     type: "website",
     images: [{ url: "https://thorft.com/images/podcast-logo.jpg", width: 800, height: 800, alt: "Behind the Ticker Podcast" }],
   },
@@ -60,7 +60,7 @@ export default function PodcastPage() {
   return (
     <>
       <JsonLd data={podcastSeriesSchema()} />
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Podcast", url: "/podcast/" }])} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Podcast", url: "/podcast" }])} />
       <JsonLd data={faqSchema(podcastFaqs)} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">

@@ -16,7 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${model.name} Model Portfolio — ${model.tagline}`,
     description: `The THOR ${model.name} model portfolio is a ${model.category.toLowerCase()} strategy for RIA advisors. ${model.description[0].substring(0, 200)} Benchmark: ${model.benchmark}. Minimum: ${model.minimum}. Fee: 0.49%.`,
-    alternates: { canonical: `https://thorft.com/models/${model.slug}/` },
+    alternates: { canonical: `https://thorft.com/models/${model.slug}` },
   };
 }
 
@@ -29,7 +29,7 @@ export default function ModelDetailPage({ params }: { params: { slug: string } }
       <JsonLd data={modelProductSchema(model)} />
       <JsonLd data={breadcrumbSchema([
         { name: "Home", url: "/" },
-        { name: "Model Portfolios", url: "/models/" },
+        { name: "Model Portfolios", url: "/models" },
         { name: model.name, url: `/models/${model.slug}/` },
       ])} />
       <JsonLd data={faqSchema(model.faqs)} />

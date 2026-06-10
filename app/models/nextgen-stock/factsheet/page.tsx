@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR NextGen Stock Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR NextGen Stock model portfolio. Concentrated portfolio of 8–12 high-growth, disruptive stocks with systematic de-risking.",
-  alternates: { canonical: "https://thorft.com/models/nextgen-stock/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/nextgen-stock/factsheet" },
   robots: { index: false },
 };
 

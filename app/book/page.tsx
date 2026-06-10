@@ -9,11 +9,11 @@ import BookChapterForm from "@/components/BookChapterForm";
 export const metadata: Metadata = {
   title: "Little Reasons, Big Consequences — Why Your Investment Returns Stink | By Brad Roth",
   description: "'Little Reasons, Big Consequences: Why Your Investment Returns Stink' is a 12-chapter book by Brad Roth, Founder & CIO of THOR Financial Technologies. It explores the behavioral mistakes that destroy investor wealth and makes the case for systematic, rules-based investing.",
-  alternates: { canonical: "https://thorft.com/book/" },
+  alternates: { canonical: "https://thorft.com/book" },
   openGraph: {
     title: "Little Reasons, Big Consequences — By Brad Roth",
     description: "Why your investment returns stink — and what to do about it. A 12-chapter exploration of behavioral mistakes that destroy wealth.",
-    url: "https://thorft.com/book/",
+    url: "https://thorft.com/book",
     type: "book",
     images: [{ url: "https://thorft.com/images/book-cover.png", width: 600, height: 900, alt: "Little Reasons, Big Consequences by Brad Roth" }],
   },
@@ -44,7 +44,7 @@ export default function BookPage() {
   return (
     <>
       <JsonLd data={bookSchema()} />
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Book", url: "/book/" }])} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Book", url: "/book" }])} />
       <JsonLd data={faqSchema(bookFaqs)} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">

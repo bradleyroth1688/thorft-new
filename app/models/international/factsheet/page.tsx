@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR International Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR International model portfolio. International equity strategy using top 10 countries by market cap with proprietary risk management.",
-  alternates: { canonical: "https://thorft.com/models/international/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/international/factsheet" },
   robots: { index: false },
 };
 

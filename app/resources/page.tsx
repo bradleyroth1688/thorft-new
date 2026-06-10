@@ -7,7 +7,7 @@ import WhitepaperForm from "@/components/WhitepaperForm";
 export const metadata: Metadata = {
   title: "Advisor Resources — Factsheets, Whitepaper & Educational Content",
   description: "Download THOR model portfolio factsheets for all six strategies, access the Signal Processing 101 whitepaper, and explore educational resources. All factsheets include full hypothetical performance disclosures.",
-  alternates: { canonical: "https://thorft.com/resources/" },
+  alternates: { canonical: "https://thorft.com/resources" },
   openGraph: {
     title: "Advisor Resources | THOR Financial Technologies",
     description: "Signal Processing 101: How THOR's systematic approach filters market noise to detect regime changes. Download the whitepaper.",
@@ -33,8 +33,8 @@ const factsheets = [
 export default function ResourcesPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Resources", url: "/resources/" }])} />
-      <JsonLd data={webPageSchema({ name: "Advisor Resources", description: "Download THOR model factsheets, access the Signal Processing 101 whitepaper, and explore educational resources.", url: "/resources/" })} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Resources", url: "/resources" }])} />
+      <JsonLd data={webPageSchema({ name: "Advisor Resources", description: "Download THOR model factsheets, access the Signal Processing 101 whitepaper, and explore educational resources.", url: "/resources" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">

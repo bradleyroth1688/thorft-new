@@ -8,7 +8,7 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "Model Portfolios — Systematic Investment Strategies for Advisors",
   description: "THOR Financial Technologies offers six adaptive model portfolios for RIA advisors: Sector 100, Low Volatility SDQ, International, Levered Index, NextGen Stock, and Dollar ALT. All use proprietary signal processing with the ability to go to 100% cash. Management fee: 0.49%.",
-  alternates: { canonical: "https://thorft.com/models/" },
+  alternates: { canonical: "https://thorft.com/models" },
 };
 
 const models = [
@@ -73,9 +73,9 @@ const models = [
 export default function ModelsPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Model Portfolios", url: "/models/" }])} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Model Portfolios", url: "/models" }])} />
       <JsonLd data={faqSchema(modelsFaqs)} />
-      <JsonLd data={webPageSchema({ name: "THOR Model Portfolios", description: "Six adaptive model portfolios powered by proprietary signal processing.", url: "/models/" })} />
+      <JsonLd data={webPageSchema({ name: "THOR Model Portfolios", description: "Six adaptive model portfolios powered by proprietary signal processing.", url: "/models" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">

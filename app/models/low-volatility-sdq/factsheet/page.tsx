@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR Low Volatility SDQ Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR Low Volatility SDQ model portfolio. Three-index rotation strategy trading the S&P 500, Dow Jones, and Nasdaq 100 with cascading risk management.",
-  alternates: { canonical: "https://thorft.com/models/low-volatility-sdq/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/low-volatility-sdq/factsheet" },
   robots: { index: false },
 };
 

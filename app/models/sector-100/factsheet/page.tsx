@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR Sector 100 Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR Sector 100 model portfolio. S&P 500 sector-based equal-weight strategy with proprietary risk management.",
-  alternates: { canonical: "https://thorft.com/models/sector-100/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/sector-100/factsheet" },
   robots: { index: false },
 };
 

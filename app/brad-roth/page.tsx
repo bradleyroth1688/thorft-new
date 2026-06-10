@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   title: "Brad Roth — Founder & CIO, THOR Financial Technologies",
   description:
     "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Pittsburgh, Pennsylvania. Over two decades in quantitative finance, host of the Behind the Ticker podcast (110+ episodes), and author of Little Reasons, Big Consequences.",
-  alternates: { canonical: "https://thorft.com/brad-roth/" },
+  alternates: { canonical: "https://thorft.com/brad-roth" },
   openGraph: {
     type: "profile",
     title: "Brad Roth — Founder & CIO, THOR Financial Technologies",
     description:
       "Brad Roth is the Founder and CIO of THOR Financial Technologies, Pittsburgh. Systematic investing, signal processing, host of the Behind the Ticker podcast, published author.",
-    url: "https://thorft.com/brad-roth/",
+    url: "https://thorft.com/brad-roth",
     images: [
       {
         url: "https://thorft.com/images/brad-roth-headshot.jpg",
@@ -40,7 +40,7 @@ export default function BradRothPage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "Brad Roth", url: "/brad-roth/" },
+          { name: "Brad Roth", url: "/brad-roth" },
         ])}
       />
       <JsonLd
@@ -48,7 +48,7 @@ export default function BradRothPage() {
           name: "Brad Roth — Founder & CIO, THOR Financial Technologies",
           description:
             "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, based in Pittsburgh, Pennsylvania.",
-          url: "/brad-roth/",
+          url: "/brad-roth",
         })}
       />
 

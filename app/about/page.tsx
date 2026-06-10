@@ -8,11 +8,11 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "About THOR Financial Technologies — Our Story & Mission",
   description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Based in Greensburg, PA, THOR manages using proprietary signal processing across six model portfolios and three ETFs.",
-  alternates: { canonical: "https://thorft.com/about/" },
+  alternates: { canonical: "https://thorft.com/about" },
   openGraph: {
     title: "About THOR Financial Technologies — Our Story & Mission",
     description: "Founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing. Six model portfolios and three ETFs.",
-    url: "https://thorft.com/about/",
+    url: "https://thorft.com/about",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
   },
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about/" }])} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "About", url: "/about" }])} />
       <JsonLd data={faqSchema(aboutFaqs)} />
-      <JsonLd data={webPageSchema({ name: "About THOR Financial Technologies", description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing.", url: "/about/" })} />
+      <JsonLd data={webPageSchema({ name: "About THOR Financial Technologies", description: "THOR Financial Technologies was founded by Brad Roth to eliminate behavioral biases through systematic, technology-driven investing.", url: "/about" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto">

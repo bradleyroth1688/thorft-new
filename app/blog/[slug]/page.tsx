@@ -31,11 +31,11 @@ export function generateMetadata({
   return {
     title: `${nl.title} | The Signal`,
     description,
-    alternates: { canonical: `https://thorft.com/blog/${nl.slug}/` },
+    alternates: { canonical: `https://thorft.com/blog/${nl.slug}` },
     openGraph: {
       title: nl.title,
       description,
-      url: `https://thorft.com/blog/${nl.slug}/`,
+      url: `https://thorft.com/blog/${nl.slug}`,
       type: "article",
       publishedTime: nl.date,
       authors: ["Brad Roth"],
@@ -93,7 +93,7 @@ export default function NewsletterPage({
             "@type": "Person",
             name: "Brad Roth",
             jobTitle: "Founder & CIO",
-            url: "https://thorft.com/team/",
+            url: "https://thorft.com/team",
           },
           publisher: {
             "@type": "Organization",
@@ -104,21 +104,21 @@ export default function NewsletterPage({
               url: "https://thorft.com/images/logos/thor-ft-white.png",
             },
           },
-          url: `https://thorft.com/blog/${nl.slug}/`,
+          url: `https://thorft.com/blog/${nl.slug}`,
           ...(nl.thumbnailUrl ? { image: nl.thumbnailUrl } : {}),
-          mainEntityOfPage: `https://thorft.com/blog/${nl.slug}/`,
+          mainEntityOfPage: `https://thorft.com/blog/${nl.slug}`,
           ...(nl.wordCount ? { wordCount: nl.wordCount } : {}),
           isPartOf: {
             "@type": "Blog",
             name: "The Signal Newsletter Archive",
-            url: "https://thorft.com/blog/",
+            url: "https://thorft.com/blog",
           },
         }}
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "The Signal", url: "/blog/" },
+          { name: "The Signal", url: "/blog" },
           { name: nl.title, url: `/blog/${nl.slug}/` },
         ])}
       />

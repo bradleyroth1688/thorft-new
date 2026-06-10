@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { homeFaqs } from "@/data/faqs";
-import { organizationSchema, breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
+import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "THOR Financial Technologies | Systematic Model Portfolios & ETFs for RIA Advisors",
   description:
     "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash. Founded by Brad Roth in Greensburg, PA.",
-  alternates: { canonical: "https://thorft.com/" },
+  alternates: { canonical: "https://thorft.com" },
 };
 
 const models = [
@@ -61,7 +61,6 @@ const stats = [
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={organizationSchema()} />
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }])} />
       <JsonLd data={faqSchema(homeFaqs)} />
       <JsonLd data={webPageSchema({

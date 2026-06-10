@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR Levered Index Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR Levered Index model portfolio. Enhanced S&P 500 strategy using a dual-signal framework for leveraged, standard, and buffered exposure.",
-  alternates: { canonical: "https://thorft.com/models/levered-index/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/levered-index/factsheet" },
   robots: { index: false },
 };
 

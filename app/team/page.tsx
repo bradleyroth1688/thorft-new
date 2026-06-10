@@ -6,11 +6,11 @@ import { personSchema, breadcrumbSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "Team — THOR Financial Technologies Leadership",
   description: "Meet the leadership team at THOR Financial Technologies. Brad Roth (Founder & CIO), Tyler Trimbath (Managing Partner & CCO), and Cameron Roth (Managing Partner). Decades of combined experience in quantitative finance, operations, and research.",
-  alternates: { canonical: "https://thorft.com/team/" },
+  alternates: { canonical: "https://thorft.com/team" },
   openGraph: {
     title: "Team — THOR Financial Technologies Leadership",
     description: "Meet Brad Roth (Founder & CIO), Tyler Trimbath (Managing Partner & CCO), and Cameron Roth (Managing Partner).",
-    url: "https://thorft.com/team/",
+    url: "https://thorft.com/team",
     type: "website",
     images: [{ url: "https://thorft.com/images/brad-roth-headshot.jpg", width: 800, height: 800, alt: "Brad Roth, Founder & CIO" }],
   },
@@ -26,8 +26,8 @@ export default function TeamPage() {
   return (
     <>
       <JsonLd data={{ "@context": "https://schema.org", ...personSchema() }} />
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Team", url: "/team/" }])} />
-      <JsonLd data={webPageSchema({ name: "Brad Roth — Founder & CIO", description: "Meet Brad Roth, Founder and CIO of THOR Financial Technologies.", url: "/team/" })} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Team", url: "/team" }])} />
+      <JsonLd data={webPageSchema({ name: "Brad Roth — Founder & CIO", description: "Meet Brad Roth, Founder and CIO of THOR Financial Technologies.", url: "/team" })} />
       {/* Hero */}
       <section className="gradient-navy text-white py-20 md:py-28">
         <div className="container-max mx-auto text-center">

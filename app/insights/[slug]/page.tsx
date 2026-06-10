@@ -27,11 +27,11 @@ export function generateMetadata({
   return {
     title: article.metaTitle,
     description: article.metaDescription,
-    alternates: { canonical: `https://thorft.com/insights/${article.slug}/` },
+    alternates: { canonical: `https://thorft.com/insights/${article.slug}` },
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription,
-      url: `https://thorft.com/insights/${article.slug}/`,
+      url: `https://thorft.com/insights/${article.slug}`,
       type: "article",
       publishedTime: article.date,
       authors: ["Brad Roth"],
@@ -80,7 +80,7 @@ export default function ArticlePage({
             "@type": "Person",
             name: "Brad Roth",
             jobTitle: "Founder & CIO",
-            url: "https://thorft.com/team/",
+            url: "https://thorft.com/team",
           },
           publisher: {
             "@type": "Organization",
@@ -91,8 +91,8 @@ export default function ArticlePage({
               url: "https://thorft.com/images/logos/thor-ft-white.png",
             },
           },
-          url: `https://thorft.com/insights/${article.slug}/`,
-          mainEntityOfPage: `https://thorft.com/insights/${article.slug}/`,
+          url: `https://thorft.com/insights/${article.slug}`,
+          mainEntityOfPage: `https://thorft.com/insights/${article.slug}`,
           articleSection: article.category,
           image: "https://thorft.com/images/whitepaper-og.png",
         }}
@@ -100,7 +100,7 @@ export default function ArticlePage({
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "Insights", url: "/insights/" },
+          { name: "Insights", url: "/insights" },
           { name: article.title, url: `/insights/${article.slug}/` },
         ])}
       />

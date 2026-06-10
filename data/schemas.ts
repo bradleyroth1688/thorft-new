@@ -1,5 +1,7 @@
 // Centralized Schema.org data builders
 
+import episodesData from "./episodes.json";
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -42,7 +44,6 @@ export function organizationSchema() {
       "adaptive investing",
       "RIA services",
     ],
-    numberOfEmployees: { "@type": "QuantitativeValue", value: 1 },
     slogan: "Technology-Driven Investment Solutions for Advisors",
   };
 }
@@ -50,7 +51,7 @@ export function organizationSchema() {
 export function personSchema() {
   return {
     "@type": "Person",
-    "@id": "https://thorft.com/brad-roth/#person",
+    "@id": "https://thorft.com/brad-roth#person",
     name: "Brad Roth",
     givenName: "Brad",
     familyName: "Roth",
@@ -58,7 +59,7 @@ export function personSchema() {
     description:
       "Brad Roth is the Founder and Chief Investment Officer of THOR Financial Technologies, a systematic investment firm based in Greensburg, Pennsylvania (Pittsburgh area). With over two decades of experience in quantitative finance, he built THOR's proprietary signal processing methodology for detecting market regime changes. He hosts the Behind the Ticker podcast (110+ episodes, partnered with ETF.com) and authored 'Little Reasons, Big Consequences.' Graduate of Duquesne University, Pittsburgh.",
     image: "https://thorft.com/images/brad-roth-headshot.jpg",
-    url: "https://thorft.com/brad-roth/",
+    url: "https://thorft.com/brad-roth",
     worksFor: {
       "@type": "Organization",
       "@id": "https://thorft.com/#organization",
@@ -126,14 +127,14 @@ export function podcastSeriesSchema() {
     name: "Behind the Ticker",
     description:
       "ETF industry conversations with the people building the funds. Host Brad Roth talks strategy, structure, and the stories behind the ticker.",
-    url: "https://thorft.com/podcast/",
+    url: "https://thorft.com/podcast",
     author: personSchema(),
     webFeed: [
       "https://open.spotify.com/show/1TJpgOAqctOCnjij9KTxNS",
       "https://podcasts.apple.com/us/podcast/behind-the-ticker/id1682702118",
     ],
     image: "https://thorft.com/images/thor-logo-white.png",
-    numberOfEpisodes: 98,
+    numberOfEpisodes: (episodesData as unknown[]).length,
   };
 }
 
@@ -157,13 +158,13 @@ export function podcastEpisodeSchema(ep: {
     "@type": "PodcastEpisode",
     name: `${ep.guest} — Behind the Ticker`,
     description: cleanDesc.substring(0, 300),
-    url: `https://thorft.com/podcast/${ep.slug}/`,
+    url: `https://thorft.com/podcast/${ep.slug}`,
     datePublished: ep.date,
     duration: ep.duration,
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "Behind the Ticker",
-      url: "https://thorft.com/podcast/",
+      url: "https://thorft.com/podcast",
     },
     performer: {
       "@type": "Person",
@@ -246,11 +247,10 @@ export function bookSchema() {
     "@type": "Book",
     name: "Little Reasons, Big Consequences: Why Your Investment Returns Stink",
     author: personSchema(),
-    url: "https://thorft.com/book/",
+    url: "https://thorft.com/book",
     description:
       "A 12-chapter exploration of the behavioral mistakes that destroy investor wealth. The core thesis: investors underperform due to behavior, not bad strategies. By Brad Roth, Founder & CIO of THOR Financial Technologies.",
     genre: "Business & Finance",
-    numberOfPages: 12,
     inLanguage: "en",
     isbn: "9798279648504",
     bookFormat: "https://schema.org/Paperback",
@@ -275,7 +275,7 @@ export function modelProductSchema(model: {
     "@type": "FinancialProduct",
     name: `THOR ${model.name} Model Portfolio`,
     description: model.description[0],
-    url: `https://thorft.com/models/${model.slug}/`,
+    url: `https://thorft.com/models/${model.slug}`,
     provider: {
       "@type": "FinancialService",
       name: "THOR Financial Technologies",

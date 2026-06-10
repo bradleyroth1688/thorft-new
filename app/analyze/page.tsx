@@ -4,11 +4,11 @@ import AnalyzerWizard from './components/AnalyzerWizard';
 export const metadata: Metadata = {
   title: 'Portfolio Analyzer | THOR Financial Technologies',
   description: 'Analyze your portfolio risk and see how THOR Models could complement your portfolio.',
-  alternates: { canonical: "https://thorft.com/analyze/" },
+  alternates: { canonical: "https://thorft.com/analyze" },
   openGraph: {
     title: "Portfolio Risk Analyzer — THOR Financial Technologies",
     description: "Get an instant risk score for your portfolio and see how THOR's systematic models may fit your portfolio.",
-    url: "https://thorft.com/analyze/",
+    url: "https://thorft.com/analyze",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Portfolio Analyzer" }],
   },

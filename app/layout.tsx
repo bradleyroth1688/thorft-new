@@ -9,6 +9,7 @@ import { organizationSchema, personSchema } from "@/data/schemas";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thorft.com"),
   title: {
     default: "THOR Financial Technologies | Technology-Driven Investment Solutions",
     template: "%s | THOR Financial Technologies",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     "THLV",
     "THIR",
   ],
-  authors: [{ name: "Brad Roth", url: "https://thorft.com/brad-roth/" }],
+  authors: [{ name: "Brad Roth", url: "https://thorft.com/brad-roth" }],
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -40,13 +41,13 @@ export const metadata: Metadata = {
     title: "THOR Financial Technologies | Technology-Driven Investment Solutions",
     description:
       "Proprietary, technology-driven model portfolios and ETFs for RIA advisors. Systematic risk management powered by signal processing.",
-    images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
+    images: [{ url: "https://thorft.com/og-image.jpg", width: 1200, height: 630, alt: "THOR Financial Technologies" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@Bradr_thor",
     creator: "@Bradr_thor",
-    images: ["https://thorft.com/images/whitepaper-og.png"],
+    images: ["https://thorft.com/og-image.jpg"],
   },
   robots: {
     index: true,

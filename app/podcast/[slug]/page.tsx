@@ -36,11 +36,11 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${ep.guest} (${ep.company}) — Behind the Ticker Podcast`,
     description: `Brad Roth interviews ${ep.guest} of ${ep.company} on the Behind the Ticker podcast. ${plainDesc.substring(0, 120)}`,
-    alternates: { canonical: `https://thorft.com/podcast/${ep.slug}/` },
+    alternates: { canonical: `https://thorft.com/podcast/${ep.slug}` },
     openGraph: {
       title: `${ep.guest} — Behind the Ticker with Brad Roth`,
       description: plainDesc.substring(0, 200),
-      url: `https://thorft.com/podcast/${ep.slug}/`,
+      url: `https://thorft.com/podcast/${ep.slug}`,
       type: "article",
       ...(ep.youtubeId ? {
         images: [`https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`],
@@ -83,7 +83,7 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
       )}
       <JsonLd data={breadcrumbSchema([
         { name: "Home", url: "/" },
-        { name: "Podcast", url: "/podcast/" },
+        { name: "Podcast", url: "/podcast" },
         { name: ep.guest, url: `/podcast/${ep.slug}/` },
       ])} />
 

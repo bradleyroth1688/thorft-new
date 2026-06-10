@@ -7,11 +7,11 @@ import { breadcrumbSchema, webPageSchema, videoObjectSchema, newsArticleSchema }
 export const metadata: Metadata = {
   title: "Press & Media — THOR Financial Technologies in the News",
   description: "THOR Financial Technologies has been featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE. Watch video interviews and read articles.",
-  alternates: { canonical: "https://thorft.com/press/" },
+  alternates: { canonical: "https://thorft.com/press" },
   openGraph: {
     title: "Press & Media — THOR Financial Technologies",
     description: "Featured on ETF.com, Schwab Network, InvestmentNews, Yahoo Finance, FinTech TV, and NYSE.",
-    url: "https://thorft.com/press/",
+    url: "https://thorft.com/press",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Financial Technologies" }],
   },
@@ -59,8 +59,8 @@ export default function PressPage() {
 
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Press & Media", url: "/press/" }])} />
-      <JsonLd data={webPageSchema({ name: "Press & Media", description: "THOR Financial Technologies press coverage and media appearances.", url: "/press/" })} />
+      <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Press & Media", url: "/press" }])} />
+      <JsonLd data={webPageSchema({ name: "Press & Media", description: "THOR Financial Technologies press coverage and media appearances.", url: "/press" })} />
 
       {/* VideoObject schema for each video with youtubeId */}
       {videos.filter(v => v.youtubeId).map((v, i) => (

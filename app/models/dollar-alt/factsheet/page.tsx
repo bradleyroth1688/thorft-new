@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "THOR Dollar ALT Model Portfolio Factsheet",
   description:
     "Hypothetical performance factsheet for the THOR Dollar ALT model portfolio. Precious metals strategy with a 60/40 gold/silver allocation and systematic risk management.",
-  alternates: { canonical: "https://thorft.com/models/dollar-alt/factsheet/" },
+  alternates: { canonical: "https://thorft.com/models/dollar-alt/factsheet" },
   robots: { index: false },
 };
 

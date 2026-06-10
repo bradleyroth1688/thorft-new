@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Insights — Educational Articles for Advisors",
   description:
     "In-depth educational articles on systematic investing, ETF mechanics, risk management, and portfolio construction. Written for financial advisors by Brad Roth.",
-  alternates: { canonical: "https://thorft.com/insights/" },
+  alternates: { canonical: "https://thorft.com/insights" },
   openGraph: {
     title: "Insights | THOR Financial Technologies",
     description:
       "In-depth educational articles on systematic investing, ETF mechanics, risk management, and portfolio construction.",
-    url: "https://thorft.com/insights/",
+    url: "https://thorft.com/insights",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "THOR Insights" }],
   },
@@ -44,7 +44,7 @@ export default function InsightsPage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "Insights", url: "/insights/" },
+          { name: "Insights", url: "/insights" },
         ])}
       />
       <JsonLd
@@ -54,7 +54,7 @@ export default function InsightsPage() {
           name: "THOR Insights",
           description:
             "In-depth educational articles on systematic investing, ETF mechanics, risk management, and portfolio construction.",
-          url: "https://thorft.com/insights/",
+          url: "https://thorft.com/insights",
           publisher: {
             "@type": "Organization",
             name: "THOR Financial Technologies",
@@ -64,7 +64,7 @@ export default function InsightsPage() {
             "@type": "BlogPosting",
             headline: a.title,
             datePublished: a.date,
-            url: `https://thorft.com/insights/${a.slug}/`,
+            url: `https://thorft.com/insights/${a.slug}`,
             author: {
               "@type": "Person",
               name: "Brad Roth",

@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "The Signal — Newsletter Archive | THOR Financial Technologies",
   description:
     "Brad Roth's daily market brief. Systematic signals, ETF positioning, and what the data is actually showing.",
-  alternates: { canonical: "https://thorft.com/blog/" },
+  alternates: { canonical: "https://thorft.com/blog" },
   openGraph: {
     title: "The Signal Newsletter Archive | THOR Financial Technologies",
     description:
       "Brad Roth's daily market brief. Systematic signals, ETF positioning, and what the data is actually showing.",
-    url: "https://thorft.com/blog/",
+    url: "https://thorft.com/blog",
     type: "website",
     images: [{ url: "https://thorft.com/images/whitepaper-og.png", width: 1200, height: 600, alt: "The Signal Newsletter" }],
   },
@@ -43,7 +43,7 @@ export default function BlogIndexPage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "The Signal", url: "/blog/" },
+          { name: "The Signal", url: "/blog" },
         ])}
       />
       <JsonLd
@@ -53,7 +53,7 @@ export default function BlogIndexPage() {
           name: "The Signal Newsletter Archive",
           description:
             "Brad Roth's daily market brief. Systematic signals, ETF positioning, and what the data is actually showing.",
-          url: "https://thorft.com/blog/",
+          url: "https://thorft.com/blog",
           publisher: {
             "@type": "Organization",
             name: "THOR Financial Technologies",
@@ -63,7 +63,7 @@ export default function BlogIndexPage() {
             "@type": "BlogPosting",
             headline: nl.title,
             datePublished: nl.date,
-            url: `https://thorft.com/blog/${nl.slug}/`,
+            url: `https://thorft.com/blog/${nl.slug}`,
             author: {
               "@type": "Person",
               name: "Brad Roth",

@@ -65,8 +65,11 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold text-navy-800 mb-6">By the Numbers</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">5+ Yrs</div>
-                  <div className="text-gray-600">Running systematic strategies live since 2020</div>
+                  <div className="text-3xl font-bold text-gold-500 w-24 flex-shrink-0">6 Yrs</div>
+                  <div className="text-gray-600">
+                    Running systematic strategies live since 2020.{" "}
+                    <Link href="/track-record" className="text-gold-600 underline hover:text-gold-700">See the track record</Link>
+                  </div>
                 </div>
                 <div className="border-t border-gray-200" />
                 <div className="flex items-center gap-4">

@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/brad-roth`, lastModified: today, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/team`, lastModified: today, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/models`, lastModified: today, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/track-record`, lastModified: today, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/podcast`, lastModified: today, changeFrequency: "weekly", priority: 0.95 },
     { url: `${baseUrl}/blog`, lastModified: today, changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/insights`, lastModified: today, changeFrequency: "weekly", priority: 0.85 },

@@ -51,10 +51,10 @@ const models = [
   },
 ];
 
-const stats = [
+const stats: { value: string; label: string; href?: string }[] = [
   { value: "6", label: "Model Portfolios" },
   { value: "3", label: "Active ETFs" },
-  { value: "5+ Years", label: "Live Track Record" },
+  { value: "6 Years", label: "Live Track Record", href: "/track-record" },
   { value: "100%", label: "Cash Capability" },
 ];
 
@@ -105,12 +105,19 @@ export default function HomePage() {
         <section className="bg-navy-700 py-8" aria-label="Key Statistics">
           <div className="container-max mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-gold-400">{stat.value}</div>
-                  <div className="text-sm text-gray-300 mt-1">{stat.label}</div>
-                </div>
-              ))}
+              {stats.map((stat) =>
+                stat.href ? (
+                  <Link key={stat.label} href={stat.href} className="text-center group">
+                    <div className="text-3xl md:text-4xl font-bold text-gold-400">{stat.value}</div>
+                    <div className="text-sm text-gray-300 mt-1 group-hover:text-gold-400 transition-colors underline decoration-gray-500 underline-offset-4 group-hover:decoration-gold-400">{stat.label}</div>
+                  </Link>
+                ) : (
+                  <div key={stat.label} className="text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-gold-400">{stat.value}</div>
+                    <div className="text-sm text-gray-300 mt-1">{stat.label}</div>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </section>

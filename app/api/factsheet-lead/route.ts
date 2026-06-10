@@ -83,7 +83,8 @@ export async function POST(req: Request) {
         const fromAddr = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
         await resend.emails.send({
           from: fromAddr,
-          to: 'broth@thoranalytics.com',
+          to: process.env.LEAD_NOTIFY_EMAIL || 'broth@thoranalytics.com',
+          replyTo: email,
           subject: `Factsheet lead: ${name} — ${firm || 'no firm'}`,
           html: `<h2>New Advisor Lead (Factsheet Gate)</h2>
             <p><strong>Name:</strong> ${name}</p>

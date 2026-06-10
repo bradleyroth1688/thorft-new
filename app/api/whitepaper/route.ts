@@ -46,7 +46,8 @@ export async function POST(req: NextRequest) {
       // Also notify Brad
       await resend.emails.send({
         from: fromAddr,
-        to: "broth@thoranalytics.com",
+        to: process.env.LEAD_NOTIFY_EMAIL || "broth@thoranalytics.com",
+        replyTo: email,
         subject: `Whitepaper Download: ${name || email}${firm ? ` (${firm})` : ""}`,
         html: `<p><strong>${name || "Unknown"}</strong> (${email})${firm ? ` from <strong>${firm}</strong>` : ""} just downloaded Signal Processing 101.</p>`,
       });

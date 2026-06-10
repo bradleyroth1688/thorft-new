@@ -36,9 +36,10 @@ export async function POST(request: Request) {
       const { Resend } = await import('resend');
       const resend = new Resend(resendKey);
       const fromAddr = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
-      await resend.emails.send({
+      const { error: sendError } = await resend.emails.send({
         from: fromAddr,
-        to: 'broth@thoranalytics.com',
+        to: process.env.LEAD_NOTIFY_EMAIL || 'broth@thoranalytics.com',
+        replyTo: email,
         subject: `New Contact: ${firstName} ${lastName} — ${email}`,
         html: `<h2>New Contact Form Submission (thorft.com)</h2>
           <p><strong>Name:</strong> ${firstName} ${lastName}</p>
@@ -48,6 +49,28 @@ export async function POST(request: Request) {
           ${interest ? `<p><strong>Interest:</strong> ${interest}</p>` : ''}
           <p><strong>Message:</strong> ${message}</p>`,
       });
+      if (sendError) {
+        console.error('Contact email send failed', sendError);
+      }
+    }
+
+    // Telegram ping so a contact never silently disappears
+    const tgToken = process.env.TELEGRAM_BOT_TOKEN;
+    const tgChat = process.env.TELEGRAM_CHAT_ID;
+    if (tgToken && tgChat) {
+      try {
+        await fetch(`https://api.telegram.org/bot${tgToken}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: tgChat,
+            text: `New contact (thorft.com): ${firstName} ${lastName}, ${firm || 'no firm'}, ${email}${interest ? ` — ${interest}` : ''}`,
+          }),
+          signal: AbortSignal.timeout(8000),
+        });
+      } catch (tgError) {
+        console.error('Contact Telegram ping failed', tgError);
+      }
     }
 
     return NextResponse.json({ ok: true });

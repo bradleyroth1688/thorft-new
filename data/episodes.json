@@ -5,10 +5,23 @@
     "guest": "Mike Willis, Cyber Hornet ETFs",
     "company": "The Bitcoin ETF Built to Survive a Drawdown",
     "duration": "33 min",
-    "youtubeId": "",
+    "youtubeId": "p9ffC4Gs6h0",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19312809-the-bitcoin-etf-built-to-survive-a-drawdown-mike-willis-cyber-hornet-etfs.mp3",
     "description": "<p>Mike Willis has spent 25 years on Wall Street — Smith Barney, Paine Webber, UBS — before founding Cyber Hornet ETFs to do two things that traditional asset management still hasn't done well: offer a founder-run alternative to the index giants that dominate corporate voting, and build a way for financial advisors to put crypto into client portfolios without the volatility blowing the relationship up.</p><p>In this episode, Mike breaks down BBB — the Cyber Hornet S&P 500 and Bitcoin 75/25 Strategy ETF — and the methodology behind why 75/25 is the sweet spot, not 50/50 or 60/40. He walks through what the fund actually did during Bitcoin's up year in 2024, its down year in 2025, and the deep drawdown unfolding right now in 2026 — and how the monthly rebalance functions as a built-in buy-low-sell-high mechanism. We also get into the firm's transition from Bitcoin futures to spot, why Coinbase's early custody concentration kept Cyber Hornet in futures longer than competitors, and how the wrapper actually changes the conversation when an advisor is trying to satisfy a client who wants crypto exposure without taking the volatility calls themselves.</p><p>Mike also covers INDEX, the firm's S&P 500 fund that pioneered shareholder voting input years before the major issuers offered any version of it — and why he wishes he had pushed harder on full pass-through voting when they had the first-mover lead.</p>",
-    "slug": "the-bitcoin-etf-built-to-survive-a-drawdown-mike-willis-cyber-hornet-etfs"
+    "slug": "the-bitcoin-etf-built-to-survive-a-drawdown-mike-willis-cyber-hornet-etfs",
+    "summary": "Mike Willis, co-founder and CEO of Cyber Hornet ETFs, joins Brad Roth to break down BBB, the S&P 500 and Bitcoin 75/25 Strategy ETF, and the case for putting crypto in client portfolios without the volatility wrecking the relationship. He explains why 75/25 is the allocation an advisor can actually hold through a cycle, how the monthly rebalance systematically trims Bitcoin after it runs and adds after it falls, and why Cyber Hornet stayed in Bitcoin futures over a year after spot ETFs launched. The conversation closes on the Jack Bogle warning that shaped the firm's other fund, INDEX: a handful of issuers controlling an outsized share of index fund voting power.",
+    "keyTopics": [
+      "Why 75/25 is the right Bitcoin allocation for most advisors, not 50/50 or a token 10 percent sleeve",
+      "The monthly rebalance that systematically trims Bitcoin after it runs and adds after it falls",
+      "How BBB held up across Bitcoin's 2024 up year, a down 2025, and a range-bound 2026",
+      "Why Cyber Hornet stayed in Bitcoin futures over a year after spot ETFs launched, and the custody risk behind it",
+      "Jack Bogle's warning on index fund voting concentration and the shareholder voting feature behind INDEX"
+    ],
+    "highlights": [
+      "Mike on the 2013 wake-up call: an S&P 500 that returned 32 percent while his portfolios did 14 to 16 percent, and the Jack Bogle meeting it led to",
+      "The 75/25 case: the Bitcoin allocation an advisor can actually hold through a full cycle",
+      "Why three firms controlling roughly 81 percent of index fund voting power was the problem INDEX set out to address"
+    ]
   },
   {
     "title": "A Forty-Year-Old Index That Still Outperforms in a Crisis | Jerry Prior, Mount Lucas",

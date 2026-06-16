@@ -1,5 +1,27 @@
 [
   {
+    "slug": "mike-willis-cyber-hornet",
+    "title": "The Bitcoin ETF Built to Survive a Drawdown | Mike Willis, Cyber Hornet ETFs",
+    "date": "2026-06-14",
+    "metaDescription": "Mike Willis, co-founder and CEO of Cyber Hornet ETFs, breaks down BBB, the S&P 500 and Bitcoin 75/25 Strategy ETF: why 75/25 is the allocation advisors can actually hold, how the monthly rebalance buys Bitcoin low and trims it high, why the firm stayed in futures over custody concerns, and the Jack Bogle voting fight behind INDEX.",
+    "guest": "Mike Willis",
+    "company": "Cyber Hornet ETFs",
+    "podcastSlug": "the-bitcoin-etf-built-to-survive-a-drawdown-mike-willis-cyber-hornet-etfs",
+    "youtubeId": "p9ffC4Gs6h0",
+    "duration": "33 min",
+    "buzzsproutId": "19312809",
+    "topics": [
+      "Bitcoin",
+      "Digital Assets",
+      "ETF Structure",
+      "Portfolio Construction",
+      "Shareholder Voting"
+    ],
+    "wordCount": 481,
+    "needsRevision": false,
+    "content": "<p>Mike Willis spent twenty-five years on Wall Street, at Smith Barney, Paine Webber, and UBS, before he started his own shop. He is the co-founder and CEO of Cyber Hornet ETFs, home to two funds that each try to fix something traditional asset management has been slow to address. BBB, the S&P 500 and Bitcoin 75/25 Strategy ETF, gives advisors a way to put crypto in client portfolios without the volatility blowing up the relationship. INDEX, the firm's S&P 500 fund, built in shareholder voting input years before the major issuers offered any version of it.</p><p>The origin story is the part that sticks. In 2013 the S&P 500 returned 32 percent. Mike's portfolios returned 14 to 16 percent. Thousands of hours of work, beaten by the cheapest product on the market. That gap sent him down a path that ended with his own firm and a meeting with Jack Bogle three months before Bogle died. The lesson he took was not that active management is dead. It was that the wrapper and the cost structure matter as much as the idea inside them.</p><p>BBB is built around a number most people argue about: 75/25, not 50/50, and not a token 10 percent Bitcoin sleeve. Mike's case is that 75/25 is the allocation an advisor can actually hold through a full cycle. We get into what the fund did in practice, up sharply in Bitcoin's 2024 run, holding positive in a down 2025, and staying inside a tight band so far in 2026. The mechanism underneath is a monthly rebalance that trims Bitcoin after it runs and adds after it falls, a discipline that takes the emotion out of the call.</p><p>We also get into why Cyber Hornet stayed in Bitcoin futures for more than a year after spot ETFs launched. The short version is custody. Early on, too much of the spot market ran through a single custodian, and Mike was not willing to take that concentration risk with client money until the picture broadened. It is a useful window into how a careful issuer thinks about structure instead of headlines.</p><p>Then there is the voting fight. Jack Bogle warned that a handful of firms would end up controlling an outsized share of index fund voting power, and Mike puts the number around three firms and 81 percent. INDEX was his early attempt to give shareholders a voice in that process before the big issuers offered anything similar. His one regret is not pushing harder on full pass through voting when Cyber Hornet had the first mover lead.</p><p>Most Bitcoin conversations are arguments about price. This one is about how you build a product clients can actually live with, and whether the wrapper around an idea matters as much as the idea. If you have been trying to fit digital assets into a real book, it is worth your time.</p>"
+  },
+  {
     "slug": "jerry-prior-mount-lucas",
     "title": "A Forty-Year-Old Index That Still Outperforms in a Crisis | Jerry Prior, Mount Lucas",
     "date": "2026-06-07",

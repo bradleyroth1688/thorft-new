@@ -1,5 +1,29 @@
 [
   {
+    "title": "Stacking the Odds to 93%: Inside a Non-Directional Income Strategy | Carter Worth, Worth Charting",
+    "date": "2026-06-21",
+    "guest": "Carter Worth, Worth Charting",
+    "company": "Stacking the Odds to 93%: Inside a Non-Directional Income Strategy",
+    "duration": "29 min",
+    "youtubeId": "3mDlVfGHHlk",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19353789-stacking-the-odds-to-93-inside-a-non-directional-income-strategy-carter-worth-worth-charting.mp3",
+    "description": "<p>Carter Worth spent 35 years on Wall Street — Value Line, Donaldson Lufkin & Jenrette, and a long series of major sell-side seats — before founding Worth Charting in 2021 to serve the largest institutional capital pools in the world. He's a regular on CNBC's Fast Money, and one of the more recognizable voices in technical analysis still operating at scale.</p><p>In this episode, Carter breaks down WRTH — the Worth Charting Options Income ETF — and why selling both sides of an option, instead of buying them or running covered calls, is a structurally different way to generate income. He walks through how the fund stacks four probability filters on top of each other — short-dated, out-of-the-money, large cap only, non-biotech, sold only after outsized earnings moves — to reach approximately 93% odds that the options expire worthless. We also get into why the fund is fundamentally non-directional and bets only on a stock staying in a range for 15 to 20 sessions after a major move, how the cash-secured structure works to manage downside risk, why tail risk from acquisitions is more manageable than most investors assume, and how Carter and his team are thinking about distribution in what he calls the ETF Thunderdome.</p><p>Carter also makes the case for why technical analysis is more relevant in a quant-and-AI-dominated market, not less — and why pattern recognition at the chart level is just the original version of what Renaissance was doing with 150 PhDs.</p>",
+    "slug": "stacking-the-odds-to-93-inside-a-non-directional-income-strategy-carter-worth-wo",
+    "summary": "Carter Worth, CEO and founder of Worth Charting, joins Brad Roth to break down WRTH, the Worth Charting Options Income ETF, and a short strangle strategy that sells both sides of an option instead of buying them or running covered calls. He walks through the four filters the fund stacks, short dated and out of the money, large caps only with no biotech, strikes at least 10 percent out of the money, and selling only after an outsized earnings move, to target roughly a 93 percent probability the options expire worthless. The conversation closes on why the rise of quant and AI validates technical analysis rather than undermining it.",
+    "keyTopics": [
+      "Why a short strangle that sells both sides of an option is structurally different from buying options or selling covered calls",
+      "The four compounding filters that move expire-worthless odds from roughly 70 percent toward a 93 percent target",
+      "Why the strategy is non-directional, a bet that a stock goes quiet for 15 to 20 sessions after a major earnings move",
+      "Tail risk and how a cash collateralized book of roughly 40 equal weighted positions keeps a single shock from becoming a wipeout",
+      "Why the rise of quant and AI validates technical analysis, with chart pattern recognition as the original version of what Renaissance did at scale"
+    ],
+    "highlights": [
+      "Carter on building a career around one input, price, across 35 years from Value Line and DLJ to a regular seat on CNBC Fast Money",
+      "The filter stack laid out step by step: short dated and out of the money to large caps only to 10 percent out of the money to selling only after an outsized earnings move",
+      "The ETF Thunderdome: why roughly half of all fund launches never cross 25 million in assets, and how a boutique fights for shelf space"
+    ]
+  },
+  {
     "title": "The Bitcoin ETF Built to Survive a Drawdown | Mike Willis, Cyber Hornet ETFs",
     "date": "2026-06-14",
     "guest": "Mike Willis, Cyber Hornet ETFs",

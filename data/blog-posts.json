@@ -1,5 +1,27 @@
 [
   {
+    "slug": "carter-worth-worth-charting",
+    "title": "The Options Income ETF That Bets on Nothing Happening | Carter Worth, Worth Charting",
+    "date": "2026-06-21",
+    "metaDescription": "Carter Worth, founder of Worth Charting, breaks down WRTH, the Worth Charting Options Income ETF: a short strangle that sells both sides of an option, the four filters that stack toward a 93 percent expire-worthless target, why the strategy is non-directional, and why quant and AI validate technical analysis rather than killing it.",
+    "guest": "Carter Worth",
+    "company": "Worth Charting",
+    "podcastSlug": "stacking-the-odds-to-93-inside-a-non-directional-income-strategy-carter-worth-wo",
+    "youtubeId": "3mDlVfGHHlk",
+    "duration": "29 min",
+    "buzzsproutId": "19353789",
+    "topics": [
+      "Options Income",
+      "Technical Analysis",
+      "Short Strangle",
+      "ETF Structure",
+      "Portfolio Construction"
+    ],
+    "wordCount": 529,
+    "needsRevision": false,
+    "content": "<p>Carter Worth has spent 35 years studying one input: price. Not earnings, not the macro story, just where a stock is trading and what the chart says about where it goes next. He came up through Value Line and Donaldson Lufkin and Jenrette, sat in a long run of major sell side seats, and became one of the more recognizable technicians still working at scale through his regular spot on CNBC Fast Money. In 2021 he left to build Worth Charting, a research boutique serving some of the largest institutional pools in the world, and then took the philosophy to its logical end with an ETF.</p><p>That fund is WRTH, the Worth Charting Options Income ETF, and it does not look like most of what gets called option income. The common versions buy options outright or sell covered calls against stock they hold. WRTH sells both sides of an option at once. That is a short strangle, cash collateralized, and it collects the premium. There is no directional call inside it. Carter is not betting a stock goes up or down. He is betting it does very little for a few weeks.</p><p>The edge comes from stacking filters. Short dated, out of the money options expire worthless something like 70 to 75 percent of the time on their own. Limit the universe to large caps, cut the biotech names, and that climbs toward 85 percent. Require the strikes to sit at least 10 percent out of the money and you are near 88. Then add the last filter: only sell the strangle in the days after a stock has made an outsized earnings move, when premium is rich and the name tends to settle into a range. Stack all four and Carter is targeting roughly a 93 percent probability that the options expire worthless. The position is really a bet that after a big gap, the stock goes quiet for 15 to 20 sessions while the fund gets paid to wait.</p><p>Brad and Carter spend real time on the part that scares people, which is what happens when a name the fund is short gaps again, on an acquisition or a shock. Carter's answer is structure. The book is cash collateralized, spread across roughly 40 equal weighted positions, so a single tail event is an event, not a wipeout. The math only works because no one line item is allowed to matter that much.</p><p>The wider argument is the one worth the listen. Carter makes the case that the rise of quant and AI validates technical analysis rather than killing it. Pattern recognition on a chart, he says, is the original version of what Jim Simons and 150 PhDs were doing at Renaissance, just at a different scale and a different price. They also get into the ETF Thunderdome, his term for a market where half of all launches never cross 25 million in assets, and how a boutique actually fights for shelf space against the giants.</p><p>If you have clients asking for income without another bet on market direction, or you just want to hear a serious chartist defend his craft against the machines, give it a listen.</p>"
+  },
+  {
     "slug": "mike-willis-cyber-hornet",
     "title": "The Bitcoin ETF Built to Survive a Drawdown | Mike Willis, Cyber Hornet ETFs",
     "date": "2026-06-14",

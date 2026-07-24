@@ -42,7 +42,8 @@ export async function POST(request: Request) {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            from: 'THOR Website <notifications@thorft.com>',
+            // thorft.com is not a verified Resend sender; thorsignals.com is.
+            from: process.env.RESEND_FROM_EMAIL || 'THOR Website <noreply@thorsignals.com>',
             to: NOTIFY_EMAIL,
             subject: `Website Visitor: ${visitor.name} — ${visitor.firm}`,
             html: `

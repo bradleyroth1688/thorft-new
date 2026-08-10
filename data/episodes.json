@@ -5,10 +5,23 @@
     "guest": "Raymond Bridges, Bridges Capital",
     "company": "Built for the Retiree Who Can't Afford a 30% Drawdown",
     "duration": "33 min",
-    "youtubeId": "",
+    "youtubeId": "0NlwfembH90",
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19591664-built-for-the-retiree-who-can-t-afford-a-30-drawdown-raymond-bridges-bridges-capital.mp3",
     "description": "<p>Raymond Bridges founded Bridges Capital in 2018 after years at Wells Fargo, building his practice around a demographic reality he sees every day in South Florida — retirees who need to draw from their portfolios monthly and cannot afford the 20 to 30% drawdowns the market delivers on a regular basis. He built an active risk management process specifically to reduce the depth of those drawdowns, tested it through COVID, and packaged it into BDGS — the Bridges Capital Tactical ETF, which launched on the Nasdaq in May 2023.</p><p>In this episode, Raymond walks through how BDGS actually works — the macro thesis grounded in Austrian business cycle theory that creates the fund's directional bias, the four-category breadth analysis that drives the actual trades, and the tranche-based scaling discipline that keeps the fund from ever going all-in or all-out. He explains why the fund has held as much as 80% cash for long stretches, how the top-ten market-cap-weighted names of the S&P 500 and Nasdaq 100 form the equity core, and why mean reversion is the buying discipline even when a name is a category leader. He makes the case for why the Sortino ratio is a better lens than the Sharpe ratio for evaluating tactical strategies, why he'd replace long-duration bonds with BDGS in most conservative portfolios, and how the ETF wrapper's custom basket redemption feature lets the fund manage risk without dragging tax consequences into every decision.</p><p>Raymond also gets into his monetarist read of the current environment, why he's been an advocate for Kevin Warsh at the Fed for more than a year, and how his macro view directly shapes the cautious posture BDGS currently carries.</p>",
-    "slug": "built-for-the-retiree-who-can-t-afford-a-30-drawdown-raymond-bridges-bridges-cap"
+    "slug": "built-for-the-retiree-who-can-t-afford-a-30-drawdown-raymond-bridges-bridges-cap",
+    "summary": "Raymond Bridges, founder of Bridges Capital, joins Behind the Ticker to argue that volatility is two completely different problems depending on which way the cash is flowing. A selloff pays the investor still contributing and punishes the retiree taking monthly distributions, and he built the Bridges Capital Tactical ETF around the second case. He walks through the two engines behind the fund, a rarely changing macro bias drawn from Austrian business cycle theory and a four category breadth signal that drives roughly four round turn trades a year, and explains why every move happens in small tranches so the fund is never all in or all out.",
+    "keyTopics": [
+      "Why a drawdown is a different event for a retiree taking monthly distributions than for an accumulator still adding, and why the failure mode is a client moving the whole account into a fixed annuity and losing growth permanently",
+      "The two speed process behind the fund: a macro thesis grounded in Austrian business cycle theory that changes very rarely, and a breadth signal scored across total NYSE breadth, the Nasdaq composite, the top 100 of the S&P 500 and the top 100 of the Nasdaq 100",
+      "Tranche based scaling in two to three percent increments, a maximum of 60 percent equities since launch, stretches at 80 percent cash, and a permanent cash sleeve in T bills or box spreads",
+      "Mean reversion as the buying rule: the equity core is the market cap weighted top names of the S&P 500 and Nasdaq 100, but a name trading above its own average gets held rather than bought, which is why AMD and Intel sat out for stretches",
+      "Why the Sortino ratio is a better lens than Sharpe for a strategy built to be asymmetric, why portfolio turnover misreads a cash heavy fund, and how custom basket redemptions let a manager make a risk decision without weighing a tax bill against it"
+    ],
+    "highlights": [
+      "[03:30] The asymmetry the whole fund is built on. COVID and 2022 were phenomenal years for anyone contributing every month, because the volatility pays you, but the retiree selling into the same drawdown does not know how long it lasts and often ends up locked into a fixed annuity",
+      "[09:30] How defensive the positioning has actually been. Since launch the most equity exposure the fund has carried is 60 percent against 40 percent cash, and only briefly at the tariff low, while 80 percent cash has been held for long stretches",
+      "[11:00] The buy rule stated plainly. Price against its own average decides the trade, so a name can sit in the top ten of the Nasdaq 100 and still not get bought, and price is treated as a signal the same way it is at a car lot or a grocery store"
+    ]
   },
   {
     "title": "Real Small Cap Value Exposure | Elena Khoziaeva, Bridgeway",

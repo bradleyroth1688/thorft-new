@@ -8,7 +8,7 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "THOR Financial Technologies | Model Portfolios for RIAs",
   description:
-    "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash. Founded by Brad Roth in Greensburg, PA.",
+    "THOR Financial Technologies delivers systematic model portfolios and active ETFs for RIAs, powered by signal processing and risk-first investing.",
   alternates: { canonical: "https://thorft.com" },
 };
 

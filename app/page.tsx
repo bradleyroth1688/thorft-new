@@ -8,7 +8,7 @@ import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "THOR Financial Technologies | Systematic Model Portfolios & ETFs for RIA Advisors",
   description:
-    "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash. Founded by Brad Roth in Greensburg, PA.",
+    "THOR Financial Technologies delivers systematic model portfolios and active ETFs for RIAs, powered by signal processing and risk-first investing.",
   alternates: { canonical: "https://thorft.com" },
 };
 
@@ -39,7 +39,7 @@ const models = [
   },
   {
     name: "NextGen Stock",
-    description: "Concentrated high-growth stock portfolio with 8–12 positions. Proprietary cascading de-risk from full equity to 100% short-duration treasuries.",
+    description: "Concentrated high-growth stock portfolio with 8\u201312 positions. Proprietary cascading de-risk from full equity to 100% short-duration treasuries.",
     benchmark: "Growth Innovation",
     href: "/models/nextgen-stock",
   },
@@ -64,7 +64,7 @@ export default function HomePage() {
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }])} />
       <JsonLd data={faqSchema(homeFaqs)} />
       <JsonLd data={webPageSchema({
-        name: "THOR Financial Technologies — Technology-Driven Investment Solutions for Advisors",
+        name: "THOR Financial Technologies \u2014 Technology-Driven Investment Solutions for Advisors",
         description: "THOR Financial Technologies provides proprietary, technology-driven model portfolios and actively managed ETFs for registered investment advisors. Six systematic strategies powered by signal processing with the ability to go to 100% cash.",
         url: "/",
       })} />
@@ -87,7 +87,7 @@ export default function HomePage() {
                 <span className="text-gold-400">for Advisors</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-10 leading-relaxed">
-                THOR uses proprietary signal processing to systematically manage risk across model portfolios and ETFs — removing emotion and replacing it with data.
+                THOR uses proprietary signal processing to systematically manage risk across model portfolios and ETFs \u2014 removing emotion and replacing it with data.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="btn-primary text-lg px-8 py-4">
@@ -142,7 +142,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold text-navy-800 mb-3">Model Portfolios</h3>
                 <p className="text-gray-600">
-                  Six distinct model portfolios spanning domestic equity, international, leveraged, growth, and alternatives — each powered by our proprietary risk management system.
+                  Six distinct model portfolios spanning domestic equity, international, leveraged, growth, and alternatives \u2014 each powered by our proprietary risk management system.
                 </p>
               </div>
               <div className="card text-center">
@@ -210,10 +210,10 @@ export default function HomePage() {
               <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">Free Tool</p>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">See How These Models Fit Your Portfolio</h3>
               <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-                Upload your current holdings and get an instant risk analysis — plus see how THOR models may fit your portfolio.
+                Upload your current holdings and get an instant risk analysis \u2014 plus see how THOR models may fit your portfolio.
               </p>
               <Link href="/analyze" className="btn-primary btn-lg">
-                Analyze My Portfolio →
+                Analyze My Portfolio \u2192
               </Link>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-navy-800 mb-1">Eliminates Behavioral Bias</h3>
-                      <p className="text-gray-600">Systematic rules replace emotional decision-making. No guessing, no gut feelings — just disciplined, data-driven execution.</p>
+                      <p className="text-gray-600">Systematic rules replace emotional decision-making. No guessing, no gut feelings \u2014 just disciplined, data-driven execution.</p>
                     </div>
                   </div>
                 </div>
@@ -309,9 +309,9 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-navy-800 mb-3">Little Reasons, Big Consequences</h3>
                 <p className="text-gray-600 mb-4">
-                  Why your investment returns stink — and what to do about it. Brad Roth&apos;s 12-chapter exploration of the behavioral pitfalls that destroy wealth.
+                  Why your investment returns stink \u2014 and what to do about it. Brad Roth&apos;s 12-chapter exploration of the behavioral pitfalls that destroy wealth.
                 </p>
-                <Link href="/book" className="btn-secondary inline-flex">Learn More →</Link>
+                <Link href="/book" className="btn-secondary inline-flex">Learn More \u2192</Link>
               </div>
               <div className="card border-2 border-navy-100">
                 <div className="flex items-center gap-3 mb-4">
@@ -322,7 +322,7 @@ export default function HomePage() {
                 <p className="text-gray-600 mb-4">
                   Conversations with the people building today&apos;s most innovative ETFs. Strategy, structure, and the stories behind each fund.
                 </p>
-                <Link href="/podcast" className="btn-secondary inline-flex">Listen Now →</Link>
+                <Link href="/podcast" className="btn-secondary inline-flex">Listen Now \u2192</Link>
               </div>
             </div>
           </div>
@@ -335,7 +335,7 @@ export default function HomePage() {
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-4">Daily Market Intelligence</p>
               <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">The Signal</h2>
               <p className="text-lg text-gray-600 mb-3">
-                Our daily market brief — positioning updates, risk signals, and the CIO&apos;s view on what matters. No fluff, no sales pitch. Just signal.
+                Our daily market brief \u2014 positioning updates, risk signals, and the CIO&apos;s view on what matters. No fluff, no sales pitch. Just signal.
               </p>
               <p className="text-sm text-gray-500 mb-8">
                 Published every weekday morning before the open. Read by advisors managing billions.
@@ -346,7 +346,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="btn-primary btn-lg inline-flex items-center gap-2"
               >
-                Subscribe Free →
+                Subscribe Free \u2192
               </a>
               <p className="text-xs text-gray-400 mt-4">Free. Unsubscribe anytime. No spam.</p>
             </div>
@@ -361,7 +361,7 @@ export default function HomePage() {
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               Get an instant risk score and see how THOR&apos;s systematic models could complement your portfolio.
             </p>
-            <Link href="/analyze" className="btn-primary btn-lg">Analyze My Portfolio →</Link>
+            <Link href="/analyze" className="btn-primary btn-lg">Analyze My Portfolio \u2192</Link>
           </div>
         </section>
 

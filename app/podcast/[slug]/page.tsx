@@ -4,6 +4,7 @@ import episodes from "@/data/episodes.json";
 import blogPosts from "@/data/blog-posts.json";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { Transcript, transcriptText } from "@/components/podcast/Transcript";
 import { SignalCTA } from "@/components/ui/SignalCTA";
 import { podcastEpisodeSchema, videoObjectSchema, breadcrumbSchema } from "@/data/schemas";
 
@@ -72,7 +73,7 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <JsonLd data={podcastEpisodeSchema(ep)} />
+      <JsonLd data={podcastEpisodeSchema({ ...ep, transcript: transcriptText(ep.slug) })} />
       {ep.youtubeId && (
         <JsonLd data={videoObjectSchema({
           title: ep.title,
@@ -227,6 +228,9 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
           </div>
         </section>
       )}
+
+      {/* Full transcript */}
+      <Transcript slug={ep.slug} guest={ep.guest} />
 
       {/* Newsletter CTA */}
       <section className="section-padding bg-gray-50">

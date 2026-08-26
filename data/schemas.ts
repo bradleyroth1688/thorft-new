@@ -150,6 +150,7 @@ export function podcastEpisodeSchema(ep: {
   description: string;
   summary?: string;
   keyTopics?: string[];
+  transcript?: string;
 }) {
   const cleanDesc = ep.description.replace(/<[^>]*>/g, "").replace(/&[^;]+;/g, " ").trim();
 
@@ -190,6 +191,15 @@ export function podcastEpisodeSchema(ep: {
       contentUrl: ep.audioUrl,
       encodingFormat: "audio/mpeg",
     };
+  }
+
+  // A transcript is a first-class signal to search and answer engines that the
+  // page carries the full spoken content, not a summary of it.
+  if (ep.transcript) {
+    schema.transcript = ep.transcript;
+    if (schema.associatedMedia) {
+      (schema.associatedMedia as Record<string, unknown>).transcript = ep.transcript;
+    }
   }
 
   return schema;

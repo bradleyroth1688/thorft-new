@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Transcript, transcriptText } from "@/components/podcast/Transcript";
 import { SignalCTA } from "@/components/ui/SignalCTA";
+import { RelatedInsights } from "@/components/ui/RelatedInsights";
+import { getRelatedInsights } from "@/lib/related-insights";
 import { podcastEpisodeSchema, videoObjectSchema, breadcrumbSchema } from "@/data/schemas";
 
 type Episode = (typeof episodes)[number] & {
@@ -70,6 +72,13 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
   const currentIndex = sorted.findIndex((e) => e.slug === ep.slug);
   const prev = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   const next = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+
+  // Episode pages rank for guest names, not for what advisors buy. These
+  // contextual links route that traffic into the commercial articles.
+  const related = getRelatedInsights(
+    [ep.title, ep.company, ep.summary || "", ep.description || "",
+     (ep.keyTopics || []).join(" ")].join(" ")
+  );
 
   return (
     <>
@@ -237,6 +246,11 @@ export default function EpisodePage({ params }: { params: { slug: string } }) {
         <div className="container-max mx-auto">
           <div className="max-w-4xl">
             <SignalCTA variant="compact" />
+            <RelatedInsights
+              insights={related}
+              heading="Related Reading"
+              intro="Where this episode's themes show up in how THOR builds portfolios."
+            />
           </div>
         </div>
       </section>

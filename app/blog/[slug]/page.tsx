@@ -4,6 +4,8 @@ import newsletters from "@/data/newsletters.json";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { PodcastCTA } from "@/components/ui/PodcastCTA";
+import { RelatedInsights } from "@/components/ui/RelatedInsights";
+import { getRelatedInsights } from "@/lib/related-insights";
 import { breadcrumbSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
@@ -76,6 +78,12 @@ export default function NewsletterPage({
   const prev =
     currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
   const next = currentIndex > 0 ? sorted[currentIndex - 1] : null;
+
+  // Score the insight articles against this edition's own words so the links
+  // are contextual rather than a fixed list repeated on every page.
+  const related = getRelatedInsights(
+    `${nl.title} ${nl.subtitle || ""} ${(nl.content || "").slice(0, 4000)}`
+  );
 
   return (
     <>
@@ -225,6 +233,13 @@ export default function NewsletterPage({
 
             {/* Podcast cross-link */}
             <PodcastCTA className="mt-6" />
+
+            {/* Contextual links into the insight articles */}
+            <RelatedInsights
+              insights={related}
+              heading="Go Deeper on This"
+              intro="Longer explainers on the ideas behind the daily brief."
+            />
           </div>
         </div>
       </section>

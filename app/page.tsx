@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { FaqSection } from "@/components/ui/FaqSection";
 import { homeFaqs } from "@/data/faqs";
+import articles from "@/data/articles.json";
 import { breadcrumbSchema, faqSchema, webPageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
@@ -59,6 +60,10 @@ const stats: { value: string; label: string; href?: string }[] = [
 ];
 
 export default function HomePage() {
+  const featuredInsights = [...articles]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+
   return (
     <>
       <JsonLd data={breadcrumbSchema([{ name: "Home", url: "/" }])} />
@@ -294,6 +299,47 @@ export default function HomePage() {
               <span className="text-lg font-semibold hover:text-gold-400 transition-colors">Yahoo Finance</span>
               <span className="text-lg font-semibold hover:text-gold-400 transition-colors">FinTech TV</span>
               <span className="text-lg font-semibold hover:text-gold-400 transition-colors">NYSE</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Insights - the advisor-intent articles. The homepage previously
+            linked to this section only from the header nav, which left the
+            commercial content with almost no internal link equity. */}
+        <section className="section-padding bg-gray-50" aria-label="Insights">
+          <div className="container-max mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-navy-800 mb-4">
+                Insights for Advisors
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                How systematic risk management actually works, what it costs, and where it fails. Written for the questions advisors ask before they allocate.
+              </p>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {featuredInsights.map((a) => (
+                <Link
+                  key={a.slug}
+                  href={`/insights/${a.slug}`}
+                  className="card group flex flex-col h-full hover:border-gold-400 transition-colors"
+                >
+                  <span className="text-xs font-semibold uppercase tracking-wide text-gold-600">
+                    {a.category}
+                  </span>
+                  <h3 className="mt-2 text-xl font-bold text-navy-800 group-hover:text-gold-600 transition-colors leading-snug">
+                    {a.title}
+                  </h3>
+                  <p className="mt-3 text-gray-600 text-sm flex-1 line-clamp-4">
+                    {a.excerpt}
+                  </p>
+                  <span className="mt-4 text-xs text-gray-500">{a.readTime}</span>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link href="/insights" className="btn-secondary inline-flex">
+                Read All Insights &rarr;
+              </Link>
             </div>
           </div>
         </section>

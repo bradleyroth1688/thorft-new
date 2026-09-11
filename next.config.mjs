@@ -41,6 +41,11 @@ const nextConfig = {
         destination: '/models',
         permanent: true,
       },
+      {
+        source: '/newsletter',
+        destination: '/blog',
+        permanent: true,
+      },
       ...legacyRedirects,
     ];
   },

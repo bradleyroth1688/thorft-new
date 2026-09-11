@@ -209,18 +209,6 @@ export default function HomePage() {
                 See <Link href="/disclosures" className="text-gold-600 underline">full disclosures</Link>.
               </p>
             </div>
-
-            {/* Analyzer CTA within Models section */}
-            <div className="mt-12 bg-navy-800 rounded-2xl p-8 md:p-10 text-center">
-              <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">Free Tool</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">See How These Models Fit Your Portfolio</h3>
-              <p className="text-gray-300 max-w-2xl mx-auto mb-6">
-                Upload your current holdings and get an instant risk analysis — plus see how THOR models may fit your portfolio.
-              </p>
-              <Link href="/analyze" className="btn-primary btn-lg">
-                Analyze My Portfolio →
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -396,18 +384,6 @@ export default function HomePage() {
               </a>
               <p className="text-xs text-gray-400 mt-4">Free. Unsubscribe anytime. No spam.</p>
             </div>
-          </div>
-        </section>
-
-        {/* Portfolio Analyzer CTA */}
-        <section className="section-padding bg-navy-800 text-white" aria-label="Portfolio Risk Analyzer">
-          <div className="container-max mx-auto text-center">
-            <p className="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-4">Free Portfolio Analysis</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Risky Is Your Portfolio?</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-              Get an instant risk score and see how THOR&apos;s systematic models could complement your portfolio.
-            </p>
-            <Link href="/analyze" className="btn-primary btn-lg">Analyze My Portfolio →</Link>
           </div>
         </section>
 

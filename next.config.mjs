@@ -31,6 +31,16 @@ const nextConfig = {
         destination: '/resources',
         permanent: true,
       },
+      {
+        source: '/analyze',
+        destination: '/models',
+        permanent: true,
+      },
+      {
+        source: '/analyze/:path*',
+        destination: '/models',
+        permanent: true,
+      },
       ...legacyRedirects,
     ];
   },

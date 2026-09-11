@@ -26,7 +26,6 @@ const navigation = [
       { name: "NextGen Stock", href: "/models/nextgen-stock" },
       { name: "Dollar ALT", href: "/models/dollar-alt" },
       { name: "Funds", href: "/funds" },
-      { name: "Portfolio Analyzer", href: "/analyze" },
     ],
   },
   {

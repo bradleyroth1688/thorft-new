@@ -1,5 +1,24 @@
 [
   {
+    "title": "Values-Based Investing Isn't ESG — Here's What It Actually Is | Bob Doll, Crossmark",
+    "date": "2026-09-20",
+    "guest": "Bob Doll, Crossmark",
+    "company": "Values-Based Investing Isn't ESG — Here's What It Actually Is",
+    "duration": "20 min",
+    "youtubeId": "cMWr6eEoo-8",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19771410-values-based-investing-isn-t-esg-here-s-what-it-actually-is-bob-doll-crossmark.mp3",
+    "description": "<p>Bob Doll has spent 40 years managing US large cap equities — as Chief Equity Strategist at Nuveen, CIO of US Equity at BlackRock, and now as CEO and CIO of Crossmark Global Investments. Crossmark has been operating since 1987, is owned by AG Financial (the financial arm of the Assemblies of God Church), and in July 2025 launched two actively managed ETFs that filled a genuine gap in the market: CLCG (Large Cap Growth) and CLCV (Large Cap Value) — the first faith-based, actively managed large cap growth and value ETFs available at the time of launch.</p><p>In this episode, Bob walks through the distinction between values-based investing and ESG — a conflation he addresses directly because it's what most advisors bring to the conversation. He explains the Avoid, Embrace, Engage framework Crossmark uses to build every values-based portfolio, and makes the case (backed by his own data) that there is no statistical evidence values-based portfolios give up return relative to non-values-based portfolios. Bob walks through the 75/25 construction split between the quantitative multi-factor secular screen and the values-based overlay, why return on equity and price to free cash flow are doing the heavy lifting in the current environment, and why both funds are meaningfully overweight financials — including a substantive case for why the banks in particular are set up well right now.</p><p>Bob also shares his read on the value-versus-growth cycle after value's strong run this year, what he's watching most closely as he thinks about his famous annual ten predictions for 2027, and why a meaningful portion of Crossmark's client base doesn't identify as people of faith but still chooses to invest with the firm.</p>",
+    "slug": "values-based-investing-isn-t-esg-here-s-what-it-actually-is-bob-doll-crossmark",
+    "summary": "Bob Doll of Crossmark Global Investments separates values-based investing from ESG and walks through the avoid, embrace, engage framework behind two actively managed large cap ETFs the firm launched in July 2025. The exclusion list removes a little over fifty names from the Russell 1000, roughly 6% of the index by capitalization. Scoring runs 75% quantitative multifactor and 25% an objective values overlay, rerun daily. He explains why an active growth portfolio looks concentrated when its benchmark is more concentrated still, why both funds are overweight banks, and why inflation is the number he is watching into next year.",
+    "keyTopics": [
+      "Values-Based Investing vs ESG",
+      "Avoid, Embrace, Engage Framework",
+      "Quantitative Multifactor Scoring",
+      "Large Cap Growth and Value Construction",
+      "Financials and Bank Positioning"
+    ]
+  },
+  {
     "title": "The ETF That Invests in What Made Billionaires Rich — Not What They Buy Now | Andrew Skatoff, Bancreek Capital",
     "date": "2026-09-13",
     "guest": "Andrew Skatoff, Bancreek Capital",
@@ -9,14 +28,14 @@
     "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19771374-the-etf-that-invests-in-what-made-billionaires-rich-not-what-they-buy-now-andrew-skatoff-bancreek-capital.mp3",
     "description": "<p>Andrew Skatoff is back on Behind the Ticker for his second appearance. Since he last sat down with Brad, Bancreek Capital has grown to approximately $300 million across four ETFs, rung the opening bell at the NYSE, and launched CLUB — the Bancreek Billionaires Club ETF — in May of this year.</p><p>CLUB isn't what the name might suggest at first glance. It doesn't invest in the personal portfolios of billionaires. It invests in the 30 publicly traded businesses that created that wealth — the family-founded, still-family-owned companies that have already won their categories and continue to compound. Andrew walks through the intellectual origin of the fund in his family office years, the data science process Bancreek uses to identify and rank the top 30 wealth-creation businesses globally, and why the billion-dollar threshold matters less than the relative positioning of the business behind it. He explains why concentration is capped at 10% and the portfolio is equal-weighted at 30 positions, why the fund runs 40 to 60% international by design, and how the monthly rerun of the screen keeps the portfolio current without introducing noise.</p><p>The episode also revisits the broader Bancreek investment framework — the combination of Andrew's fundamental value training from Columbia and Chief Data Scientist Anton Yen's information theory background (Lawrence Livermore, MIT Lincoln Labs, DARPA) — with what may be the clearest articulation of the firm's edge to date: two assets that compound at 10% over five years, one delivering it ratably and one delivering it through wild volatility, are not the same business. Bancreek is looking for Asset A across every one of its funds.</p>",
     "slug": "the-etf-that-invests-in-what-made-billionaires-rich-not-what-they-buy-now-andrew",
+    "summary": "Andrew Skatoff of Bancreek Capital returns to Behind the Ticker to explain a screen built on wealth creation rather than on what wealthy investors are buying today. He ranks the wealthiest people in the world against the specific publicly traded business that created the fortune, takes the top thirty, and holds them equal weighted with a cap on any single position at purchase. He walks through why the absolute dollar threshold matters less than relative position, why the screen runs global with international exposure historically in a forty to sixty percent band, and why two assets that finish five years in the same place are not the same business if one got there smoothly and the other lurched.",
     "keyTopics": [
       "Wealth Creation as an Investment Signal",
       "Founder and Family Owned Businesses",
       "Global Equity Allocation",
       "Equal Weight Portfolio Construction",
       "Data Science and Information Theory"
-    ],
-    "summary": "Andrew Skatoff of Bancreek Capital returns to Behind the Ticker to explain a screen built on wealth creation rather than on what wealthy investors are buying today. He ranks the wealthiest people in the world against the specific publicly traded business that created the fortune, takes the top thirty, and holds them equal weighted with a cap on any single position at purchase. He walks through why the absolute dollar threshold matters less than relative position, why the screen runs global with international exposure historically in a forty to sixty percent band, and why two assets that finish five years in the same place are not the same business if one got there smoothly and the other lurched."
+    ]
   },
   {
     "title": "Getting 5% Yield With Half the Volatility | Jeff Klingelhofer, Aristotle Pacific",

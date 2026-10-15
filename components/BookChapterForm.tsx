@@ -1,8 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
+import Script from "next/script";
 
 const CHAPTER_URL = "/documents/book-chapter-1.pdf";
+
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 export default function BookChapterForm() {
   const [name, setName] = useState("");
@@ -10,6 +13,16 @@ export default function BookChapterForm() {
   const [firm, setFirm] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  const turnstileRef = useRef("");
+
+  const onTurnstileCallback = useCallback((token: string) => {
+    turnstileRef.current = token;
+  }, []);
+
+  if (typeof window !== "undefined") {
+    (window as any).onTurnstileBookChapter = onTurnstileCallback;
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,7 +35,13 @@ export default function BookChapterForm() {
     fetch("/api/book-download", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, name, firm }),
+      body: JSON.stringify({
+        email,
+        name,
+        firm,
+        honeypot,
+        turnstileToken: turnstileRef.current || undefined,
+      }),
     }).catch(() => {});
 
     setSubmitted(true);
@@ -63,6 +82,7 @@ export default function BookChapterForm() {
       <p className="text-sm text-gray-400 mb-4">
         Get the first chapter free — see why your returns suffer from the behavioral traps you don&apos;t even notice.
       </p>
+      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" />
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="bc-name" className="block text-sm text-gray-300 mb-1">Full Name</label>
@@ -98,6 +118,28 @@ export default function BookChapterForm() {
             placeholder="Wealth Management Co."
           />
         </div>
+        {/* Honeypot */}
+        <div style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }} aria-hidden="true">
+          <input
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
+
+        {TURNSTILE_SITE_KEY && (
+          <div
+            className="cf-turnstile"
+            data-sitekey={TURNSTILE_SITE_KEY}
+            data-callback="onTurnstileBookChapter"
+            data-theme="dark"
+            data-size="flexible"
+          />
+        )}
+
         <button type="submit" disabled={loading} className="btn-primary w-full disabled:opacity-50">
           {loading ? "Opening..." : "Download Chapter 1 Free"}
         </button>

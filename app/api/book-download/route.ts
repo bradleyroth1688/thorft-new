@@ -1,11 +1,48 @@
 import { NextRequest, NextResponse } from "next/server";
+import { rateLimit } from "@/lib/rate-limit";
+import { verifyTurnstile } from "@/lib/turnstile";
+import { spamReason } from "@/lib/lead-spam";
 
 export async function POST(req: NextRequest) {
   try {
-    const { email, name, firm } = await req.json();
+    const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+    if (!rateLimit(ip, "book-download", 5, 10 * 60 * 1000)) {
+      return NextResponse.json({ error: "Too many requests. Please try again later." }, { status: 429 });
+    }
+
+    const { email, name, firm, honeypot, turnstileToken } = await req.json();
 
     if (!email || !email.includes("@")) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
+    }
+
+    // Honeypot: look successful, send nothing.
+    if (honeypot) {
+      return NextResponse.json({ success: true });
+    }
+
+    // Drop machine-generated submissions silently. Sending the PDF to an
+    // attacker-supplied address turns this route into an open relay on our
+    // only verified sending domain, so a flagged request sends NO mail at
+    // all — not the document, not the lead notification.
+    const spam = spamReason({ name, firm, email });
+    if (spam) {
+      console.warn(`[book-download] dropped submission (${spam}) from ${ip}`);
+      return NextResponse.json({ success: true });
+    }
+
+    // Turnstile is optional here (the form opens the PDF without waiting),
+    // but a token that is present must be valid.
+    if (turnstileToken) {
+      const valid = await verifyTurnstile(turnstileToken);
+      if (!valid) {
+        return NextResponse.json({ error: "CAPTCHA verification failed." }, { status: 403 });
+      }
+    }
+
+    // One document per address per hour, whatever the source IP.
+    if (!rateLimit(String(email).toLowerCase(), "book-download-email", 2, 60 * 60 * 1000)) {
+      return NextResponse.json({ success: true });
     }
 
     // Send email with chapter link via Resend

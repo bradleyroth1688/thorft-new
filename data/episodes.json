@@ -1,5 +1,24 @@
 [
   {
+    "title": "The $7 Trillion Market Most Advisors Can't Actually Access | Chris Getter, Simplify",
+    "date": "2026-10-18",
+    "guest": "Chris Getter, Simplify",
+    "company": "The $7 Trillion Market Most Advisors Can't Actually Access",
+    "duration": "22 min",
+    "youtubeId": "BXLnTtVsBDA",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19947158-the-7-trillion-market-most-advisors-can-t-actually-access-chris-getter-simplify.mp3",
+    "description": "<p>Chris Getter started his career in US high yield at Fidelity in the mid-1990s before transitioning into emerging markets just in time for the Asia currency crisis and the Russian default. He spent a decade at PIMCO, briefly moved to Lazard, and after what he thought was retirement found his way to Simplify, where he's now a managing director and portfolio manager. Simplify was founded in 2020 by Dave Burns and Paul Kim specifically to take advantage of the SEC's 2019 rule refresh — the regulatory change that effectively opened the ETF wrapper to the derivatives-based, convex, and institutional strategies that had previously been limited to mutual funds. The firm's calling card is alternatives, and FOXY — the Simplify Currency Strategy ETF, launched in February 2025 — is the firm's dedicated expression of currency as an alternatives sleeve exposure.</p><p>In this episode, Chris walks through why currency exposure is almost always encountered embedded inside something else (European stocks come with euro exposure whether you want it or not), why most retail investors have never had meaningful direct access to the asset class, and why forward contracts — the primary instrument of the global FX market — don't appear on any retail brokerage platform. He explains carry trades in plain English using a Brazilian real / Swiss franc example, and lays out the specific Achilles heel every carry strategy faces: the sudden violent unwind. FOXY is designed around that failure mode. The emerging markets side of the strategy runs eight currency pairs against the US dollar, going long high-yielding EM currencies and shorting lower-yielding funding currencies. The G10 side runs on implied yield momentum, long accelerating-yield currencies and short weakening ones. Implied volatility itself is used as a signal — when EM currencies signal higher future volatility, exposure scales back and shifts into the G10 cushion.</p><p>A critical structural feature of FOXY is that it's dollar-neutral: every long position is matched by an equally sized short. The fund is not making a directional bet on the dollar. Chris walks through the T-bill sleeve that collateralizes the forward positions and funds the monthly distribution, the fund's first-year performance through the tariff tantrum (a genuine stress test for a systematic strategy), and the correlation case: FOXY's correlation to a 60/40 portfolio since inception is approximately 0.4, with correlation to other alternatives running below 0.2 and in some cases below 0.1. He also lays out how FOXY fits inside Simplify's broader alternatives lineup — complementing rather than duplicating the firm's managed futures, private credit, and other strategies.</p>",
+    "slug": "the-7-trillion-market-most-advisors-can-t-actually-access-chris-getter-simplify",
+    "summary": "Chris Getter of Simplify explains why currencies are the one market most investors only hold by accident, how a carry trade works in plain English, why his strategy stays dollar neutral, and how volatility signals shift risk from emerging market currencies into a G10 cushion when trouble builds.",
+    "keyTopics": [
+      "The currency carry trade",
+      "Why FX is hard for advisors to access",
+      "Dollar-neutral long/short construction",
+      "Volatility as a risk signal",
+      "Currency inside an alternatives sleeve"
+    ]
+  },
+  {
     "title": "Why Producers Fell From 35% of the S&P to 5% — And What It Means for Portfolios | Doug Daly, Core Commodity",
     "date": "2026-10-11",
     "guest": "Doug Daly, Core Commodity",

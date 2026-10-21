@@ -37,6 +37,18 @@ const nextConfig = {
         permanent: true,
       },
       {
+        // LinkedIn outreach sent /analyzer (not /analyze) to thousands of
+        // leads; it 404'd. Several replied to say the link was broken.
+        source: '/analyzer',
+        destination: '/models',
+        permanent: true,
+      },
+      {
+        source: '/analyzer/:path*',
+        destination: '/models',
+        permanent: true,
+      },
+      {
         source: '/analyze/:path*',
         destination: '/models',
         permanent: true,

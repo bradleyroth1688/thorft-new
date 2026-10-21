@@ -17,6 +17,17 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        // The single booking URL for every published surface. Everything we
+        // publish links here, never straight to the scheduler, so the booking
+        // tool can change without reprinting a link we have already sent.
+        // `?s=<surface>` rides through to the scheduler and shows up in the
+        // Vercel request log, which is how we attribute a booking to a channel.
+        // Canon: ~/clawd/canon/CTA_STANDARD.md
+        source: '/call',
+        destination: 'https://ThorsCalendar.as.me',
+        permanent: false,
+      },
+      {
         source: '/resources/white-papers',
         destination: '/resources',
         permanent: true,

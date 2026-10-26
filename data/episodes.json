@@ -1,5 +1,24 @@
 [
   {
+    "title": "Private Credit Exposure Without the Lockups | Mike O'Brien, Hilton Capital",
+    "date": "2026-10-25",
+    "guest": "Mike O'Brien, Hilton Capital",
+    "company": "Private Credit Exposure Without the Lockups",
+    "duration": "23 min",
+    "youtubeId": "CY8evX-MU28",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/19984148-private-credit-exposure-without-the-lockups-mike-o-brien-hilton-capital.mp3",
+    "description": "<p>Mike O'Brien started his career in Chapter 11 restructuring at FTI Consulting, moved to sell-side equity research at Wolfe Research covering spin-offs and special situations, and joined Hilton Capital Management in 2024, where he co-manages the firm's tactical income and dividend strategies alongside HBDC. Hilton has doubled to roughly $4 billion in assets since he joined, and in June 2025 it launched HBDC, the Hilton BDC Corporate Bond ETF — the first and only pure-play BDC bond ETF on the market.</p><p>In this episode, Mike explains what business development companies are (banks without deposits, created in 1980 to lend to small and mid-sized US businesses), why they grew rapidly after post-2008 bank regulation, and why the bonds they issue have been overlooked while BDC equity gets most of the attention. The investment case rests on structure: BDCs are legally capped at 2-to-1 leverage, most run closer to 1-to-1, and a BDC's NAV would need to fall 50% before its bonds were impaired. Mike notes there hasn't been a BDC bond impairment since the vehicle was created in 1980. He walks through the index Hilton built with Solactive, including issuer caps that deliberately overweight smaller BDCs for extra spread, a $250 million minimum issue size to protect liquidity, and the decision not to impose an investment grade mandate. At recording, the fund was about 95% investment grade with a yield to maturity around 6.7% and a spread of roughly 175 basis points over Treasuries.</p><p>Mike also covers what advisors have taught him since launch: the BIZD question that comes up in nearly every meeting, the negative press cycle around private credit, and why BDC transparency (every loan disclosed in SEC filings) is underappreciated. He's direct that HBDC is not a substitute for core bonds, with a spread beta of about 1.4 to investment grade, and makes the case for it instead as a replacement for interval funds and non-traded BDCs that carry lockups, quarterly redemption limits, and much higher fees. HBDC charges 39 basis points and recently received an NAIC 2C designation.</p>",
+    "slug": "private-credit-exposure-without-the-lockups-mike-o-brien-hilton-capital",
+    "keyTopics": [
+      "What a BDC bond is",
+      "Statutory leverage limits and the equity cushion",
+      "Index design and issuer caps",
+      "BDC bonds vs BDC equity",
+      "Liquid alternative to non-traded BDCs"
+    ],
+    "summary": "Mike O'Brien of Hilton Capital Management explains the first pure-play BDC bond ETF: how BDC bonds sit next to private credit without owning the loans, why the 2 to 1 leverage limit leaves an equity cushion under the bonds, how the index caps the largest issuers, and why he positions it as a liquid alternative to non-traded BDCs and interval funds, not a core bond replacement."
+  },
+  {
     "title": "The $7 Trillion Market Most Advisors Can't Actually Access | Chris Getter, Simplify",
     "date": "2026-10-18",
     "guest": "Chris Getter, Simplify",

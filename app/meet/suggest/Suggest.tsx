@@ -67,7 +67,7 @@ export default function Suggest({ types }: { types: PublicType[] }) {
           {copied === 'plain' ? 'Copied' : 'Copy as plain text'}
         </button>
       </div>
-      <p className="text-xs text-gray-500 mt-3">"Copy for email" makes each time a booking link in Gmail or Outlook. Plain text has one link at the end.</p>
+      <p className="text-xs text-gray-500 mt-3">&ldquo;Copy for email&rdquo; makes each time a booking link in Gmail or Outlook. Plain text has one link at the end.</p>
     </div>
   )
 }

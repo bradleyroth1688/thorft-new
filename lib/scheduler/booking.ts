@@ -25,18 +25,22 @@ export function description(type: MeetingType, b: BookingDetails, manage: string
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!)
 
-/** Tell Brad. The Google invite already puts the meeting on his calendar; this is the heads-up. */
-export async function notifyBrad(subject: string, lines: string[], replyTo?: string) {
+/**
+ * Tell Brad. Google does not email the organizer about events on his own calendar, so this email is his only notice.
+ * It goes to his own inbox (SCHEDULER_NOTIFY_EMAIL), not to LEAD_NOTIFY_EMAIL, which the other site forms share.
+ */
+export async function notifyBrad(subject: string, lines: string[], replyTo?: string, eventLink?: string) {
   const resendKey = process.env.RESEND_API_KEY
   if (resendKey) {
     try {
       const { Resend } = await import('resend')
       const { error } = await new Resend(resendKey).emails.send({
         from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-        to: process.env.LEAD_NOTIFY_EMAIL || 'broth@thoranalytics.com',
+        to: process.env.SCHEDULER_NOTIFY_EMAIL || 'broth@thoranalytics.com',
         ...(replyTo ? { replyTo } : {}),
         subject,
-        html: `<h2>${esc(subject)}</h2>${lines.map((l) => `<p>${esc(l)}</p>`).join('')}`,
+        html: `<h2>${esc(subject)}</h2>${lines.map((l) => `<p>${esc(l)}</p>`).join('')}${
+          eventLink ? `<p><a href="${esc(eventLink)}">Open in Google Calendar</a></p>` : ''}${replyTo ? '<p>Reply to this email to reach the guest.</p>' : ''}`,
       })
       if (error) console.error('Scheduler email failed', error)
     } catch (e) {

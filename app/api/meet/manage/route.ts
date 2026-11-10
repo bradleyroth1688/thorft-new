@@ -67,6 +67,7 @@ export async function POST(request: Request) {
         `Rescheduled: ${b.ev.summary}`,
         [`Was: ${whenLabel(new Date(b.ev.start.dateTime))}`, `Now: ${whenLabel(start)}`, guest],
         b.meta.guestEmail,
+        moved?.htmlLink,
       )
       return NextResponse.json({ ok: true, when: whenLabel(start) })
     }

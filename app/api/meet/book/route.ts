@@ -61,7 +61,7 @@ export async function POST(request: Request) {
     const summary = type.title(details)
     const desc = description(type, details, manage)
     const end = new Date(start.getTime() + type.minutes * 60_000)
-    await createEvent({
+    const created = await createEvent({
       id,
       summary,
       description: desc,
@@ -75,8 +75,9 @@ export async function POST(request: Request) {
     await emailGuest({ kind: 'booked', id, type, guest: { name, email }, summary, description: desc, start, end, manage, sequence: 0 })
     await notifyBrad(
       `New booking: ${type.title(details)}`,
-      [whenLabel(start), `${name} <${email}>`, firm && `Firm: ${firm}`, etf && `ETF: ${etf}`, notes && `Notes: ${notes}`].filter(Boolean) as string[],
+      [whenLabel(start), `${type.name}, ${type.minutes} minutes`, `${name} <${email}>`, firm && `Firm: ${firm}`, etf && `ETF: ${etf}`, notes && `Notes: ${notes}`].filter(Boolean) as string[],
       email,
+      created.htmlLink,
     )
     return NextResponse.json({ ok: true, when: whenLabel(start), location: locationLabel(type.location), manage })
   } catch (e) {

@@ -34,8 +34,8 @@ export async function availability(type: MeetingType, opts: { fresh?: boolean; i
   const dur = type.minutes * 60_000
   const buf = SCHEDULE.bufferMinutes * 60_000
   const earliest = now.getTime() + SCHEDULE.minNoticeHours * 3_600_000
-  const [sh, sm] = hhmm(SCHEDULE.start)
-  const [eh, em] = hhmm(SCHEDULE.end)
+  const [sh, sm] = hhmm(type.hours?.start || SCHEDULE.start)
+  const [eh, em] = hhmm(type.hours?.end || SCHEDULE.end)
 
   const days: Day[] = []
   for (let k = 0; k <= SCHEDULE.horizonDays; k++) {

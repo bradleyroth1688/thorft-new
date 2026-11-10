@@ -10,7 +10,7 @@ export const SCHEDULE = {
   stepMinutes: 30,
   minNoticeHours: 4,
   horizonDays: 30,
-  bufferMinutes: 0,
+  bufferMinutes: 15, // Free time kept before and after every busy block, so meetings never run back to back.
 }
 
 export type LocationKind = 'zoom' | 'riverside'
@@ -24,6 +24,8 @@ export type MeetingType = {
   location: LocationKind
   blurb: string
   askEtf?: boolean
+  /** Overrides SCHEDULE start/end for this type. */
+  hours?: { start: string; end: string }
   title: (b: BookingDetails) => string
 }
 
@@ -50,6 +52,7 @@ export const MEETING_TYPES: Record<string, MeetingType> = {
     minutes: 30,
     location: 'riverside',
     askEtf: true,
+    hours: { start: '10:00', end: '14:00' }, // Brad records only while the house is empty.
     blurb: 'A 30-minute Behind the Ticker recording in the Riverside studio.',
     title: (b) => `Behind the Ticker // ${b.name} // ${b.etf || 'ETF TBD'}`,
   },

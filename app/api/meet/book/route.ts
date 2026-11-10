@@ -1,3 +1,4 @@
+import { timingSafeEqual } from 'crypto'
 import { NextResponse } from 'next/server'
 import { MEETING_TYPES, SCHEDULE, locationLabel, locationUrl } from '@/lib/scheduler/config'
 import { isOpen } from '@/lib/scheduler/availability'
@@ -13,11 +14,23 @@ export const dynamic = 'force-dynamic'
 const EMAIL = /^[^\s@<>()",;]+@[^\s@<>()",;]+\.[a-z]{2,}$/i
 const clean = (v: unknown, max: number) => (typeof v === 'string' ? v.replace(/[\r\n\t]+/g, ' ').trim().slice(0, max) : '')
 
+/** Jane (Brad's scheduling assistant) books from a server, so she has no Turnstile token and one IP. */
+function isAgent(request: Request): boolean {
+  const key = process.env.SCHEDULER_AGENT_KEY
+  const got = request.headers.get('x-scheduler-key')
+  if (!key || key.length < 32 || !got) return false
+  const a = Buffer.from(key)
+  const b = Buffer.from(got)
+  return a.length === b.length && timingSafeEqual(a, b)
+}
+
 // Every booking makes Google send an invite from Brad's own address. An unguarded route would be an
 // invite-spam relay on broth@thoranalytics.com, so this route carries all four lead-route guards.
+// The agent key skips only Turnstile and the per-IP limit; the honeypot, per-email limit and spam check stay.
 export async function POST(request: Request) {
+  const agent = isAgent(request)
   const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown'
-  if (!rateLimit(ip, 'meet-book', 5, 60 * 60 * 1000)) {
+  if (!agent && !rateLimit(ip, 'meet-book', 5, 60 * 60 * 1000)) {
     return NextResponse.json({ error: 'Too many requests. Please try again later.' }, { status: 429 })
   }
   const body = await request.json().catch(() => ({}))
@@ -35,7 +48,7 @@ export async function POST(request: Request) {
   }
   if (type.askEtf && !etf) return NextResponse.json({ error: 'Please enter the ETF we will discuss.' }, { status: 400 })
 
-  if (process.env.TURNSTILE_SECRET_KEY && process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) {
+  if (!agent && process.env.TURNSTILE_SECRET_KEY && process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY) {
     if (!body.turnstileToken || !(await verifyTurnstile(body.turnstileToken))) {
       return NextResponse.json({ error: 'Verification failed. Please try again.' }, { status: 403 })
     }

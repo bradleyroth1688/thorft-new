@@ -124,7 +124,8 @@ export default function Booker({ type, siteKey, reschedule }: Props) {
         ? await fetch('/api/meet/manage', { method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ action: 'reschedule', id: reschedule.id, sig: reschedule.sig, start: slot }) })
         : await fetch('/api/meet/book', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ ...form, type: type.slug, start: slot, honeypot, turnstileToken: turnstileRef.current }) })
+            body: JSON.stringify({ ...form, type: type.slug, start: slot, honeypot, turnstileToken: turnstileRef.current,
+              source: new URLSearchParams(window.location.search).get('s') || '' }) })
       const d = await r.json()
       if (!r.ok) {
         setError(d.error || 'That did not work.')

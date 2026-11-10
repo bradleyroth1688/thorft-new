@@ -40,6 +40,7 @@ export async function POST(request: Request) {
   const firm = clean(body.firm, 120)
   const etf = clean(body.etf, 60).toUpperCase()
   const notes = typeof body.notes === 'string' ? body.notes.trim().slice(0, 1000) : ''
+  const source = clean(body.source, 40).replace(/[^a-z0-9_-]/gi, '')
   const start = new Date(clean(body.start, 40))
 
   if (!type) return NextResponse.json({ error: 'Unknown meeting type' }, { status: 400 })
@@ -68,7 +69,7 @@ export async function POST(request: Request) {
     if (!(await isOpen(type, start.toISOString()))) {
       return NextResponse.json({ error: 'That time was just taken. Please pick another.' }, { status: 409 })
     }
-    const details = { name, email, firm, etf, notes }
+    const details = { name, email, firm, etf, notes, source }
     const id = newEventId()
     const manage = manageUrl(id)
     const summary = type.title(details)
@@ -83,12 +84,12 @@ export async function POST(request: Request) {
       end,
       timeZone: SCHEDULE.timeZone,
       guest: { email, name },
-      meta: { type: type.slug, guestEmail: email, guestName: name },
+      meta: { type: type.slug, guestEmail: email, guestName: name, ...(source ? { source } : {}) },
     })
     await emailGuest({ kind: 'booked', id, type, guest: { name, email }, summary, description: desc, start, end, manage, sequence: 0 })
     await notifyBrad(
       `New booking: ${type.title(details)}`,
-      [whenLabel(start), `${type.name}, ${type.minutes} minutes`, `${name} <${email}>`, firm && `Firm: ${firm}`, etf && `ETF: ${etf}`, notes && `Notes: ${notes}`].filter(Boolean) as string[],
+      [whenLabel(start), `${type.name}, ${type.minutes} minutes`, `${name} <${email}>`, firm && `Firm: ${firm}`, etf && `ETF: ${etf}`, notes && `Notes: ${notes}`, source && `Came from: ${source}`].filter(Boolean) as string[],
       email,
       created.htmlLink,
     )

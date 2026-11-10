@@ -15,7 +15,7 @@ export const SCHEDULE = {
 
 export type LocationKind = 'zoom' | 'riverside'
 
-export type BookingDetails = { name: string; email: string; firm?: string; etf?: string; notes?: string }
+export type BookingDetails = { name: string; email: string; firm?: string; etf?: string; notes?: string; source?: string }
 
 export type MeetingType = {
   slug: string
@@ -30,6 +30,15 @@ export type MeetingType = {
 }
 
 export const MEETING_TYPES: Record<string, MeetingType> = {
+  // thorft.com/call lands here. Every published CTA promises "fifteen minutes" (canon/CTA_STANDARD.md).
+  intro: {
+    slug: 'intro',
+    name: 'Intro Call with Brad Roth',
+    minutes: 15,
+    location: 'zoom',
+    blurb: 'Fifteen minutes with Brad Roth, founder and CIO of THOR: the mechanism, the index history, and where it fits.',
+    title: (b) => `Intro Call // ${b.name}${b.firm ? ` // ${b.firm}` : ''}`,
+  },
   demo: {
     slug: 'demo',
     name: 'THOR Funds Demo',

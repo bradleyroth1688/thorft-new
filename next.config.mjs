@@ -23,8 +23,9 @@ const nextConfig = {
         // `?s=<surface>` rides through to the scheduler and shows up in the
         // Vercel request log, which is how we attribute a booking to a channel.
         // Canon: ~/clawd/canon/CTA_STANDARD.md
+        // 2026-11-10: Acuity replaced by Brad's own scheduler. The 15-minute intro matches the published copy.
         source: '/call',
-        destination: 'https://ThorsCalendar.as.me',
+        destination: '/meet/intro',
         permanent: false,
       },
       {

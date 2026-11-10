@@ -78,10 +78,20 @@ export default function Booker({ type, siteKey, reschedule }: Props) {
     const pre = new URLSearchParams(window.location.search).get('t')
     const preIso = pre ? new Date(pre).toISOString() : ''
     const all = days.flatMap((d) => d.slots)
+    const open = (iso: string) => {
+      const d = ymd(iso, tz)
+      setMonth(d.slice(0, 7)); setDate(d); setSlot(iso); setStep('form')
+    }
     if (preIso && all.includes(preIso) && !reschedule) {
-      const d = ymd(preIso, tz)
-      setMonth(d.slice(0, 7)); setDate(d); setSlot(preIso); setStep('form')
+      open(preIso)
       return
+    }
+    if (preIso && !reschedule) {
+      // A time agreed by email can sit off the 30-minute grid (2:15 PM). Ask the server about that exact minute.
+      fetch(`/api/meet/suggest?type=${type.slug}&count=1&want=${encodeURIComponent(preIso)}`, { cache: 'no-store' })
+        .then((r) => r.json())
+        .then((d) => { if (d.proposed?.[0]?.open) open(preIso) })
+        .catch(() => {})
     }
     if (!date && firstOpen) { setDate(firstOpen); setMonth(firstOpen.slice(0, 7)) }
     if (!month && !firstOpen && days[0]) setMonth(days[0].date.slice(0, 7))
@@ -213,7 +223,7 @@ export default function Booker({ type, siteKey, reschedule }: Props) {
                     )
                   })}
                 </div>
-                {byDate.size === 0 && <p className="mt-6 text-sm text-gray-600">No open times in the next 30 days. Please email welcome@thoranalytics.com.</p>}
+                {byDate.size === 0 && <p className="mt-6 text-sm text-gray-600">No open times in the next 60 days. Please email welcome@thoranalytics.com.</p>}
               </div>
               <div>
                 <h3 className="font-semibold text-navy-800 mb-4">{date ? longDate(date) : 'Pick a day'}</h3>

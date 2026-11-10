@@ -9,7 +9,7 @@ export const SCHEDULE = {
   end: '16:00',
   stepMinutes: 30,
   minNoticeHours: 4,
-  horizonDays: 30,
+  horizonDays: 60, // "The week of" requests reach weeks ahead.
   bufferMinutes: 15, // Free time kept before and after every busy block, so meetings never run back to back.
 }
 

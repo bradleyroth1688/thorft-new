@@ -59,6 +59,29 @@ export async function googleBusy(lo: Date, hi: Date): Promise<Interval[]> {
   return out
 }
 
+/** Events with titles, for the travel rules. Expands recurring events. Pages up to 2,500 x 4. */
+export async function listEvents(calendarId: string, lo: Date, hi: Date): Promise<any[]> {
+  const out: any[] = []
+  let token = ''
+  for (let i = 0; i < 4; i++) {
+    const q = new URLSearchParams({
+      timeMin: lo.toISOString(), timeMax: hi.toISOString(), singleEvents: 'true', orderBy: 'startTime', maxResults: '2500',
+      fields: 'nextPageToken,items(id,status,summary,start,end,location,eventType,transparency)',
+    })
+    if (token) q.set('pageToken', token)
+    const d = await call(`/calendars/${encodeURIComponent(calendarId)}/events?${q}`)
+    out.push(...(d.items || []))
+    token = d.nextPageToken || ''
+    if (!token) break
+  }
+  return out
+}
+
+/** Calendars whose event titles feed the travel rules. Env SCHEDULER_TRAVEL_CALENDARS. */
+export function travelCalendars(): string[] {
+  return (process.env.SCHEDULER_TRAVEL_CALENDARS || 'primary').split(/[\s,]+/).filter(Boolean)
+}
+
 export type NewEvent = {
   id: string
   summary: string

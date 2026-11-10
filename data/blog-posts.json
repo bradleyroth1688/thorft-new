@@ -1,5 +1,27 @@
 [
   {
+    "slug": "haren-bhakta-why-the-s-p-will-buy-more-berkshire-when-buffett-dies",
+    "title": "Haren Bhakta on Why the S&P Will Buy More Berkshire When Buffett Dies",
+    "date": "2026-11-08",
+    "metaDescription": "Haren Bhakta of the Inside Ownership Index joins Behind the Ticker to explain S&P 500 float adjustment, insider ownership weighting, and why owner-operators matter.",
+    "guest": "Haren Bhakta",
+    "company": "Inside Ownership",
+    "podcastSlug": "why-the-s-p-will-buy-more-berkshire-when-buffett-dies-haren-bhakta-inside-owners",
+    "youtubeId": "xJZMP-_YycU",
+    "duration": "24 min",
+    "buzzsproutId": "20059048",
+    "topics": [
+      "Index Construction",
+      "Insider Ownership",
+      "Founder-Led Companies",
+      "Market Cap Weighting",
+      "Equity Allocation"
+    ],
+    "wordCount": 716,
+    "needsRevision": false,
+    "content": "<p>Haren Bhakta has been going to the Berkshire Hathaway annual meeting since 2017. In 2024 he sat in that room for the first meeting without Charlie Munger, holding a lot of Berkshire stock and a question he couldn't shake. What happens to his shares when Warren Buffett is gone? He doesn't believe in the company the same way without him. Halfway through the meeting it hit him. The S&P 500 will buy more Berkshire on the day Buffett dies.</p>\n\n<p>That one observation became an index. Haren started out selling insurance in 2008 because nobody else was hiring, moved to wealth management at Merrill Lynch and then Morgan Stanley, and broke away in 2017 to run his own firm and a micro cap fund. He won a proxy fight, got a board seat, and sold that company in 2023. Today he's founder and CEO of the Inside Ownership Index.</p>\n\n<h2>The Shares the S&P Leaves Out</h2>\n\n<p>The S&P 500 is weighted by free-float adjusted market cap. Shares held by founders and controlling insiders don't count. Haren put it in round numbers. Call Berkshire a trillion-dollar company. Buffett owns about 20% of it, so the index counts roughly $800 billion. When he dies, that stake starts to trade, and the index adds it back.</p>\n\n<p>His point is that this is backwards. Who wants more Berkshire without Buffett, more Tesla without Elon Musk, or more Meta without Mark Zuckerberg? You want the exposure while the owner is there and less of it once they're gone.</p>\n\n<p>He gave a cleaner example. In July 2020 Intel and Nvidia were both about $250 billion companies, each close to 1% of the S&P. Intel had seven times the revenue, seven times the profit, a higher return on equity and a higher free cash flow yield. Nvidia had a founder CEO with a big stake who went to bed thinking about the company and woke up thinking about it. The S&P gave the two companies the same weight anyway. That's the example I keep coming back to.</p>\n\n<h2>21,000 Proxy Filings</h2>\n\n<p>He came home from Omaha and went looking for the data. Bloomberg, Capital IQ and FactSet didn't have insider ownership going back far enough. So he read the proxy filings himself, about 21,000 of them covering roughly 20 years. He also went back a hundred years for context. General Motors under Alfred Sloan. IBM under Thomas Watson Jr., two and a half times the size of the next biggest company in the world in 1984, out of the top ten eight years after Watson retired. GE under Jack Welch. Over and over, a dominant company faded after the owner-operator left. Apple is the one clear exception he found.</p>\n\n<p>The method is simple. Start with the S&P 500. Take the 100 companies with the largest dollar value of insider ownership. Weight each one by that dollar value instead of by total market cap. He uses dollars rather than a percentage stake on purpose, so the index stays close to market cap. He calls it market cap seen through skin in the game. Apple still makes it, because Tim Cook and the board chair each own about a billion dollars of stock. It's just underweight.</p>\n\n<p>A board seat with real ownership is enough to qualify. Buffett didn't found Berkshire and Howard Schultz didn't found Starbucks. Both bought in and became the owner later.</p>\n\n<h2>Zoo Lions and Wild Lions</h2>\n\n<p>Haren calls a hired CEO a zoo lion. It gets fed every day whether the hunt works or not, with a base salary, a bonus and often a golden parachute. The owner-operator is a wild lion. When the hunt fails, it starves. In a crisis, that shows up two ways. Owners can get to capital when nobody else can, and they can make a call without a committee. If Zuckerberg wants to pay an AI researcher $200 million, he signs it.</p>\n\n<p>It's more concentrated, so he finds the index more volatile than the S&P in an ordinary market. He'd still use it in place of the S&P as the core holding.</p>\n\n<h2>Talk it through</h2>\n<p>THOR builds adaptive index strategies for advisers and allocators. Fifteen minutes with our founder and CIO gets you the mechanism, the index history, and an honest read on where it fits. <a href=\"https://thorft.com/call?s=podcast\">Book a time</a>.</p>"
+  },
+  {
     "slug": "adam-schenck-a-couple-retiring-today-needs-600000-for-healthcare",
     "title": "Adam Schenck on Why a Couple Retiring Today Needs $600,000 for Healthcare",
     "date": "2026-11-01",

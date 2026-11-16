@@ -1,5 +1,24 @@
 [
   {
+    "title": "Nvidia's Picks and Shovels, Without Owning Nvidia | Joe DeYonker, PurePlay ETFs",
+    "date": "2026-11-15",
+    "guest": "Joe DeYonker, PurePlay ETFs",
+    "company": "Nvidia's Picks and Shovels, Without Owning Nvidia",
+    "duration": "25 min",
+    "youtubeId": "gHRIQ5JR5i4",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/20103735-nvidia-s-picks-and-shovels-without-owning-nvidia-joe-deyonker-pureplay-etfs.mp3",
+    "description": "<p>Joe DeYonker started his career on the private markets team at the roughly $30 billion DuPont Pension Trust, evaluating private equity, private credit, and venture managers. He then helped manage about $11 billion in real assets and credit at the roughly $64 billion UAW Retiree Medical Benefits Trust. He left to start and later sell a staffing company, then returned to investing to found PurePlay ETFs, a firm built to fix what he calls thematic dilution, the tendency of thematic funds to fill up with holdings that have little to do with the theme on the label.</p><p>In this episode, Joe walks through NVPS, the NVIDIA Ecosystem Picks and Shovels ETF, which launched in June 2026 and is built to track Nvidia's value chain. Because Nvidia is fabless, it relies on a global network of suppliers for silicon wafers, fabrication, memory, equipment, packaging, and data center infrastructure. NVPS starts with FactSet supply chain data to identify companies with a documented commercial relationship with Nvidia, then requires at least 50% of a company's revenue to come from defined ecosystem functions. Qualifying companies are grouped into six fixed-weight pillars: raw materials, tools, fabrication, packaging, infrastructure, and connectivity. Within each pillar, companies are scored as critical, core, or supporting based on how essential they are to Nvidia, with ASML as the clearest example of a critical supplier.</p><p>Joe also explains what NVPS deliberately leaves out: Nvidia itself, its customers such as the hyperscalers, and competitors such as AMD. That makes it a supplier-only exposure that doesn't duplicate an existing Nvidia, SMH, or QQQ position. He covers why the fund invests in Taiwan, South Korea, and Western Europe but excludes China, how quarterly rebalancing and semiannual reconstitution keep up with a fast-changing supply chain, and what he's learned about marketing a new fund under compliance rules as a first-time ETF sponsor.</p>",
+    "slug": "nvidia-s-picks-and-shovels-without-owning-nvidia-joe-deyonker-pureplay-etfs",
+    "keyTopics": [
+      "Thematic dilution in theme ETFs",
+      "Why a fabless Nvidia needs suppliers",
+      "A 50% revenue test for inclusion",
+      "Six pillars and supplier criticality",
+      "Supplier-only exposure, no Nvidia"
+    ],
+    "summary": "Joe DeYonker of PurePlay ETFs explains how NVPS maps Nvidia's supply chain from FactSet relationship data, keeps only companies that earn at least half their revenue from the ecosystem, weights six pillars by how critical each supplier is, and leaves out Nvidia, its customers and its competitors."
+  },
+  {
     "title": "Why the S&P Will Buy More Berkshire When Buffett Dies | Haren Bhakta, Inside Ownership",
     "date": "2026-11-08",
     "guest": "Haren Bhakta, Inside Ownership",

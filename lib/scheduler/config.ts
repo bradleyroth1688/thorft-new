@@ -55,6 +55,15 @@ export const MEETING_TYPES: Record<string, MeetingType> = {
     blurb: 'A one-hour meeting with Brad Roth, Founder and CIO of THOR, on Zoom.',
     title: (b) => `Meeting // ${b.name}${b.firm ? ` // ${b.firm}` : ''}`,
   },
+  // bradroth.co "Book a call" lands here (Brad, 2026-11-19): a plain meeting with no THOR pitch.
+  meeting30: {
+    slug: 'meeting30',
+    name: '30-Minute Meeting with Brad Roth',
+    minutes: 30,
+    location: 'zoom',
+    blurb: 'Thirty minutes with Brad Roth on Zoom.',
+    title: (b) => `Meeting (30 min) // ${b.name}${b.firm ? ` // ${b.firm}` : ''}`,
+  },
   podcast: {
     slug: 'podcast',
     name: 'Behind the Ticker Podcast',

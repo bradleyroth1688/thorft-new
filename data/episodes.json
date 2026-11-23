@@ -1,5 +1,24 @@
 [
   {
+    "title": "Bonds Broke as a Diversifier. Here's What Fills the Gap | Andrew Beer, DBi",
+    "date": "2026-11-22",
+    "guest": "Andrew Beer, DBi",
+    "company": "Bonds Broke as a Diversifier. Here's What Fills the Gap",
+    "duration": "30 min",
+    "youtubeId": "laQM_yEULdc",
+    "audioUrl": "https://www.buzzsprout.com/2162961/episodes/20133423-bonds-broke-as-a-diversifier-here-s-what-fills-the-gap-andrew-beer-dbi.mp3",
+    "description": "<p>Andrew Beer is back on Behind the Ticker, and a lot has changed since his last appearance. DBMF, the managed futures ETF from Dynamic Beta investments (DBi), crossed $5 billion in assets in September, up from about $1 billion in late 2022. When DBMF launched in 2019, the managed futures ETF category held roughly $300 million. It's now about $10 billion, and DBMF holds about half of it.</p><p>In this episode, Andrew explains how DBMF works. Instead of building its own models, DBi studies what the largest managed futures hedge funds are doing, identifies the positions driving their returns, and replicates them using about 10 liquid futures markets, such as the S&P 500, emerging market equities, and Treasuries. He describes the approach as \"contrarian, early, and right,\" using DBMF's 2022 inflation positioning and this year's early move into crude oil and short bond positions as examples. He explains why the usual technical pitch for managed futures doesn't land with advisors, and why the simpler message, that an ETF can beat the hedge funds at their own strategy, does.</p><p>Andrew also introduces DBAR, the DBi Absolute Return ETF, which launched in September. It pairs 100% exposure to the managed futures strategy with 30% exposure to US equities at 85 basis points. It's designed for advisors who want the diversification benefit but have a hard time defending a managed futures position in a year when the S&P is surging. He compares it with the roughly $12 billion in higher-fee, tax-inefficient mutual funds that use the same approach, and explains when DBMF or DBAR makes more sense in a model portfolio. He also walks through \"The Great 60/40 Head Fake,\" his case that bonds stopped working as a diversifier, describes how an Asian family office used Claude to analyze managed futures and find DBi, and explains why he isn't firing a \"spaghetti cannon\" of new products.</p>",
+    "slug": "bonds-broke-as-a-diversifier-here-s-what-fills-the-gap-andrew-beer-dbi",
+    "keyTopics": [
+      "Why bonds stopped working as a diversifier",
+      "From 60/40 to 60/20/20",
+      "Replicating managed futures hedge funds",
+      "DBAR adds equity exposure to the strategy",
+      "Simple messaging for model allocators"
+    ],
+    "summary": "Andrew Beer of DBi explains why bonds stopped working as a diversifier this decade, how DBMF replicates the key positions of the largest managed futures hedge funds with about 10 liquid futures markets, and why DBi built DBAR for advisers who need the strategy to keep pace with equities."
+  },
+  {
     "title": "Nvidia's Picks and Shovels, Without Owning Nvidia | Joe DeYonker, PurePlay ETFs",
     "date": "2026-11-15",
     "guest": "Joe DeYonker, PurePlay ETFs",

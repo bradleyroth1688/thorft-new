@@ -57,11 +57,11 @@ export async function POST(request: Request) {
       }
       const end = new Date(start.getTime() + b.type.minutes * 60_000)
       const prior = String(b.ev.description || '')
-      const desc = prior.includes('/meet/manage') ? prior : `${prior}\n\nReschedule or cancel: ${manageUrl(b.ev.id)}`
+      const desc = prior.includes('/meet/manage') ? prior : `${prior}\n\nReschedule or cancel: ${manageUrl(b.ev.id, b.type.site)}`
       const moved = await moveEvent(b.ev.id, start, end, SCHEDULE.timeZone, desc)
       await emailGuest({
         kind: 'moved', id: b.ev.id, type: b.type, guest: { name: b.meta.guestName, email: b.meta.guestEmail },
-        summary: b.ev.summary, description: desc, start, end, manage: manageUrl(b.ev.id), sequence: Number(moved?.sequence) || 1,
+        summary: b.ev.summary, description: desc, start, end, manage: manageUrl(b.ev.id, b.type.site), sequence: Number(moved?.sequence) || 1,
       })
       await notifyBrad(
         `Rescheduled: ${b.ev.summary}`,

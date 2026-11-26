@@ -108,6 +108,7 @@ export async function emailGuest(o: {
   const where = locationLabel(o.type.location)
   const when = whenLabel(o.start)
   const first = o.guest.name.split(/\s+/)[0]
+  const personal = o.type.brand === 'personal'
   const heading = o.kind === 'booked' ? 'Your meeting is confirmed' : 'Your meeting has moved'
   const btn = (href: string, label: string, gold: boolean) =>
     `<a href="${esc(href)}" style="display:inline-block;padding:12px 22px;margin:0 8px 8px 0;border-radius:8px;font-weight:600;text-decoration:none;${
@@ -115,7 +116,7 @@ export async function emailGuest(o: {
   const html = `<!doctype html><html><body style="margin:0;background:#f0f3f7;font-family:Inter,Arial,sans-serif;color:#1a2744">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0f3f7;padding:32px 12px"><tr><td align="center">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:14px;overflow:hidden">
-<tr><td style="background:#0a1628;padding:22px 28px;color:#d4af37;font-weight:700;letter-spacing:.08em;font-size:13px">THOR FINANCIAL TECHNOLOGIES</td></tr>
+<tr><td style="background:${personal ? '#070709' : '#0a1628'};padding:22px 28px;color:${personal ? '#f4f2ed' : '#d4af37'};font-weight:700;letter-spacing:.08em;font-size:13px">${personal ? 'BRAD ROTH' : 'THOR FINANCIAL TECHNOLOGIES'}</td></tr>
 <tr><td style="padding:28px">
 <h1 style="margin:0 0 16px;font-size:22px;color:#0a1628">${esc(heading)}</h1>
 <p style="margin:0 0 20px;font-size:15px;line-height:1.6">Hi ${esc(first)}, ${o.kind === 'booked' ? 'thank you for booking time with me.' : 'here is the new time for our meeting.'}</p>
@@ -123,7 +124,7 @@ export async function emailGuest(o: {
 <strong>${esc(o.summary)}</strong><br>${esc(when)}<br>${o.type.minutes} minutes on ${esc(where)}</td></tr></table>
 ${url ? btn(url, `Join on ${where}`, true) : ''}${btn(o.manage, 'Reschedule or cancel', false)}
 <p style="margin:18px 0 0;font-size:13px;color:#6787af;line-height:1.6">The attached invite adds this meeting to your calendar. Reply to this email to reach me directly.</p>
-<p style="margin:22px 0 0;font-size:15px">Brad Roth<br><span style="color:#6787af;font-size:13px">Founder and CIO, THOR Financial Technologies</span></p>
+<p style="margin:22px 0 0;font-size:15px">Brad Roth${personal ? '<br><span style="color:#6787af;font-size:13px">bradroth.com</span>' : '<br><span style="color:#6787af;font-size:13px">Founder and CIO, THOR Financial Technologies</span>'}</p>
 </td></tr></table></td></tr></table></body></html>`
   const text = [heading, '', o.summary, when, `${o.type.minutes} minutes on ${where}`, url && `Join: ${url}`, `Reschedule or cancel: ${o.manage}`, '', 'Brad Roth']
     .filter(Boolean).join('\n')

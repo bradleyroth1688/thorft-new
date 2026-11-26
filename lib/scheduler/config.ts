@@ -26,6 +26,11 @@ export type MeetingType = {
   askEtf?: boolean
   /** Overrides SCHEDULE start/end for this type. */
   hours?: { start: string; end: string }
+  /** Site that hosts the booking and manage pages. Defaults to SITE_URL (thorft.com). */
+  site?: string
+  /** 'personal' sends Brad Roth branded emails with no THOR header. */
+  brand?: 'personal'
+
   title: (b: BookingDetails) => string
 }
 
@@ -55,12 +60,15 @@ export const MEETING_TYPES: Record<string, MeetingType> = {
     blurb: 'A one-hour meeting with Brad Roth, Founder and CIO of THOR, on Zoom.',
     title: (b) => `Meeting // ${b.name}${b.firm ? ` // ${b.firm}` : ''}`,
   },
-  // bradroth.co "Book a call" lands here (Brad, 2026-11-19): a plain meeting with no THOR pitch.
+  // bradroth.com "Book a call" lands here (Brad, 2026-11-19): a plain meeting with no THOR pitch.
+  // Since 2026-11-26 the booking and manage pages live on bradroth.com/meet ("its own scheduler").
   meeting30: {
     slug: 'meeting30',
     name: '30-Minute Meeting with Brad Roth',
     minutes: 30,
     location: 'zoom',
+    site: 'https://bradroth.com',
+    brand: 'personal',
     blurb: 'Thirty minutes with Brad Roth on Zoom.',
     title: (b) => `Meeting (30 min) // ${b.name}${b.firm ? ` // ${b.firm}` : ''}`,
   },

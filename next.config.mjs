@@ -14,6 +14,20 @@ const legacyRedirects = JSON.parse(
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // bradroth.com/meet is a static page that books through these routes (Brad, 2026-11-26).
+  async headers() {
+    return [
+      {
+        source: '/api/meet/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: 'https://bradroth.com' },
+          { key: 'Access-Control-Allow-Methods', value: 'GET, POST, OPTIONS' },
+          { key: 'Access-Control-Allow-Headers', value: 'Content-Type' },
+          { key: 'Vary', value: 'Origin' },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

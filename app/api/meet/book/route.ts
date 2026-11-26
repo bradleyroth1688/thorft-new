@@ -71,7 +71,7 @@ export async function POST(request: Request) {
     }
     const details = { name, email, firm, etf, notes, source }
     const id = newEventId()
-    const manage = manageUrl(id)
+    const manage = manageUrl(id, type.site)
     const summary = type.title(details)
     const desc = description(type, details, manage)
     const end = new Date(start.getTime() + type.minutes * 60_000)

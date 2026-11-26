@@ -18,6 +18,6 @@ export function verify(id: string, sig: string): boolean {
   return a.length === b.length && timingSafeEqual(a, b)
 }
 
-export function manageUrl(id: string): string {
-  return `${SITE_URL}/meet/manage?id=${encodeURIComponent(id)}&sig=${sign(id)}`
+export function manageUrl(id: string, site: string = SITE_URL): string {
+  return `${site}/meet/manage?id=${encodeURIComponent(id)}&sig=${sign(id)}`
 }

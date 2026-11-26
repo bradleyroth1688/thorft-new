@@ -100,7 +100,7 @@ export default function BradRothPage() {
                   @Bradr_thor
                 </a>
                 <a
-                  href="https://www.youtube.com/@BRoth_THOR"
+                  href="https://www.youtube.com/@Brad_Roth"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-gold-400/20 border border-white/20 rounded-lg text-sm font-medium transition-colors"

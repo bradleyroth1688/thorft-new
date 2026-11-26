@@ -31,7 +31,7 @@ export function organizationSchema() {
     },
     sameAs: [
       "https://www.linkedin.com/in/brad-roth-thor/",
-      "https://www.youtube.com/@BRoth_THOR",
+      "https://www.youtube.com/@Brad_Roth",
       "https://x.com/Bradr_thor",
     ],
     areaServed: "US",
@@ -102,7 +102,7 @@ export function personSchema() {
       "https://www.wikidata.org/wiki/Q138413241",
       "https://www.linkedin.com/in/brad-roth-thor/",
       "https://x.com/Bradr_thor",
-      "https://www.youtube.com/@BRoth_THOR",
+      "https://www.youtube.com/@Brad_Roth",
       "https://www.etfcentral.com/author/bradley-roth",
       "https://www.etftrends.com/nyses-etf-leaders-thor-financial-technologies-brad-roth/",
       "https://www.barnesandnoble.com/w/little-reasons-big-consequences-brad-roth/1149363789?ean=9798279648504",
